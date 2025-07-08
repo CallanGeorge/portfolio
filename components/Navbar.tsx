@@ -15,8 +15,8 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100" style={{ paddingLeft: '4rem', paddingRight: '4rem' }}>
+      <div style={{ maxWidth: '1920px', margin: '0 auto' }}>
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
@@ -47,31 +47,32 @@ export default function Navbar() {
               href="#contact"
               className="stampedButtonBlue"
               style={{ 
+                fontFamily: 'var(--font-family-thunder)',
                 background: '#1B76FF',
                 color: 'white',
-                padding: '0.8rem 1.5rem',
-                borderRadius: '14px',
-                fontWeight: '600',
-                fontSize: '0.9rem',
+                padding: '0.5rem 2rem',
+                borderRadius: '16px',
+                fontWeight: '700',
+                fontSize: '1rem',
                 textTransform: 'uppercase',
-                letterSpacing: '1px',
+                letterSpacing: '1.5px',
                 boxShadow: '8px 8px 0px rgba(0, 0, 0, 0.9)',
                 border: '3px solid black',
                 textAlign: 'center',
                 cursor: 'pointer',
                 transition: 'transform 0.1s ease-in-out',
                 zIndex: '2',
-                transform: 'translate(0px, 0px)'
+                transform: 'translate(0px, 0px)',
               }}
               onMouseEnter={(e) => {
                 const target = e.target as HTMLElement;
-                target.style.transform = 'translate(4px, 4px)';
-                target.style.boxShadow = '4px 4px 0px rgba(0, 0, 0, 0.9)';
+                target.style.transform = 'translate(3px, 3px)';
+                target.style.boxShadow = '3px 3px 0px rgba(0, 0, 0, 0.9)';
               }}
               onMouseLeave={(e) => {
                 const target = e.target as HTMLElement;
                 target.style.transform = 'translate(0px, 0px)';
-                target.style.boxShadow = '8px 8px 0px rgba(0, 0, 0, 0.9)';
+                target.style.boxShadow = '6px 6px 0px rgba(0, 0, 0, 0.9)';
               }}
             >
               CONTACT
@@ -128,21 +129,23 @@ export default function Navbar() {
                 href="#contact"
                 className="stampedButtonBlue block mx-3 mt-4"
                 style={{ 
+                  fontFamily: 'var(--font-family-thunder)',
                   background: '#1B76FF',
                   color: 'white',
-                  padding: '0.8rem 1.5rem',
+                  padding: '0.9rem 1.8rem',
                   borderRadius: '14px',
-                  fontWeight: '600',
+                  fontWeight: '700',
                   fontSize: '0.9rem',
                   textTransform: 'uppercase',
-                  letterSpacing: '1px',
-                  boxShadow: '8px 8px 0px rgba(0, 0, 0, 0.9)',
+                  letterSpacing: '1.2px',
+                  boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.9)',
                   border: '3px solid black',
                   textAlign: 'center',
                   cursor: 'pointer',
                   transition: 'transform 0.1s ease-in-out',
                   zIndex: '2',
-                  transform: 'translate(0px, 0px)'
+                  transform: 'translate(0px, 0px)',
+                  minWidth: '140px'
                 }}
                 onClick={() => setIsOpen(false)}
               >

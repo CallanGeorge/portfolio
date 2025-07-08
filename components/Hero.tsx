@@ -60,10 +60,10 @@ export default function Hero() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <div className="w-full max-w-[95vw] mx-auto flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 lg:gap-0">
+          <div className="w-full max-w-[95vw] mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12 lg:gap-16">
             {/* Subtitle */}
-            <div className="lg:text-left text-center">
-              <p className="subheading text-lg sm:text-xl md:text-xl text-gray-600 leading-relaxed">
+            <div className="lg:text-left text-center lg:flex-1 lg:max-w-2xl">
+              <p className="subheading text-xl sm:text-2xl md:text-2xl lg:text-xl xl:text-2xl text-gray-600 leading-relaxed font-medium">
                 EDINBURGH-BASED FREELANCE WEB DEVELOPER HELPING LOCAL 
                 BUSINESSES BUILD THEIR DIGITAL PRESENCE - MODERN WEBSITES, 
                 PROVEN RESULTS, PERSONAL SERVICE.
@@ -79,19 +79,21 @@ export default function Hero() {
                   fontFamily: 'var(--font-family-thunder)',
                   background: '#1B76FF',
                   color: 'white',
-                  padding: '1rem 2rem',
+                  padding: '1rem 1.2rem',
                   borderRadius: '16px',
-                  fontWeight: '600',
-                  fontSize: '1.2rem',
+                  fontWeight: '700',
+                  fontSize: '1.4rem',
                   textTransform: 'uppercase',
-                  letterSpacing: '1px',
+                  letterSpacing: '1.5px',
                   boxShadow: '8px 8px 0px rgba(0, 0, 0, 0.9)',
                   border: '3px solid black',
                   textAlign: 'center',
                   cursor: 'pointer',
                   transition: 'transform 0.1s ease-in-out',
                   zIndex: '2',
-                  transform: 'translate(0px, 0px)'
+                  transform: 'translate(0px, 0px)',
+                  minWidth: '200px',
+                  margin: '0 1rem',
                 }}
                 onMouseEnter={(e) => {
                   const target = e.target as HTMLElement;
