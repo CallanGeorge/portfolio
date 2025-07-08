@@ -24,7 +24,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="w-full max-w-[95vw] mx-auto px-6 sm:px-8 lg:px-16 text-center relative z-10">
+      <div className="w-full max-w-[95vw] 2xl:max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 text-center relative z-10">
 
 
         {/* Main Headline */}
@@ -34,13 +34,13 @@ export default function Hero() {
           }`}
         >
           <h1 className="font-black  text-black" style={{ fontFamily: 'var(--font-family-thunder)' }}>
-            <div className="text-8xl sm:text-9xl md:text-[9rem] lg:text-[11rem] xl:text-[13rem] 2xl:text-[15rem] leading-[0.8] mb-2">
+            <div className="text-8xl sm:text-9xl md:text-[9rem] lg:text-[11rem] xl:text-[13rem] 2xl:text-[17rem] leading-[0.8] mb-2">
               CUSTOM WEBSITES
             </div>
-            <div className="text-8xl sm:text-9xl md:text-[9rem] lg:text-[11rem] xl:text-[13rem] 2xl:text-[15rem] leading-[0.8] mb-2">
+            <div className="text-8xl sm:text-9xl md:text-[9rem] lg:text-[11rem] xl:text-[13rem] 2xl:text-[17rem] leading-[0.8] mb-2">
               FOR LOCAL BUSINESS
             </div>
-            <div className="text-8xl sm:text-9xl md:text-[9rem] lg:text-[11rem] xl:text-[13rem] 2xl:text-[15rem] leading-[0.8]">
+            <div className="text-8xl sm:text-9xl md:text-[9rem] lg:text-[11rem] xl:text-[13rem] 2xl:text-[17rem] leading-[0.8]">
               <span 
                 style={{
                   WebkitTextStroke: '4px #2563EB',
@@ -110,19 +110,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div 
-          className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-800 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}
-        >
-          <div className="flex flex-col items-center text-gray-500">
-            <span className="text-xs mb-3 font-space-mono font-medium tracking-wider">SCROLL TO EXPLORE</span>
-            <div className="w-5 h-8 border-2 border-gray-400 rounded-full flex justify-center">
-              <div className="w-0.5 h-2 bg-gray-500 rounded-full mt-1.5 animate-bounce"></div>
-            </div>
-          </div>
-        </div>
       </div>
 
 
