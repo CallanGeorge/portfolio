@@ -1,11 +1,13 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
+import WhyChooseMe from '@/components/WhyChooseMe'
 
 export default function Home() {
   return (
     <main className="relative">
       <Navbar />
       <Hero />
+      <WhyChooseMe />
       
       {/* Placeholder sections for future content */}
       <section id="about" className="min-h-screen bg-gray-50 flex items-center justify-center">

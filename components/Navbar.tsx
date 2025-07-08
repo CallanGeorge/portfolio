@@ -15,7 +15,7 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100" style={{ paddingLeft: '4rem', paddingRight: '4rem' }}>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 px-4 sm:px-8 md:px-16">
       <div style={{ maxWidth: '1920px', margin: '0 auto' }}>
         <div className="flex justify-between items-center h-16">
           {/* Logo */}

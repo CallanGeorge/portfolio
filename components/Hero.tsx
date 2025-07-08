@@ -11,7 +11,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20  bg-gray-50">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 sm:pt-36 md:pt-40 bg-gray-50">
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 opacity-3">
         <div className="absolute top-0 right-0 w-96 h-96 opacity-50">
@@ -62,7 +62,7 @@ export default function Hero() {
         >
           <div className="w-full max-w-[95vw] mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12 lg:gap-16">
             {/* Subtitle */}
-            <div className="lg:text-left text-center lg:flex-1 lg:max-w-2xl">
+            <div className="lg:text-left text-center lg:flex-1 lg:max-w-4xl">
               <p className="subheading text-xl sm:text-2xl md:text-2xl lg:text-xl xl:text-2xl text-gray-600 leading-relaxed font-medium">
                 EDINBURGH-BASED FREELANCE WEB DEVELOPER HELPING LOCAL 
                 BUSINESSES BUILD THEIR DIGITAL PRESENCE - MODERN WEBSITES, 
