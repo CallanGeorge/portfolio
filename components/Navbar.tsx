@@ -45,34 +45,21 @@ export default function Navbar() {
           <div className="hidden md:flex">
             <Link
               href="#contact"
-              className="stampedButtonBlue"
+              className="px-4 py-2 bg-[#1B76FF] text-white font-bold border-4 border-black rounded-none transition-transform duration-100 uppercase text-sm"
               style={{ 
-                fontFamily: 'var(--font-family-thunder)',
-                background: '#1B76FF',
-                color: 'white',
-                padding: '0.5rem 2rem',
-                borderRadius: '16px',
-                fontWeight: '700',
-                fontSize: '1rem',
-                textTransform: 'uppercase',
-                letterSpacing: '1.5px',
-                boxShadow: '8px 8px 0px rgba(0, 0, 0, 0.9)',
-                border: '3px solid black',
-                textAlign: 'center',
-                cursor: 'pointer',
-                transition: 'transform 0.1s ease-in-out',
-                zIndex: '2',
-                transform: 'translate(0px, 0px)',
+                fontFamily: 'Space Mono, monospace',
+                boxShadow: '4px 4px 0px rgba(0, 0, 0, 1)',
+                transform: 'translate(0px, 0px)'
               }}
               onMouseEnter={(e) => {
                 const target = e.target as HTMLElement;
-                target.style.transform = 'translate(3px, 3px)';
-                target.style.boxShadow = '3px 3px 0px rgba(0, 0, 0, 0.9)';
+                target.style.transform = 'translate(2px, 2px)';
+                target.style.boxShadow = '2px 2px 0px rgba(0, 0, 0, 1)';
               }}
               onMouseLeave={(e) => {
                 const target = e.target as HTMLElement;
                 target.style.transform = 'translate(0px, 0px)';
-                target.style.boxShadow = '6px 6px 0px rgba(0, 0, 0, 0.9)';
+                target.style.boxShadow = '4px 4px 0px rgba(0, 0, 0, 1)';
               }}
             >
               CONTACT
@@ -127,25 +114,21 @@ export default function Navbar() {
               ))}
               <Link
                 href="#contact"
-                className="stampedButtonBlue block mx-3 mt-4"
+                className="block mx-3 mt-4 px-4 py-2 bg-[#1B76FF] text-white font-bold border-4 border-black rounded-none transition-transform duration-100 uppercase text-sm text-center"
                 style={{ 
-                  fontFamily: 'var(--font-family-thunder)',
-                  background: '#1B76FF',
-                  color: 'white',
-                  padding: '0.9rem 1.8rem',
-                  borderRadius: '14px',
-                  fontWeight: '700',
-                  fontSize: '0.9rem',
-                  textTransform: 'uppercase',
-                  letterSpacing: '1.2px',
-                  boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.9)',
-                  border: '3px solid black',
-                  textAlign: 'center',
-                  cursor: 'pointer',
-                  transition: 'transform 0.1s ease-in-out',
-                  zIndex: '2',
-                  transform: 'translate(0px, 0px)',
-                  minWidth: '140px'
+                  fontFamily: 'Space Mono, monospace',
+                  boxShadow: '4px 4px 0px rgba(0, 0, 0, 1)',
+                  transform: 'translate(0px, 0px)'
+                }}
+                onMouseEnter={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.transform = 'translate(2px, 2px)';
+                  target.style.boxShadow = '2px 2px 0px rgba(0, 0, 0, 1)';
+                }}
+                onMouseLeave={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.transform = 'translate(0px, 0px)';
+                  target.style.boxShadow = '4px 4px 0px rgba(0, 0, 0, 1)';
                 }}
                 onClick={() => setIsOpen(false)}
               >

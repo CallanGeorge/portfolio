@@ -81,53 +81,58 @@ export default function Services() {
           }`}
         >
           {services.map((service, index) => (
-                         <div 
-               key={index}
-               className="bg-white border-4 border-black rounded-none p-6 sm:p-8 h-fit"
-               style={{
-                 boxShadow: '8px 8px 0px rgba(0, 0, 0, 1)',
-               }}
-             >
-                             {/* Title */}
-               <h3 className="font-black text-gray-900 mb-4 leading-tight" style={{ fontFamily: 'var(--font-family-thunder)', fontSize: '32px' }}>
+            <div 
+              key={index}
+              className="bg-white border-4 border-black rounded-none p-6 sm:p-8 flex flex-col"
+              style={{
+                boxShadow: '8px 8px 0px rgba(0, 0, 0, 1)',
+                minHeight: '700px'
+              }}
+            >
+              {/* Title - Fixed height */}
+              <h3 className="font-black text-gray-900 mb-4 leading-tight h-20 flex items-start" style={{ fontFamily: 'var(--font-family-thunder)', fontSize: '32px' }}>
                 {service.title}
               </h3>
               
-                             {/* Description */}
-               <p className="text-gray-700 mb-6 text-base sm:text-lg leading-relaxed" style={{ fontFamily: 'Space Mono, monospace' }}>
+              {/* Description - Fixed height */}
+              <p className="text-gray-700 mb-6 text-base sm:text-lg leading-relaxed h-16 flex items-start" style={{ fontFamily: 'Space Mono, monospace' }}>
                 {service.description}
               </p>
 
-              {/* Price (if applicable) */}
-              {service.price && (
-                <div className="mb-6">
-                                     <div className="flex items-baseline gap-1">
-                     <span className="text-4xl sm:text-5xl font-black text-gray-900" style={{ fontFamily: 'Space Mono, monospace' }}>
-                       {service.price}
-                     </span>
-                     {service.priceUnit && (
-                       <span className="text-xl text-gray-700" style={{ fontFamily: 'Space Mono, monospace' }}>
-                         {service.priceUnit}
-                       </span>
-                     )}
-                   </div>
-                   {service.priceNote && (
-                     <p className="text-sm text-gray-600 mt-1" style={{ fontFamily: 'Space Mono, monospace' }}>
-                       {service.priceNote}
-                     </p>
-                   )}
-                </div>
-              )}
-              
-              {/* CTA Button */}
+              {/* Price Section - Fixed height for alignment */}
+              <div className="mb-6 h-20 flex flex-col justify-start">
+                {service.price ? (
+                  <>
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-4xl sm:text-5xl font-black text-gray-900" style={{ fontFamily: 'Space Mono, monospace' }}>
+                        {service.price}
+                      </span>
+                      {service.priceUnit && (
+                        <span className="text-xl text-gray-700" style={{ fontFamily: 'Space Mono, monospace' }}>
+                          {service.priceUnit}
+                        </span>
+                      )}
+                    </div>
+                    {service.priceNote && (
+                      <p className="text-sm text-gray-600 mt-1" style={{ fontFamily: 'Space Mono, monospace' }}>
+                        {service.priceNote}
+                      </p>
+                    )}
+                  </>
+                ) : (
+                  <div></div>
+                )}
+              </div>
+
+              {/* CTA Button - Fixed position */}
               <div className="mb-8">
-                                                <button
-                   className="w-full py-4 px-6 bg-[#1B76FF] text-white font-bold text-lg border-4 border-black rounded-none transition-transform duration-100"
-                   style={{
-                     fontFamily: 'Space Mono, monospace',
-                     boxShadow: '6px 6px 0px rgba(0, 0, 0, 1)',
-                     transform: 'translate(0px, 0px)'
-                   }}
+                <button
+                  className="w-full py-4 px-6 bg-[#1B76FF] text-white font-bold text-lg border-4 border-black rounded-none transition-transform duration-100"
+                  style={{
+                    fontFamily: 'Space Mono, monospace',
+                    boxShadow: '6px 6px 0px rgba(0, 0, 0, 1)',
+                    transform: 'translate(0px, 0px)'
+                  }}
                   onMouseEnter={(e) => {
                     const target = e.target as HTMLElement;
                     target.style.transform = 'translate(3px, 3px)';
@@ -146,16 +151,16 @@ export default function Services() {
               {/* Divider */}
               <div className="border-t-2 border-black mb-6"></div>
               
-              {/* Features */}
-              <div>
-                                 <h4 className="text-lg font-bold text-gray-900 mb-4" style={{ fontFamily: 'Space Mono, monospace' }}>
+              {/* Features - Takes remaining space */}
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-gray-900 mb-4" style={{ fontFamily: 'Space Mono, monospace' }}>
                   What's included:
                 </h4>
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></span>
-                                             <span className="text-gray-700 text-base leading-relaxed" style={{ fontFamily: 'Space Mono, monospace' }}>
+                      <span className="text-gray-700 text-base leading-relaxed" style={{ fontFamily: 'Space Mono, monospace' }}>
                         {feature}
                       </span>
                     </li>
