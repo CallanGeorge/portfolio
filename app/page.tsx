@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import WhyChooseMe from '@/components/WhyChooseMe'
+import Services from '@/components/Services'
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <WhyChooseMe />
+      <Services />
       
       {/* Placeholder sections for future content */}
       <section id="about" className="min-h-screen bg-gray-50 flex items-center justify-center">
@@ -40,14 +42,7 @@ export default function Home() {
         </div>
       </section>
       
-      <section id="services" className="min-h-screen bg-slate-100 flex items-center justify-center">
-        <div className="text-center">
-          <h2 className="text-4xl font-bold mb-4 font-montserrat">
-            SERVICES SECTION
-          </h2>
-          <p className="text-gray-600 subheading">Coming soon...</p>
-        </div>
-      </section>
+
       
       <section id="blog" className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">

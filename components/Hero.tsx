@@ -74,36 +74,32 @@ export default function Hero() {
             <div className="lg:flex-shrink-0 text-center lg:text-right">
               <Link
                 href="#contact"
-                className="stampedButtonBlue inline-block"
+                className="stampedButtonBlue inline-block px-4 py-3 sm:px-5 sm:py-4 md:px-6 md:py-4 text-sm sm:text-base md:text-xl min-w-[160px] sm:min-w-[180px] md:min-w-[200px] mx-2 sm:mx-4"
                 style={{ 
-                  fontFamily: 'var(--font-family-thunder)',
+                  fontFamily: 'Space Mono, monospace',
                   background: '#1B76FF',
                   color: 'white',
-                  padding: '1rem 1.2rem',
                   borderRadius: '16px',
                   fontWeight: '700',
-                  fontSize: '1.4rem',
                   textTransform: 'uppercase',
                   letterSpacing: '1.5px',
-                  boxShadow: '8px 8px 0px rgba(0, 0, 0, 0.9)',
+                  boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.9)',
                   border: '3px solid black',
                   textAlign: 'center',
                   cursor: 'pointer',
                   transition: 'transform 0.1s ease-in-out',
                   zIndex: '2',
                   transform: 'translate(0px, 0px)',
-                  minWidth: '200px',
-                  margin: '0 1rem',
                 }}
                 onMouseEnter={(e) => {
                   const target = e.target as HTMLElement;
-                  target.style.transform = 'translate(4px, 4px)';
-                  target.style.boxShadow = '4px 4px 0px rgba(0, 0, 0, 0.9)';
+                  target.style.transform = 'translate(3px, 3px)';
+                  target.style.boxShadow = '3px 3px 0px rgba(0, 0, 0, 0.9)';
                 }}
                 onMouseLeave={(e) => {
                   const target = e.target as HTMLElement;
                   target.style.transform = 'translate(0px, 0px)';
-                  target.style.boxShadow = '8px 8px 0px rgba(0, 0, 0, 0.9)';
+                  target.style.boxShadow = '6px 6px 0px rgba(0, 0, 0, 0.9)';
                 }}
               >
                 GET STARTED
