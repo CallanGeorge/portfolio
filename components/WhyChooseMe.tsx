@@ -20,7 +20,7 @@ export default function WhyChooseMe() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <h2 className="font-black text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[10rem] leading-[0.9]" style={{ fontFamily: 'var(--font-family-thunder)' }}>
+          <h2 className="font-black text-white text-5xl sm:text-6xl md:text-7xl lg:text-[7vw] leading-[0.9]" style={{ fontFamily: 'var(--font-family-thunder)' }}>
             Why Choose Me?
           </h2>
         </div>
@@ -32,7 +32,7 @@ export default function WhyChooseMe() {
           }`}
         >
           <div className="max-w-5xl mx-auto">
-            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white leading-tight sm:leading-relaxed font-normal mb-6 sm:mb-8 md:mb-12 uppercase" style={{ fontFamily: 'Inter, sans-serif', fontWeight: '400' }}>
+            <p className="text-[1.2rem] lg:text-[2.5rem] text-white leading-tight sm:leading-relaxed font-normal mb-6 sm:mb-8 md:mb-12 uppercase" style={{ fontFamily: 'Inter, sans-serif', fontWeight: '400' }}>
             When you work with me, you’re not just another project in the queue – you get my full focus and a personalised approach tailored to your business goals. As a freelance professional, I prioritise clear communication, attention to detail, and results that help your business grow.            </p>
             
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed font-normal max-w-4xl mx-auto uppercase" style={{ fontFamily: 'Inter, sans-serif' }}>
