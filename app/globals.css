@@ -25,9 +25,9 @@
   --font-family-montserrat: "Montserrat", sans-serif;
   --font-family-phudu: "Phudu", sans-serif;
   
-  --color-primary: #2563EB;
-  --color-primary-dark: #1D4ED8;
-  --color-primary-light: #60A5FA;
+  --color-primary: #779179;
+  --color-primary-dark: #6B7F68;
+  --color-primary-light: #8FA191;
   
   --font-size-7xl: 5rem;
   --font-size-8xl: 6rem;
@@ -113,7 +113,7 @@ body {
 }
 
 .stampedButtonBlue {
-  background: #1B76FF;
+  background: #779179;
   color: white;
   padding: 1rem 2rem;
   border-radius: 16px;
@@ -135,18 +135,18 @@ body {
 }
 
 .btn-primary {
-  background-color: #3B82F6;
+  background-color: #779179;
   color: white;
   border-radius: 1rem;
-  box-shadow: 0 8px 0 #1E40AF, 0 12px 20px rgba(30, 64, 175, 0.3);
+  box-shadow: 0 8px 0 #6B7F68, 0 12px 20px rgba(119, 145, 121, 0.3);
   transform: translateY(0px);
   transition: all 0.2s ease;
 }
 
 .btn-primary:hover {
-  background-color: #2563EB;
+  background-color: #6B7F68;
   transform: translateY(4px);
-  box-shadow: 0 4px 0 #1E40AF, 0 8px 15px rgba(30, 64, 175, 0.3);
+  box-shadow: 0 4px 0 #6B7F68, 0 8px 15px rgba(119, 145, 121, 0.3);
 }
 
 .btn-secondary {

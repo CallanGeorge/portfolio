@@ -10,7 +10,7 @@ export default function WhyChooseMe() {
   }, [])
 
   return (
-    <section className="relative  flex items-center justify-center overflow-hidden bg-gray-900 pt-16 sm:pt-16 md:pt-24 pb-8 sm:pb-12 md:pb-16">
+    <section className="relative  flex items-center justify-center overflow-hidden bg-[#242424] pt-16 sm:pt-16 md:pt-24 pb-8 sm:pb-12 md:pb-16">
 
       <div className="w-full max-w-[95vw] 2xl:max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 text-center relative z-10">
         
@@ -164,21 +164,15 @@ export default function WhyChooseMe() {
             </h3>
             
             <button
-              className="px-8 py-4 bg-[#1B76FF] text-white font-bold text-lg border-4 border-black rounded-none transition-transform duration-100 uppercase"
+                             className="inline-block bg-[#779179] text-white font-normal rounded-[10px] transition-all duration-200 uppercase hover:bg-[#6B7F68] border-[3px] border-black relative z-[2] text-center cursor-pointer"
               style={{
-                fontFamily: 'Space Mono, monospace',
-                boxShadow: '6px 6px 0px rgba(0, 0, 0, 1)',
-                transform: 'translate(0px, 0px)'
-              }}
-              onMouseEnter={(e) => {
-                const target = e.target as HTMLElement;
-                target.style.transform = 'translate(3px, 3px)';
-                target.style.boxShadow = '3px 3px 0px rgba(0, 0, 0, 1)';
-              }}
-              onMouseLeave={(e) => {
-                const target = e.target as HTMLElement;
-                target.style.transform = 'translate(0px, 0px)';
-                target.style.boxShadow = '6px 6px 0px rgba(0, 0, 0, 1)';
+                fontFamily: 'Space Mono, sans-serif',
+                boxShadow: '9px 10px #000',
+                padding: '.75em 1em',
+                fontSize: '.8rem',
+                fontWeight: '400',
+                letterSpacing: '0',
+                textTransform: 'uppercase'
               }}
             >
               GET STARTED

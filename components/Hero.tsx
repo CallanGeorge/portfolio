@@ -11,7 +11,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 sm:pt-36 md:pt-40 bg-gray-50">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 sm:pt-36 md:pt-40 bg-[#ebe2da]">
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 opacity-3">
         <div className="absolute top-0 right-0 w-96 h-96 opacity-50">
@@ -33,7 +33,7 @@ export default function Hero() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <h1 className="font-black  text-black" style={{ fontFamily: 'var(--font-family-thunder)' }}>
+          <h1 className="font-black  text-[#242424]" style={{ fontFamily: 'var(--font-family-thunder)' }}>
             <div className="text-8xl sm:text-9xl md:text-[9rem] lg:text-[11rem] xl:text-[13rem] 2xl:text-[17rem] leading-[0.8] mb-2">
               CUSTOM WEBSITES
             </div>
@@ -43,7 +43,7 @@ export default function Hero() {
             <div className="text-8xl sm:text-9xl md:text-[9rem] lg:text-[11rem] xl:text-[13rem] 2xl:text-[17rem] leading-[0.8]">
               <span 
                 style={{
-                  WebkitTextStroke: '4px #2563EB',
+                  WebkitTextStroke: '4px #779179',
                   WebkitTextFillColor: 'transparent',
                   color: 'transparent'
                 }}
@@ -63,7 +63,7 @@ export default function Hero() {
           <div className="w-full max-w-[95vw] mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12 lg:gap-16">
             {/* Subtitle */}
             <div className="lg:text-left text-center lg:flex-1 lg:max-w-4xl">
-              <p className="subheading text-xl sm:text-2xl md:text-2xl lg:text-xl xl:text-2xl text-gray-600 leading-relaxed font-medium">
+              <p className="subheading text-xl sm:text-2xl md:text-2xl lg:text-xl xl:text-2xl text-[#242424] leading-relaxed font-medium">
                 EDINBURGH-BASED FREELANCE WEB DEVELOPER HELPING LOCAL 
                 BUSINESSES BUILD THEIR DIGITAL PRESENCE - MODERN WEBSITES, 
                 PROVEN RESULTS, PERSONAL SERVICE.
@@ -74,21 +74,15 @@ export default function Hero() {
             <div className="lg:flex-shrink-0 text-center lg:text-right">
               <Link
                 href="#contact"
-                className="inline-block px-4 py-3 sm:px-5 sm:py-4 md:px-6 md:py-4 bg-[#1B76FF] text-white font-bold border-4 border-black rounded-none transition-transform duration-100 text-sm sm:text-base md:text-xl min-w-[160px] sm:min-w-[180px] md:min-w-[200px] mx-2 sm:mx-4 uppercase"
+                                 className="inline-block bg-[#779179] text-white font-normal rounded-[10px] transition-all duration-200 min-w-[160px] sm:min-w-[180px] md:min-w-[200px] mx-2 sm:mx-4 uppercase hover:bg-[#6B7F68] border-[3px] border-black relative z-[2] text-center cursor-pointer"
                 style={{ 
-                  fontFamily: 'Space Mono, monospace',
-                  boxShadow: '6px 6px 0px rgba(0, 0, 0, 1)',
-                  transform: 'translate(0px, 0px)'
-                }}
-                onMouseEnter={(e) => {
-                  const target = e.target as HTMLElement;
-                  target.style.transform = 'translate(3px, 3px)';
-                  target.style.boxShadow = '3px 3px 0px rgba(0, 0, 0, 1)';
-                }}
-                onMouseLeave={(e) => {
-                  const target = e.target as HTMLElement;
-                  target.style.transform = 'translate(0px, 0px)';
-                  target.style.boxShadow = '6px 6px 0px rgba(0, 0, 0, 1)';
+                  fontFamily: 'Space Mono, sans-serif',
+                  boxShadow: '9px 10px #000',
+                  padding: '.75em 1em',
+                  fontSize: '.8rem',
+                  fontWeight: '400',
+                  letterSpacing: '0',
+                  textTransform: 'uppercase'
                 }}
               >
                 GET STARTED

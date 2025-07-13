@@ -55,7 +55,7 @@ export default function Services() {
   ]
 
   return (
-    <section id="services" className="relative py-16 sm:py-20 md:py-24 lg:py-32 bg-gray-100 overflow-hidden">
+    <section id="services" className="relative py-16 sm:py-20 md:py-24 lg:py-32 bg-[#ebe2da] overflow-hidden">
       <div className="w-full max-w-[95vw] 2xl:max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 relative z-10">
         
         {/* Header */}
@@ -64,12 +64,12 @@ export default function Services() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <h2 className="font-black text-gray-900 leading-[0.9] mb-6 text-[4em] sm:text-6xl md:text-8xl lg:text-[12.5em]" style={{ fontFamily: 'Inter, sans-serif' }}>
+          <h2 className="font-black text-[#242424] leading-[0.9] mb-6 text-[4em] sm:text-6xl md:text-8xl lg:text-[12.5em]" style={{ fontFamily: 'Inter, sans-serif' }}>
             Explore My
             <br />
             Services
           </h2>
-          <p className="text-gray-700 font-medium" style={{ fontFamily: 'Space Mono, monospace', fontSize: '1rem' }}>
+          <p className="text-[#242424] font-medium" style={{ fontFamily: 'Space Mono, monospace', fontSize: '1rem' }}>
             I offer a variety of plans to accommodate your small business needs.
           </p>
         </div>
@@ -90,12 +90,12 @@ export default function Services() {
               }}
             >
               {/* Title - Fixed height */}
-              <h3 className="font-black text-gray-900 mb-4 leading-tight h-20 flex items-start" style={{ fontFamily: 'var(--font-family-thunder)', fontSize: '32px' }}>
+              <h3 className="font-black text-[#242424] mb-4 leading-tight h-20 flex items-start" style={{ fontFamily: 'var(--font-family-thunder)', fontSize: '32px' }}>
                 {service.title}
               </h3>
               
               {/* Description - Fixed height */}
-              <p className="text-gray-700 mb-6 text-base sm:text-lg leading-relaxed h-16 flex items-start" style={{ fontFamily: 'Space Mono, monospace' }}>
+              <p className="text-[#242424] mb-6 text-base sm:text-lg leading-relaxed h-16 flex items-start" style={{ fontFamily: 'Space Mono, monospace' }}>
                 {service.description}
               </p>
 
@@ -104,17 +104,17 @@ export default function Services() {
                 {service.price ? (
                   <>
                     <div className="flex items-baseline gap-1">
-                      <span className="text-4xl sm:text-5xl font-black text-gray-900" style={{ fontFamily: 'Space Mono, monospace' }}>
+                      <span className="text-4xl sm:text-5xl font-black text-[#242424]" style={{ fontFamily: 'Space Mono, monospace' }}>
                         {service.price}
                       </span>
                       {service.priceUnit && (
-                        <span className="text-xl text-gray-700" style={{ fontFamily: 'Space Mono, monospace' }}>
+                        <span className="text-xl text-[#242424]" style={{ fontFamily: 'Space Mono, monospace' }}>
                           {service.priceUnit}
                         </span>
                       )}
                     </div>
                     {service.priceNote && (
-                      <p className="text-sm text-gray-600 mt-1" style={{ fontFamily: 'Space Mono, monospace' }}>
+                      <p className="text-sm text-[#242424] mt-1" style={{ fontFamily: 'Space Mono, monospace' }}>
                         {service.priceNote}
                       </p>
                     )}
@@ -127,21 +127,15 @@ export default function Services() {
               {/* CTA Button - Fixed position */}
               <div className="mb-8">
                 <button
-                  className="w-full py-4 px-6 bg-[#1B76FF] text-white font-bold text-lg border-4 border-black rounded-none transition-transform duration-100"
+                                     className="w-full bg-[#779179] text-white font-normal rounded-[10px] transition-all duration-200 hover:bg-[#6B7F68] border-[3px] border-black relative z-[2] text-center cursor-pointer"
                   style={{
-                    fontFamily: 'Space Mono, monospace',
-                    boxShadow: '6px 6px 0px rgba(0, 0, 0, 1)',
-                    transform: 'translate(0px, 0px)'
-                  }}
-                  onMouseEnter={(e) => {
-                    const target = e.target as HTMLElement;
-                    target.style.transform = 'translate(3px, 3px)';
-                    target.style.boxShadow = '3px 3px 0px rgba(0, 0, 0, 1)';
-                  }}
-                  onMouseLeave={(e) => {
-                    const target = e.target as HTMLElement;
-                    target.style.transform = 'translate(0px, 0px)';
-                    target.style.boxShadow = '6px 6px 0px rgba(0, 0, 0, 1)';
+                    fontFamily: 'Space Mono, sans-serif',
+                    boxShadow: '9px 10px #000',
+                    padding: '.75em 1em',
+                    fontSize: '.8rem',
+                    fontWeight: '400',
+                    letterSpacing: '0',
+                    textTransform: 'uppercase'
                   }}
                 >
                   {service.button}
@@ -153,14 +147,14 @@ export default function Services() {
               
               {/* Features - Takes remaining space */}
               <div className="flex-1">
-                <h4 className="text-lg font-bold text-gray-900 mb-4" style={{ fontFamily: 'Space Mono, monospace' }}>
+                <h4 className="text-lg font-bold text-[#242424] mb-4" style={{ fontFamily: 'Space Mono, monospace' }}>
                   What's included:
                 </h4>
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></span>
-                      <span className="text-gray-700 text-base leading-relaxed" style={{ fontFamily: 'Space Mono, monospace' }}>
+                      <span className="w-2 h-2 bg-[#242424] rounded-full mt-2 flex-shrink-0"></span>
+                      <span className="text-[#242424] text-base leading-relaxed" style={{ fontFamily: 'Space Mono, monospace' }}>
                         {feature}
                       </span>
                     </li>
