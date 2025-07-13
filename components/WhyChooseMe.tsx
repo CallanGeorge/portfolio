@@ -50,29 +50,29 @@ export default function WhyChooseMe() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               
               {/* Testimonial 1 */}
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 relative group hover:scale-[1.02] transition-all duration-300 border border-gray-200/50" style={{ boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1)' }}>
+              <div className="bg-white border-4 border-black rounded-none p-8 relative group hover:scale-[1.02] transition-all duration-300" style={{ boxShadow: '8px 8px 0px rgba(0, 0, 0, 1)' }}>
                 
                 <div className="mb-6">
-                  <div className="flex justify-center text-yellow-400 mb-6 gap-1">
+                  <div className="flex justify-center text-yellow-500 mb-6 gap-1">
                     {'★★★★★'.split('').map((star, i) => (
                       <span key={i} className="text-xl">{star}</span>
                     ))}
                   </div>
-                  <p className="text-gray-800 text-base leading-relaxed font-normal mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  <p className="text-[#242424] text-base leading-relaxed font-normal mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
                     "Callan delivered exactly what we needed for our restaurant. The website is beautiful, easy to manage, and our online orders have increased significantly since launch."
                   </p>
                 </div>
                 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
-                    <div className="w-full h-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+                    <div className="w-full h-full bg-[#779179] flex items-center justify-center">
                       <span className="text-white font-semibold text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
                         SM
                       </span>
                     </div>
                   </div>
                   <div className="flex-1 min-w-0 text-left">
-                    <h4 className="text-gray-900 font-semibold text-sm mb-1" style={{ fontFamily: 'Inter, sans-serif' }}>
+                    <h4 className="text-[#242424] font-semibold text-sm mb-1" style={{ fontFamily: 'Inter, sans-serif' }}>
                       Sarah Mitchell
                     </h4>
                     <p className="text-gray-600 text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
@@ -83,29 +83,29 @@ export default function WhyChooseMe() {
               </div>
 
               {/* Testimonial 2 */}
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 relative group hover:scale-[1.02] transition-all duration-300 border border-gray-200/50" style={{ boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1)' }}>
+              <div className="bg-white border-4 border-black rounded-none p-8 relative group hover:scale-[1.02] transition-all duration-300" style={{ boxShadow: '8px 8px 0px rgba(0, 0, 0, 1)' }}>
                 
                 <div className="mb-6">
-                  <div className="flex justify-center text-yellow-400 mb-6 gap-1">
+                  <div className="flex justify-center text-yellow-500 mb-6 gap-1">
                     {'★★★★★'.split('').map((star, i) => (
                       <span key={i} className="text-xl">{star}</span>
                     ))}
                   </div>
-                  <p className="text-gray-800 text-base leading-relaxed font-normal mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  <p className="text-[#242424] text-base leading-relaxed font-normal mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
                     "Professional, responsive, and genuinely cares about the result. Callan took our fitness studio online and the booking system works perfectly. Highly recommend!"
                   </p>
                 </div>
                 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
-                    <div className="w-full h-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+                    <div className="w-full h-full bg-[#779179] flex items-center justify-center">
                       <span className="text-white font-semibold text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
                         JT
                       </span>
                     </div>
                   </div>
                   <div className="flex-1 min-w-0 text-left">
-                    <h4 className="text-gray-900 font-semibold text-sm mb-1" style={{ fontFamily: 'Inter, sans-serif' }}>
+                    <h4 className="text-[#242424] font-semibold text-sm mb-1" style={{ fontFamily: 'Inter, sans-serif' }}>
                       James Thompson
                     </h4>
                     <p className="text-gray-600 text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
@@ -116,29 +116,29 @@ export default function WhyChooseMe() {
               </div>
 
               {/* Testimonial 3 */}
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 relative group hover:scale-[1.02] transition-all duration-300 border border-gray-200/50 md:col-span-2 lg:col-span-1" style={{ boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1)' }}>
+              <div className="bg-white border-4 border-black rounded-none p-8 relative group hover:scale-[1.02] transition-all duration-300 md:col-span-2 lg:col-span-1" style={{ boxShadow: '8px 8px 0px rgba(0, 0, 0, 1)' }}>
                 
                 <div className="mb-6">
-                  <div className="flex justify-center text-yellow-400 mb-6 gap-1">
+                  <div className="flex justify-center text-yellow-500 mb-6 gap-1">
                     {'★★★★★'.split('').map((star, i) => (
                       <span key={i} className="text-xl">{star}</span>
                     ))}
                   </div>
-                  <p className="text-gray-800 text-base leading-relaxed font-normal mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  <p className="text-[#242424] text-base leading-relaxed font-normal mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
                     "From concept to launch, Callan made the whole process smooth and stress-free. Our new e-commerce site looks amazing and sales have doubled in just 3 months."
                   </p>
                 </div>
                 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
-                    <div className="w-full h-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+                    <div className="w-full h-full bg-[#779179] flex items-center justify-center">
                       <span className="text-white font-semibold text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
                         ED
                       </span>
                     </div>
                   </div>
                   <div className="flex-1 min-w-0 text-left">
-                    <h4 className="text-gray-900 font-semibold text-sm mb-1" style={{ fontFamily: 'Inter, sans-serif' }}>
+                    <h4 className="text-[#242424] font-semibold text-sm mb-1" style={{ fontFamily: 'Inter, sans-serif' }}>
                       Emma Davidson
                     </h4>
                     <p className="text-gray-600 text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>

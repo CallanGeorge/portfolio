@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import WhyChooseMe from '@/components/WhyChooseMe'
 import Services from '@/components/Services'
+import AboutSection from '@/components/AboutSection'
 
 export default function Home() {
   return (
@@ -10,19 +11,9 @@ export default function Home() {
       <Hero />
       <WhyChooseMe />
       <Services />
+      <AboutSection />
       
       {/* Placeholder sections for future content */}
-      <section id="about" className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <h2 
-            className="text-4xl font-bold mb-4"
-            style={{ fontFamily: 'var(--font-family-thunder)' }}
-          >
-            ABOUT SECTION
-          </h2>
-          <p className="text-gray-600 subheading">Coming soon...</p>
-        </div>
-      </section>
       
       <section id="projects" className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
