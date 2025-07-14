@@ -43,7 +43,7 @@ export default function Hero() {
             <div className="text-8xl sm:text-9xl md:text-[9rem] lg:text-[11rem] xl:text-[13rem] 2xl:text-[17rem] leading-[0.8]">
               <span 
                 style={{
-                  WebkitTextStroke: '4px #779179',
+                  WebkitTextStroke: '6px #242424',
                   WebkitTextFillColor: 'transparent',
                   color: 'transparent'
                 }}
