@@ -15,7 +15,7 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#ebe2da]/95 backdrop-blur-md border-b border-gray-100 px-4 sm:px-8 md:px-16">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-xl border-b border-white/20 px-4 sm:px-8 md:px-16 shadow-lg shadow-black/5">
       <div style={{ maxWidth: '1920px', margin: '0 auto' }}>
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -29,12 +29,12 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6 px-6 py-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-[#242424] transition-colors duration-200 hover:text-[var(--color-primary)]"
+                className="text-sm font-medium text-[#242424] transition-colors duration-200 hover:text-black"
               >
                 {item.name}
               </Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-[#242424] transition-colors duration-200 hover:text-[var(--color-primary)]"
+              className="text-[#242424] transition-colors duration-200 hover:text-black"
             >
               <svg
                 className="h-6 w-6"
@@ -94,15 +94,15 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-[#ebe2da] border-t border-gray-100">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="md:hidden bg-white/10 backdrop-blur-xl border-t border-white/20">
+            <div className="px-4 pt-4 pb-4 mx-2 my-2 rounded-2xl bg-white/20 backdrop-blur-sm border border-white/30">
               {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="block px-3 py-2 text-base font-medium text-[#242424] transition-colors duration-200 hover:text-[var(--color-primary)]"
-                  onClick={() => setIsOpen(false)}
-                >
+                                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="block px-3 py-2 text-base font-medium text-[#242424] transition-colors duration-200 hover:text-black"
+                    onClick={() => setIsOpen(false)}
+                  >
                   {item.name}
                 </Link>
               ))}
