@@ -74,9 +74,10 @@ export default function AboutSection() {
             <div>
               <Link
                 href="#projects"
-                className="inline-block bg-[#779179] text-white font-normal rounded-[8px] sm:rounded-[10px] transition-all duration-200 uppercase hover:bg-[#6B7F68] border-2 sm:border-[3px] border-black relative z-[2] text-center cursor-pointer w-full sm:w-auto py-3 sm:py-4 px-4 sm:px-6 text-xs sm:text-sm shadow-[4px_4px_0px_rgba(0,0,0,1)] sm:shadow-[6px_6px_0px_rgba(0,0,0,1)]"
+                className="inline-block bg-[#779179] text-white font-normal rounded-[10px] transition-all duration-200 uppercase hover:bg-[#6B7F68] border-[3px] border-black relative z-[2] text-center cursor-pointer py-3 px-4 text-sm"
                 style={{
                   fontFamily: 'Space Mono, sans-serif',
+                  boxShadow: '4px 4px #000',
                   fontWeight: '400',
                   letterSpacing: '0'
                 }}

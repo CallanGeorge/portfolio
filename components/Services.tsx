@@ -127,15 +127,12 @@ export default function Services() {
               {/* CTA Button - Fixed position */}
               <div className="mb-8">
                 <button
-                                     className="w-full bg-[#779179] text-white font-normal rounded-[10px] transition-all duration-200 hover:bg-[#6B7F68] border-[3px] border-black relative z-[2] text-center cursor-pointer"
+                  className="w-full bg-[#779179] text-white font-normal rounded-[10px] transition-all duration-200 hover:bg-[#6B7F68] border-[3px] border-black relative z-[2] text-center cursor-pointer py-3 px-4 text-sm uppercase"
                   style={{
                     fontFamily: 'Space Mono, sans-serif',
-                    boxShadow: '9px 10px #000',
-                    padding: '.75em 1em',
-                    fontSize: '.8rem',
+                    boxShadow: '4px 4px #000',
                     fontWeight: '400',
-                    letterSpacing: '0',
-                    textTransform: 'uppercase'
+                    letterSpacing: '0'
                   }}
                 >
                   {service.button}

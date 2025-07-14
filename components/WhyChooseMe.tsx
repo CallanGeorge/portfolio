@@ -164,15 +164,12 @@ export default function WhyChooseMe() {
             </h3>
             
             <button
-                             className="inline-block bg-[#779179] text-white font-normal rounded-[10px] transition-all duration-200 uppercase hover:bg-[#6B7F68] border-[3px] border-black relative z-[2] text-center cursor-pointer"
+              className="inline-block bg-[#779179] text-white font-normal rounded-[10px] transition-all duration-200 uppercase hover:bg-[#6B7F68] border-[3px] border-black relative z-[2] text-center cursor-pointer py-4 px-8 text-sm"
               style={{
                 fontFamily: 'Space Mono, sans-serif',
                 boxShadow: '9px 10px #000',
-                padding: '.75em 1em',
-                fontSize: '.8rem',
                 fontWeight: '400',
-                letterSpacing: '0',
-                textTransform: 'uppercase'
+                letterSpacing: '0'
               }}
             >
               GET STARTED
