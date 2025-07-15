@@ -102,26 +102,6 @@ export default function MyWorkSection() {
           ))}
         </div>
 
-        {/* Back to Home Link */}
-        <div 
-          className={`text-center mt-16 sm:mt-20 md:mt-24 transition-all duration-1000 delay-600 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}
-        >
-          <a
-            href="/"
-            className="inline-block bg-[#242424] text-white font-normal rounded-[10px] transition-all duration-200 uppercase hover:bg-[#333333] border-[3px] border-black relative z-[2] text-center cursor-pointer py-4 px-8 text-sm"
-            style={{
-              fontFamily: 'Space Mono, sans-serif',
-              boxShadow: '9px 10px #000',
-              fontWeight: '400',
-              letterSpacing: '0'
-            }}
-          >
-            BACK TO HOME
-          </a>
-        </div>
-
       </div>
     </section>
   )
