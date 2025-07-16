@@ -5,6 +5,7 @@ import Services from '@/components/Services'
 import AboutSection from '@/components/AboutSection'
 import Projects from '@/components/Projects'
 import FinalCTA from '@/components/FinalCTA'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -15,11 +16,8 @@ export default function Home() {
       <AboutSection />
       <Services />
       <Projects />
-  
-      
       <FinalCTA />
-      
-  
+      <Footer />
     </main>
   )
 } 

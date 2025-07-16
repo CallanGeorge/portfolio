@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import WorkHeader from '@/components/WorkHeader'
 import MyWorkSection from '@/components/MyWorkSection'
 import FinalCTA from '@/components/FinalCTA'
+import Footer from '@/components/Footer'
 
 export default function WorkPage() {
   return (
@@ -10,6 +11,7 @@ export default function WorkPage() {
       <WorkHeader />
       <MyWorkSection />
       <FinalCTA />
+      <Footer />
     </main>
   )
 } 
