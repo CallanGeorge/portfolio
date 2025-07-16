@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import AboutHeader from '@/components/AboutHeader'
 import AboutSection from '@/components/AboutSection'
+import FinalCTA from '@/components/FinalCTA'
 
 export default function AboutPage() {
   return (
@@ -8,6 +9,7 @@ export default function AboutPage() {
       <Navbar />
       <AboutHeader />
       <AboutSection />
+      <FinalCTA />
     </main>
   )
 } 
