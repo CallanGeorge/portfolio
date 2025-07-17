@@ -13,7 +13,7 @@ export default function WorkHeader() {
     <section className="relative pt-24 pb-16 min-h-[28rem] flex items-center sm:py-20 md:py-24 lg:min-h-[40rem] lg:flex lg:items-center xl:py-40 bg-[#ebe2da] overflow-hidden">
       <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 relative z-10 mx-auto">
         
-        {/* Header */}
+
         <div 
           className={`text-center transition-all duration-1000 delay-200 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
