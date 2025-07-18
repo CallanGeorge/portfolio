@@ -84,7 +84,7 @@ export default function AboutSection() {
               <p>
                 Let's collaborate and create something exceptional for your business. Get in touch today, and let's embark on this exciting journey together!
               </p>
-                         </div>
+             </div>
           </div>
 
         </div>
