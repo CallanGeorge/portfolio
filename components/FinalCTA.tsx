@@ -15,7 +15,7 @@ export default function FinalCTA() {
       <div className="w-full max-w-[95vw] 2xl:max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 relative z-10">
         
         <div className="text-center">
-          {/* Main Title */}
+          {/*  Title */}
           <div 
             className={`mb-16 sm:mb-20 md:mb-24 lg:mb-28 xl:mb-32 transition-all duration-1000 delay-200 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
