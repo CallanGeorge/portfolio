@@ -6,10 +6,11 @@ import AboutSection from '@/components/AboutSection'
 import Projects from '@/components/Projects'
 import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
+import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className={styles.main}>
       <Navbar />
       <Hero />
       <WhyChooseMe />
