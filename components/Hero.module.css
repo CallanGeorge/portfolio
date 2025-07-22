@@ -6,7 +6,7 @@
   justify-content: center;
   overflow: hidden;
   padding-top: 8rem;
-  background-color: #ebe2da;
+  background-color: var(--color-cream);
 }
 
 @media (min-width: 640px) {
@@ -91,7 +91,7 @@
 
 .headline {
   font-weight: 900;
-  color: #242424;
+  color: var(--color-dark);
   font-family: var(--font-family-thunder);
 }
 
@@ -132,7 +132,7 @@
 }
 
 .outlineText {
-  -webkit-text-stroke: 6px #242424;
+  -webkit-text-stroke: 6px var(--color-dark);
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
@@ -186,7 +186,7 @@
 
 .subtitle {
   font-size: 1.25rem;
-  color: #242424;
+  color: var(--color-dark);
   line-height: 1.625;
   font-weight: 500;
 }
@@ -228,13 +228,13 @@
 
 .ctaButton {
   display: inline-block;
-  background-color: #779179;
-  color: white;
+  background-color: var(--color-red);
+  color: var(--color-white);
   font-weight: 400;
   border-radius: 10px;
   transition: all 200ms ease;
   text-transform: uppercase;
-  border: 3px solid black;
+  border: 3px solid var(--color-black);
   position: relative;
   z-index: 2;
   text-align: center;
@@ -242,11 +242,13 @@
   padding: 1rem 2rem;
   font-size: 0.875rem;
   font-family: 'Space Mono', sans-serif;
-  box-shadow: 9px 10px #000;
+  box-shadow: 9px 10px var(--color-black);
   letter-spacing: 0;
   text-decoration: none;
 }
 
 .ctaButton:hover {
-  background-color: #6B7F68;
+  background-color: var(--color-red-dark);
+  transform: translateY(-2px);
+  box-shadow: 11px 12px var(--color-black);
 } 

@@ -5,7 +5,7 @@
   min-height: 28rem;
   display: flex;
   align-items: center;
-  background-color: #ebe2da;
+  background-color: var(--color-cream);
   overflow: hidden;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .title {
-  color: #242424;
+  color: var(--color-dark);
   letter-spacing: -0.01em;
   text-transform: uppercase;
   cursor: none;
@@ -130,7 +130,7 @@
 }
 
 .subtitle {
-  color: #242424;
+  color: var(--color-dark);
   font-weight: 500;
   font-size: 1rem;
   text-align: center;

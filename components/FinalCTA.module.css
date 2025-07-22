@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #242424;
+  background-color: var(--color-dark);
   overflow: hidden;
 }
 
@@ -154,7 +154,7 @@
 
 .ctaButton {
   display: block;
-  background-color: #779179;
+  background-color: var(--color-red);
   color: white;
   font-weight: 400;
   transition: all 200ms ease;
@@ -211,5 +211,7 @@
 }
 
 .ctaButton:hover {
-  background-color: #6B7F68;
+  background-color: var(--color-red-dark);
+  transform: translateY(-2px);
+  box-shadow: 11px 12px var(--color-black);
 } 

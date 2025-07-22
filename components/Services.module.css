@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #ebe2da;
+  background-color: var(--color-cream);
   overflow: hidden;
 }
 
@@ -256,7 +256,7 @@
 
 .ctaButton {
   width: 100%;
-  background-color: #779179;
+  background-color: var(--color-red);
   color: white;
   font-weight: 400;
   border-radius: 10px;
@@ -275,7 +275,7 @@
 }
 
 .ctaButton:hover {
-  background-color: #6B7F68;
+  background-color: var(--color-red-dark);
 }
 
 .divider {

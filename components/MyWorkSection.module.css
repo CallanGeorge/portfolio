@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #f5edf0;
+  background-color: var(--color-light-pink);
   overflow: hidden;
 }
 
@@ -123,11 +123,12 @@
   overflow: hidden;
   transition: all 300ms ease;
   cursor: pointer;
-  box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
+  box-shadow: 8px 8px 0px var(--color-black-shadow);
 }
 
 .projectCard:hover {
   transform: scale(1.02);
+  box-shadow: 12px 12px 0px var(--color-black-shadow);
 }
 
 .imageContainer {
@@ -220,13 +221,13 @@
 
 .viewButton {
   width: 100%;
-  background-color: #779179;
-  color: white;
+  background-color: var(--color-red);
+  color: var(--color-white);
   font-weight: 400;
   border-radius: 8px;
   transition: all 200ms ease;
   text-transform: uppercase;
-  border: 2px solid black;
+  border: 2px solid var(--color-black);
   position: relative;
   z-index: 2;
   text-align: center;
@@ -235,12 +236,14 @@
   font-size: 0.875rem;
   margin-top: 1rem;
   font-family: 'Space Mono', sans-serif;
-  box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 0px var(--color-black-shadow);
   letter-spacing: 0;
 }
 
 .viewButton:hover {
-  background-color: #6B7F68;
+  background-color: var(--color-red-dark);
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 0px var(--color-black-shadow);
 }
 
 .fallbackContainer {
