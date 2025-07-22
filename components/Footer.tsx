@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import styles from './Footer.module.css'
 
 export default function Footer() {
   const footerLinks = [
@@ -10,50 +11,52 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-[#242424] text-white py-6">
-      <div className="w-full max-w-[95vw] 2xl:max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+    <footer className={styles.footer}>
+      <div className={styles.container}>
         
         {/* Mobile Layout - Stacked and Centered */}
-        <div className="block md:hidden text-center space-y-4">
+        <div className={styles.mobileLayout}>
           
           {/* Navigation Links */}
-          <div className="flex flex-wrap justify-center gap-4">
-            {footerLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-white text-sm font-medium hover:text-[#779179] transition-colors duration-200"
-                style={{ fontFamily: 'Space Mono, monospace' }}
-              >
-                {link.name}
-              </Link>
-            ))}
+          <div className={styles.mobileSection}>
+            <div className={styles.mobileNavigation}>
+              {footerLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className={styles.mobileNavLink}
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
           </div>
 
           {/* Copyright with bullet */}
-          <div className="flex items-center justify-center gap-2">
-            <div className="w-2 h-2 bg-white rounded-full"></div>
-            <p className="text-white text-xs" style={{ fontFamily: 'Space Mono, monospace' }}>
-              2025 CALLAN GEORGE. ALL RIGHTS RESERVED
-            </p>
+          <div className={styles.mobileSection}>
+            <div className={styles.mobileCopyright}>
+              <div className={styles.mobileBullet}></div>
+              <p className={styles.mobileCopyrightText}>
+                2025 CALLAN GEORGE. ALL RIGHTS RESERVED
+              </p>
+            </div>
           </div>
 
           {/* Logo */}
-          <div className="flex justify-center">
-            <Link href="/" className="flex items-center">
-              <div 
-                className="text-white font-bold text-center"
-                style={{ fontFamily: 'var(--font-family-space-mono)' }}
-              >
-                <div className="text-[#779179] text-lg">Callan</div>
-                <div className="text-xs">CREATIVE DEPT</div>
-              </div>
-            </Link>
+          <div className={styles.mobileSection}>
+            <div className={styles.mobileLogoContainer}>
+              <Link href="/" className={styles.mobileLogoLink}>
+                <div className={styles.mobileLogoText}>
+                  <div className={styles.mobileLogoBrand}>Callan</div>
+                  <div className={styles.mobileLogoTagline}>CREATIVE DEPT</div>
+                </div>
+              </Link>
+            </div>
           </div>
 
           {/* Location */}
-          <div>
-            <p className="text-white text-xs" style={{ fontFamily: 'Space Mono, monospace' }}>
+          <div className={styles.mobileSection}>
+            <p className={styles.mobileLocationText}>
               MADE WITH LOVE ❤️ IN EDINBURGH
             </p>
           </div>
@@ -61,19 +64,18 @@ export default function Footer() {
         </div>
 
         {/* Desktop Layout - Two Rows */}
-        <div className="hidden md:block">
+        <div className={styles.desktopLayout}>
           
           {/* Top Row - Navigation and Logo */}
-          <div className="flex items-center justify-between mb-4">
+          <div className={styles.desktopTopRow}>
             
             {/* Left - Navigation Links */}
-            <div className="flex gap-6 md:gap-8">
+            <div className={styles.desktopNavigation}>
               {footerLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-white text-sm font-medium hover:text-[#779179] transition-colors duration-200"
-                  style={{ fontFamily: 'Space Mono, monospace' }}
+                  className={styles.desktopNavLink}
                 >
                   {link.name}
                 </Link>
@@ -81,14 +83,11 @@ export default function Footer() {
             </div>
 
             {/* Right - Logo */}
-            <div className="flex items-center">
-              <Link href="/" className="flex items-center">
-                <div 
-                  className="text-white font-bold text-right"
-                  style={{ fontFamily: 'var(--font-family-space-mono)' }}
-                >
-                  <div className="text-[#779179] text-lg">Callan</div>
-                  <div className="text-xs">CREATIVE DEPT</div>
+            <div className={styles.desktopLogoContainer}>
+              <Link href="/" className={styles.desktopLogoLink}>
+                <div className={styles.desktopLogoText}>
+                  <div className={styles.desktopLogoBrand}>Callan</div>
+                  <div className={styles.desktopLogoTagline}>CREATIVE DEPT</div>
                 </div>
               </Link>
             </div>
@@ -96,25 +95,25 @@ export default function Footer() {
           </div>
 
           {/* Bottom Row - Copyright and Location */}
-          <div className="flex items-center justify-between text-xs">
+          <div className={styles.desktopBottomRow}>
             
             {/* Left - Copyright */}
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-white rounded-full"></div>
-              <p className="text-white" style={{ fontFamily: 'Space Mono, monospace' }}>
+            <div className={styles.desktopCopyright}>
+              <div className={styles.desktopBullet}></div>
+              <p className={styles.desktopCopyrightText}>
                 2025 CALLAN GEORGE. ALL RIGHTS RESERVED
               </p>
             </div>
 
             {/* Center - Location */}
-            <div>
-              <p className="text-white text-center" style={{ fontFamily: 'Space Mono, monospace' }}>
+            <div className={styles.desktopLocationContainer}>
+              <p className={styles.desktopLocationText}>
                 MADE WITH LOVE ❤️ IN EDINBURGH
               </p>
             </div>
 
             {/* Right - Empty for balance */}
-            <div className="w-16"></div>
+            <div className={styles.desktopSpacer}></div>
 
           </div>
 

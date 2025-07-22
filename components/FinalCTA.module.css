@@ -1,0 +1,215 @@
+.section {
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #242424;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 80rem;
+  }
+}
+
+.contentCenter {
+  text-align: center;
+}
+
+.titleContainer {
+  margin-bottom: 4rem;
+  transition: all 1s ease;
+  transition-delay: 200ms;
+}
+
+@media (min-width: 640px) {
+  .titleContainer {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .titleContainer {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .titleContainer {
+    margin-bottom: 7rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .titleContainer {
+    margin-bottom: 8rem;
+  }
+}
+
+.titleContainer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.titleContainer.hidden {
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+.mainTitle {
+  color: #ebe2da;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  cursor: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18vw;
+  line-height: 0.9;
+  position: relative;
+  white-space: nowrap;
+  font-family: var(--font-family-thunder);
+}
+
+.ctaContainer {
+  transition: all 1s ease;
+  transition-delay: 400ms;
+}
+
+.ctaContainer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ctaContainer.hidden {
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+.ctaButton {
+  display: block;
+  background-color: #779179;
+  color: white;
+  font-weight: 400;
+  transition: all 200ms ease;
+  text-transform: uppercase;
+  border: 8px solid black;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 2rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  font-family: 'Space Mono', sans-serif;
+  box-shadow: 16px 16px 0px rgba(0, 0, 0, 1);
+  letter-spacing: clamp(0.05em, 1.5vw, 0.15em);
+  border-radius: 120px;
+  text-decoration: none;
+}
+
+@media (min-width: 480px) {
+  .ctaButton {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .ctaButton {
+    padding: 2rem 3rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .ctaButton {
+    padding: 2.5rem 4rem;
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ctaButton {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ctaButton {
+    font-size: 1.5rem;
+  }
+}
+
+.ctaButton:hover {
+  background-color: #6B7F68;
+} 

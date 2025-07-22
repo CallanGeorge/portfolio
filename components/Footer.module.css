@@ -1,0 +1,250 @@
+.footer {
+  background-color: #242424;
+  color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 80rem;
+  }
+}
+
+/* Mobile Layout */
+.mobileLayout {
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .mobileLayout {
+    display: none;
+  }
+}
+
+.mobileSection {
+  margin-bottom: 1rem;
+}
+
+.mobileSection:last-child {
+  margin-bottom: 0;
+}
+
+.mobileNavigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mobileNavLink {
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 200ms ease;
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+}
+
+.mobileNavLink:hover {
+  color: #779179;
+}
+
+.mobileCopyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.mobileBullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.mobileCopyrightText {
+  color: white;
+  font-size: 0.75rem;
+  font-family: 'Space Mono', monospace;
+}
+
+.mobileLogoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.mobileLogoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.mobileLogoText {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  font-family: var(--font-family-space-mono);
+}
+
+.mobileLogoBrand {
+  color: #779179;
+  font-size: 1.125rem;
+}
+
+.mobileLogoTagline {
+  font-size: 0.75rem;
+}
+
+.mobileLocationText {
+  color: white;
+  font-size: 0.75rem;
+  font-family: 'Space Mono', monospace;
+}
+
+/* Desktop Layout */
+.desktopLayout {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktopLayout {
+    display: block;
+  }
+}
+
+.desktopTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.desktopNavigation {
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .desktopNavigation {
+    gap: 2rem;
+  }
+}
+
+.desktopNavLink {
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 200ms ease;
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+}
+
+.desktopNavLink:hover {
+  color: #779179;
+}
+
+.desktopLogoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.desktopLogoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.desktopLogoText {
+  color: white;
+  font-weight: 700;
+  text-align: right;
+  font-family: var(--font-family-space-mono);
+}
+
+.desktopLogoBrand {
+  color: #779179;
+  font-size: 1.125rem;
+}
+
+.desktopLogoTagline {
+  font-size: 0.75rem;
+}
+
+.desktopBottomRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+
+.desktopCopyright {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.desktopBullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.desktopCopyrightText {
+  color: white;
+  font-family: 'Space Mono', monospace;
+}
+
+.desktopLocationContainer {
+  /* No specific styles, just for structure */
+}
+
+.desktopLocationText {
+  color: white;
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+}
+
+.desktopSpacer {
+  width: 4rem;
+} 
