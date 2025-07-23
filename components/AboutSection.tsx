@@ -27,18 +27,11 @@ export default function AboutSection() {
           {/* Left Side - Image */}
           <div className={`${styles.imageContainer} ${isVisible ? styles.visible : styles.hidden}`}>
             <div className={styles.imageWrapper}>
-              <div className={styles.imagePlaceholder}>
-                <div className={styles.imageContent}>
-                  <div className={styles.imageTextContainer}>
-                    <div className={styles.imageIcon}>
-                      <span>📸</span>
-                    </div>
-                    <p className={styles.imageText}>
-                      Your Image Here
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <img 
+                src="/Callan.JPG"
+                alt="Callan George - Web Developer"
+                className={styles.aboutImage}
+              />
             </div>
           </div>
 

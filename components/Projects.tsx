@@ -79,7 +79,13 @@ export default function Projects() {
         {/* Projects Grid */}
         <div className={`${styles.projectsGrid} ${isVisible ? styles.visible : styles.hidden}`}>
           {projects.map((project, index) => (
-            <div key={index} className={styles.projectCard}>
+            <Link 
+              key={index} 
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.projectCard}
+            >
               {/* Project Image */}
               <div className={styles.projectImage}>
                 <div className={styles.imageContent}>
@@ -92,48 +98,15 @@ export default function Projects() {
                     </p>
                   </div>
                 </div>
-                {/* Category Badge */}
-                <div className={styles.categoryBadge}>
-                  {project.category}
+                
+                {/* Project Title Overlay */}
+                <div className={styles.titleOverlay}>
+                  <h3 className={styles.projectTitle}>
+                    {project.title}
+                  </h3>
                 </div>
               </div>
-
-              {/* Project Title */}
-              <h3 className={styles.projectTitle}>
-                {project.title}
-              </h3>
-              
-              {/* Project Description */}
-              <p className={styles.projectDescription}>
-                {project.description}
-              </p>
-
-              {/* Results & Benefits */}
-              <div className={styles.resultsSection}>
-                <h4 className={styles.resultsTitle}>
-                  Key Results:
-                </h4>
-                <div className={styles.resultsTags}>
-                  {project.results.map((result, resultIndex) => (
-                    <span key={resultIndex} className={styles.resultTag}>
-                      {result}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Project Link */}
-              <div className={styles.projectLinkContainer}>
-                <Link
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.projectLink}
-                >
-                  VIEW PROJECT
-                </Link>
-              </div>
-            </div>
+            </Link>
           ))}
         </div>
 

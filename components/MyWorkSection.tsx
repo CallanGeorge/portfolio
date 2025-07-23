@@ -31,6 +31,13 @@ export default function MyWorkSection() {
       url: "https://goviralwithlaurencompton.com",
       category: "Personal Brand",
       year: "2024"
+    },
+    {
+      title: "Debrunner Design",
+      image: "/debrunner-design.png",
+      url: "https://debrunnerdesign.com",
+      category: "Design Agency",
+      year: "2024"
     }
   ]
 
@@ -57,7 +64,7 @@ export default function MyWorkSection() {
     <section className={styles.section}>
       <div className={styles.container}>
         
-        {/* Projects Grid - Large Screenshots */}
+        {/* Projects Grid - Image Focused */}
         <div className={`${styles.projectsGrid} ${isVisible ? styles.visible : styles.hidden}`}>
           {projects.map((project, index) => (
             <div 
@@ -74,26 +81,12 @@ export default function MyWorkSection() {
                   onError={(e) => handleImageError(e, project.title)}
                 />
                 
-                {/* Category Badge */}
-                <div className={styles.categoryBadge}>
-                  {project.category}
+                {/* Project Title Overlay */}
+                <div className={styles.titleOverlay}>
+                  <h3 className={styles.projectTitle}>
+                    {project.title}
+                  </h3>
                 </div>
-                
-                {/* Year Badge */}
-                <div className={styles.yearBadge}>
-                  {project.year}
-                </div>
-              </div>
-
-              {/* Project Info - Simplified */}
-              <div className={styles.projectInfo}>
-                <h3 className={styles.projectTitle}>
-                  {project.title}
-                </h3>
-                
-                <button className={styles.viewButton}>
-                  VIEW PROJECT
-                </button>
               </div>
             </div>
           ))}

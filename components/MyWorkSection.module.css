@@ -117,23 +117,24 @@
 }
 
 .projectCard {
-  background-color: white;
-  border: 4px solid black;
-  border-radius: 0;
+  border-radius: 8px;
   overflow: hidden;
   transition: all 300ms ease;
   cursor: pointer;
-  box-shadow: 8px 8px 0px var(--color-black-shadow);
+  position: relative;
 }
 
 .projectCard:hover {
-  transform: scale(1.02);
-  box-shadow: 12px 12px 0px var(--color-black-shadow);
+  transform: scale(1.05);
+}
+
+.projectCard:hover .titleOverlay {
+  opacity: 1;
 }
 
 .imageContainer {
   width: 100%;
-  height: 400px;
+  height: 300px;
   position: relative;
   overflow: hidden;
   background-color: #f3f4f6;
@@ -141,13 +142,13 @@
 
 @media (min-width: 640px) {
   .imageContainer {
-    height: 500px;
+    height: 350px;
   }
 }
 
 @media (min-width: 1024px) {
   .imageContainer {
-    height: 600px;
+    height: 400px;
   }
 }
 
@@ -159,33 +160,15 @@
   transition: transform 300ms ease;
 }
 
-.projectCard:hover .projectImage {
-  transform: scale(1.05);
-}
-
-.categoryBadge {
+.titleOverlay {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background-color: white;
-  border: 2px solid black;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  font-family: 'Space Mono', monospace;
-}
-
-.yearBadge {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  background-color: #779179;
-  border: 2px solid black;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: white;
-  font-family: 'Space Mono', monospace;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 2rem 1.5rem 1.5rem;
+  opacity: 0;
+  transition: opacity 300ms ease;
 }
 
 .projectInfo {
@@ -199,12 +182,12 @@
 }
 
 .projectTitle {
-  font-weight: 900;
-  color: #242424;
-  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
   line-height: 1.25;
   font-size: 1.125rem;
-  font-family: var(--font-family-thunder);
+  font-family: 'Inter', sans-serif;
 }
 
 @media (min-width: 640px) {
@@ -213,38 +196,7 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .projectTitle {
-    font-size: 1.5rem;
-  }
-}
 
-.viewButton {
-  width: 100%;
-  background-color: var(--color-red);
-  color: var(--color-white);
-  font-weight: 400;
-  border-radius: 8px;
-  transition: all 200ms ease;
-  text-transform: uppercase;
-  border: 2px solid var(--color-black);
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  cursor: pointer;
-  padding: 0.75rem 1rem;
-  font-size: 0.875rem;
-  margin-top: 1rem;
-  font-family: 'Space Mono', sans-serif;
-  box-shadow: 4px 4px 0px var(--color-black-shadow);
-  letter-spacing: 0;
-}
-
-.viewButton:hover {
-  background-color: var(--color-red-dark);
-  transform: translateY(-2px);
-  box-shadow: 6px 6px 0px var(--color-black-shadow);
-}
 
 .fallbackContainer {
   width: 100%;
