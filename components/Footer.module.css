@@ -127,7 +127,7 @@
 }
 
 .mobileLogoBrand {
-  color: #779179;
+  color: var(--color-primary);
   font-size: 1.125rem;
 }
 
@@ -138,6 +138,7 @@
 .mobileLocationText {
   color: white;
   font-size: 0.75rem;
+  text-align: right;
   font-family: 'Space Mono', monospace;
 }
 
@@ -202,7 +203,7 @@
 }
 
 .desktopLogoBrand {
-  color: #779179;
+  color: var(--color-primary);
   font-size: 1.125rem;
 }
 
@@ -213,7 +214,7 @@
 .desktopBottomRow {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   font-size: 0.75rem;
 }
 
@@ -236,15 +237,15 @@
 }
 
 .desktopLocationContainer {
-  /* No specific styles, just for structure */
+  margin-left: auto;
 }
 
 .desktopLocationText {
   color: white;
-  text-align: center;
+  text-align: right;
   font-family: 'Space Mono', monospace;
 }
 
 .desktopSpacer {
-  width: 4rem;
+  /* No longer needed with margin-left: auto approach */
 } 
