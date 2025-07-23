@@ -25,7 +25,7 @@ export default function FinalCTA() {
 
           {/* CTA  */}
           <div className={`${styles.ctaContainer} ${isVisible ? styles.visible : styles.hidden}`}>
-            <Link href="#contact" className={styles.ctaButton}>
+            <Link href="/contact" className={styles.ctaButton}>
               LET'S WORK TOGETHER
             </Link>
           </div>

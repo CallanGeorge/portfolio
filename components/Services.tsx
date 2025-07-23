@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import styles from './Services.module.css'
 
 export default function Services() {
@@ -112,9 +113,9 @@ export default function Services() {
 
               {/* CTA Button - Fixed position */}
               <div className={styles.buttonContainer}>
-                <button className={styles.ctaButton}>
+                <Link href="/contact" className={styles.ctaButton}>
                   {service.button}
-                </button>
+                </Link>
               </div>
 
               {/* Divider */}

@@ -57,7 +57,7 @@ export default function Hero() {
             
             {/* CTA Button */}
             <div className={styles.ctaContainer}>
-              <Link href="#contact" className={styles.ctaButton}>
+              <Link href="/contact" className={styles.ctaButton}>
                 GET STARTED
               </Link>
             </div>

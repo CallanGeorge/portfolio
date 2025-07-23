@@ -143,7 +143,7 @@ export default function Projects() {
             Ready to grow your business like these success stories?
           </h3>
           
-          <Link href="#contact" className={styles.ctaButton}>
+          <Link href="/contact" className={styles.ctaButton}>
             GET STARTED TODAY
           </Link>
         </div>

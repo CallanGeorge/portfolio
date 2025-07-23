@@ -42,7 +42,7 @@ export default function Navbar() {
           {/* Contact Button */}
           <div className={styles.desktopContact}>
             <Link
-              href="#contact"
+              href="/contact"
               className={styles.contactButton}
             >
               CONTACT
@@ -93,7 +93,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <Link
-                href="#contact"
+                href="/contact"
                 className={styles.mobileContactButton}
                 onClick={() => setIsOpen(false)}
               >

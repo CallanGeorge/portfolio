@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import styles from './WhyChooseMe.module.css'
 
 export default function WhyChooseMe() {
@@ -145,9 +146,9 @@ export default function WhyChooseMe() {
               Ready to take your online presence to the next level? Contact me today to discuss your project and how I can help.
             </h3>
             
-            <button className={styles.ctaButton}>
+            <Link href="/contact" className={styles.ctaButton}>
               GET STARTED
-            </button>
+            </Link>
           </div>
         </div>
 
