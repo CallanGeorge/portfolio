@@ -12,32 +12,11 @@ export default function MyWorkSection() {
 
   const projects = [
     {
-      title: "Shipwreck Island Waterpark",
-      image: "/shipwreck-island-screenshot.jpg",
-      url: "https://shipwreckislandwaterpark.com",
-      category: "Recreation & Tourism",
-      year: "2024"
-    },
-    {
-      title: "Your Comfort Specialists",
-      image: "/comfort-specialists-screenshot.jpg",
-      url: "https://yourcomfortspecialists.com", 
-      category: "Home Services",
-      year: "2024"
-    },
-    {
-      title: "Go Viral with Lauren Compton",
-      image: "/lauren-compton-screenshot.jpg",
-      url: "https://goviralwithlaurencompton.com",
-      category: "Personal Brand",
-      year: "2024"
-    },
-    {
       title: "Debrunner Design",
       image: "/debrunner-design.png",
       url: "https://debrunnerdesign.com",
       category: "Design Agency",
-      year: "2024"
+      year: "2025"
     }
   ]
 
