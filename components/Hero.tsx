@@ -46,7 +46,6 @@ export default function Hero() {
         {/* Subtitle and CTA Side by Side */}
         <div className={`${styles.contentContainer} ${isVisible ? styles.visible : styles.hidden}`}>
           <div className={styles.contentWrapper}>
-            {/* Subtitle */}
             <div className={styles.subtitleContainer}>
               <p className={styles.subtitle}>
                 EDINBURGH-BASED FREELANCE WEB DEVELOPER HELPING LOCAL 
