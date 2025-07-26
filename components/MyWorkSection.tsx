@@ -43,7 +43,7 @@ export default function MyWorkSection() {
     <section className={styles.section}>
       <div className={styles.container}>
         
-        {/* Projects Grid - Image Focused */}
+        {/* Projects Grid */}
         <div className={`${styles.projectsGrid} ${isVisible ? styles.visible : styles.hidden}`}>
           {projects.map((project, index) => (
             <div 
