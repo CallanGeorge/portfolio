@@ -43,7 +43,7 @@ export default function Hero() {
           </h1>
         </div>
 
-        {/* Subtitle and CTA Side by Side */}
+        {/* Subtitle and CTA */}
         <div className={`${styles.contentContainer} ${isVisible ? styles.visible : styles.hidden}`}>
           <div className={styles.contentWrapper}>
             <div className={styles.subtitleContainer}>
