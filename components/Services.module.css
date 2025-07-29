@@ -255,27 +255,37 @@
 }
 
 .ctaButton {
+  -webkit-text-size-adjust: 100%;
+  line-height: 20px;
+  box-sizing: border-box;
+  cursor: none;
+  max-width: 100%;
+  display: inline-block;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  border: 3px solid #000;
+  border-radius: 10px;
+  font-family: 'Space Mono', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: 9px 10px #000;
+  padding: .5em 1.25em;
+  text-decoration: none;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
   width: 100%;
   background-color: var(--color-red);
   color: white;
-  font-weight: 400;
-  border-radius: 10px;
-  transition: all 200ms ease;
-  border: 3px solid black;
   position: relative;
   z-index: 2;
   text-align: center;
-  cursor: pointer;
-  padding: 0.75rem 1rem;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  font-family: 'Space Mono', sans-serif;
-  box-shadow: 4px 4px #000;
-  letter-spacing: 0;
+  transition: all 200ms ease;
 }
 
 .ctaButton:hover {
   background-color: var(--color-red-dark);
+  transform: translateY(-2px);
+  box-shadow: 11px 12px #000;
 }
 
 .divider {
