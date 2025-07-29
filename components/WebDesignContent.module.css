@@ -1,0 +1,156 @@
+.section {
+  padding: 4rem 0;
+  background-color: var(--color-white);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 6rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 8rem 0;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contentBlock {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .contentBlock {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contentBlock {
+    margin-bottom: 5rem;
+  }
+}
+
+.heading {
+  color: #242424;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 2.2em;
+  line-height: 0.9;
+  letter-spacing: -0.05px;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .heading {
+    margin-bottom: 2rem;
+  }
+}
+
+.subheading {
+  color: #242424;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 2.2em;
+  line-height: 0.9;
+  letter-spacing: -0.05px;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .subheading {
+    margin-bottom: 2rem;
+  }
+}
+
+.paragraph {
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-dark);
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .paragraph {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .paragraph {
+    font-size: 1.25rem;
+    line-height: 1.8;
+  }
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+    font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-dark);
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.listItem::before {
+  content: '•';
+  color: var(--color-red);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (min-width: 640px) {
+  .listItem {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .listItem {
+    font-size: 1.25rem;
+  }
+} 
