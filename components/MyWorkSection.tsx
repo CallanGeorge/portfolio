@@ -17,6 +17,24 @@ export default function MyWorkSection() {
       url: "https://debrunnerdesign.com",
       category: "Design Agency",
       year: "2025"
+    },
+    {
+      title: "Chloe Penaranda",
+      image: "/ChloePenaranda.png",
+      category: "Author",
+      year: "2025"
+    },
+    {
+      title: "BodyCore",
+      image: "/BodyCore.png",
+      category: "PT Training",
+      year: "2024"
+    },
+    {
+      title: "John Gwynne",
+      image: "/JohnGwynne.png",
+      category: "Author",
+      year: "2025"
     }
   ]
 

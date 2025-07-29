@@ -4,9 +4,8 @@ import styles from './Footer.module.css'
 export default function Footer() {
   const footerLinks = [
     { name: 'ABOUT', href: '/about' },
-    { name: 'SHOP', href: '#shop' },
     { name: 'WORK', href: '/work' },
-    { name: 'JOURNAL', href: '#blog' },
+    { name: 'BLOG', href: '#blog' },
     { name: 'SERVICES', href: '#services' },
   ]
 
