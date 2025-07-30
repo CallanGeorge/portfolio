@@ -29,7 +29,7 @@ export default function MyWorkSection() {
     },
     {
       title: "BodyCore",
-      image: "/BodyCore.png",
+      image: "/bodycore.png",
       slug: "bodycore",
       category: "PT Training",
       year: "2024"
