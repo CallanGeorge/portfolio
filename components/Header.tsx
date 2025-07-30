@@ -1,9 +1,14 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import styles from './WorkHeader.module.css'
+import styles from './Header.module.css'
 
-export default function WorkHeader() {
+interface HeaderProps {
+  title: string
+  subtitle?: string
+}
+
+export default function Header({ title, subtitle }: HeaderProps) {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -13,14 +18,19 @@ export default function WorkHeader() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
+        
+        {/* Header */}
         <div className={`${styles.headerContent} ${isVisible ? styles.visible : styles.hidden}`}>
           <h1 className={styles.title}>
-            MY WORK
+            {title}
           </h1>
-          <p className={styles.subtitle}>
-            A LIST OF CLIENTS THAT I'VE RECENTLY WORKED WITH.
-          </p>
+          {subtitle && (
+            <p className={styles.subtitle}>
+              {subtitle}
+            </p>
+          )}
         </div>
+
       </div>
     </section>
   )

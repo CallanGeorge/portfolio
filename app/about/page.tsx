@@ -1,5 +1,5 @@
 import Navbar from '@/components/Navbar'
-import AboutHeader from '@/components/AboutHeader'
+import Header from '@/components/Header'
 import AboutSection from '@/components/AboutSection'
 import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
@@ -9,7 +9,10 @@ export default function AboutPage() {
   return (
     <main className={styles.main}>
       <Navbar />
-      <AboutHeader />
+      <Header 
+        title="ABOUT"
+        subtitle="GET TO KNOW THE PERSON BEHIND THE WORK."
+      />
       <AboutSection />
       <FinalCTA />
       <Footer />

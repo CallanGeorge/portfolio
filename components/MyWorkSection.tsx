@@ -1,10 +1,12 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import styles from './MyWorkSection.module.css'
 
 export default function MyWorkSection() {
   const [isVisible, setIsVisible] = useState(false)
+  const router = useRouter()
 
   useEffect(() => {
     setIsVisible(true)
@@ -14,25 +16,28 @@ export default function MyWorkSection() {
     {
       title: "Debrunner Design",
       image: "/debrunner-design.png",
-      url: "https://debrunnerdesign.com",
+      slug: "debrunner-design",
       category: "Design Agency",
       year: "2025"
     },
     {
       title: "Chloe Penaranda",
       image: "/ChloePenaranda.png",
+      slug: "chloe-penaranda",
       category: "Author",
       year: "2025"
     },
     {
       title: "BodyCore",
       image: "/BodyCore.png",
+      slug: "bodycore",
       category: "PT Training",
       year: "2024"
     },
     {
       title: "John Gwynne",
       image: "/JohnGwynne.png",
+      slug: "john-gwynne",
       category: "Author",
       year: "2025"
     }
@@ -57,6 +62,10 @@ export default function MyWorkSection() {
     }
   }
 
+  const handleProjectClick = (slug: string) => {
+    router.push(`/projects/${slug}`)
+  }
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -67,7 +76,7 @@ export default function MyWorkSection() {
             <div 
               key={index}
               className={styles.projectCard}
-              onClick={() => window.open(project.url, '_blank')}
+              onClick={() => handleProjectClick(project.slug)}
             >
               {/* Large Website Screenshot */}
               <div className={styles.imageContainer}>

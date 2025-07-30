@@ -1,5 +1,5 @@
 import Navbar from '@/components/Navbar'
-import WorkHeader from '@/components/WorkHeader'
+import Header from '@/components/Header'
 import MyWorkSection from '@/components/MyWorkSection'
 import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
@@ -9,7 +9,10 @@ export default function WorkPage() {
   return (
     <main className={styles.main}>
       <Navbar />
-      <WorkHeader />
+      <Header 
+        title="MY WORK"
+        subtitle="A LIST OF CLIENTS THAT I'VE RECENTLY WORKED WITH."
+      />
       <MyWorkSection />
       <FinalCTA />
       <Footer />

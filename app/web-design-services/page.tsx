@@ -1,6 +1,6 @@
 import Navbar from '../../components/Navbar'
-import WebDesignHeader from '../../components/WebDesignHeader'
-import WebDesignContent from '../../components/WebDesignContent'
+import Header from '../../components/Header'
+import WebDesignContent from '@/components/WebDesignContent'
 import FinalCTA from '../../components/FinalCTA'
 import Footer from '../../components/Footer'
 
@@ -9,7 +9,10 @@ export default function WebDesignServicesPage() {
     <>
       <Navbar />
       <main>
-        <WebDesignHeader />
+        <Header 
+          title="WEB DESIGN SERVICES"
+          subtitle="CREATING BEAUTIFUL, FUNCTIONAL WEBSITES THAT DRIVE RESULTS."
+        />
         <WebDesignContent />
         <FinalCTA />
       </main>
