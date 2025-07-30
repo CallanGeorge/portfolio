@@ -6,6 +6,7 @@ import styles from './Projects.module.css'
 
 export default function Projects() {
   const [isVisible, setIsVisible] = useState(false)
+  const [expandedProject, setExpandedProject] = useState<number | null>(null)
 
   useEffect(() => {
     setIsVisible(true)
@@ -13,54 +14,43 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Scottish Retailer E-Commerce",
-      description: "Transformed a traditional store into a thriving online business. Increased sales by 150% in the first 6 months with streamlined product browsing and secure checkout.",
-      image: "/project-placeholder-1.jpg",
-      results: ["150% sales increase", "Mobile-friendly design", "Secure payments", "Inventory management"],
-      liveUrl: "https://example.com",
-      category: "E-Commerce"
+      title: "Debrunner Design",
+      year: "2025",
+      description: "A sophisticated design agency website showcasing premium creative services and portfolio work with elegant typography and clean layouts.",
+      image: "/debrunner-design.png",
+      url: "https://debrunnerdesign.com",
+      category: "Design Agency",
+      screenshots: ["/debrunner-design.png", "/debrunner-design.png"]
     },
     {
-      title: "Edinburgh Restaurant",
-      description: "Built a stunning website that increased table bookings by 80% and introduced online ordering, helping the restaurant reach new customers during tough times.",
-      image: "/project-placeholder-2.jpg",
-      results: ["80% more bookings", "Online ordering system", "Mobile reservations", "Google integration"],
-      liveUrl: "https://example.com",
-      category: "Restaurant"
+      title: "Chloe Penaranda",
+      year: "2025",
+      description: "Professional author website featuring book showcases, speaking engagements, and a clean, literary-focused design that reflects the author's brand.",
+      image: "/ChloePenaranda.png",
+      category: "Author",
+      screenshots: ["/ChloePenaranda.png", "/ChloePenaranda.png"]
     },
     {
-      title: "FitCore Edinburgh Studio",
-      description: "Created a complete booking platform that streamlined class management and increased member retention by 45% through better user experience.",
-      image: "/project-placeholder-3.jpg",
-      results: ["45% better retention", "Easy class booking", "Member portal", "Payment automation"],
-      liveUrl: "https://example.com",
-      category: "Fitness"
+      title: "BodyCore",
+      year: "2024",
+      description: "Dynamic fitness and personal training website with booking systems, trainer profiles, and motivational design elements to inspire fitness journeys.",
+      image: "/bodycore.png",
+      category: "PT Training",
+      screenshots: ["/bodycore.png", "/bodycore.png"]
     },
     {
-      title: "Edinburgh Business Hub",
-      description: "Developed a community platform connecting 200+ local businesses with customers, generating thousands of leads and strengthening the local economy.",
-      image: "/project-placeholder-4.jpg",
-      results: ["200+ businesses listed", "Customer reviews", "Local search optimized", "Lead generation"],
-      liveUrl: "https://example.com",
-      category: "Directory"
-    },
-    {
-      title: "Highland Crafts Co.",
-      description: "Launched an online store that showcased beautiful Scottish crafts to a global market, doubling their customer base and expanding internationally.",
-      image: "/project-placeholder-5.jpg",
-      results: ["Double customer base", "International shipping", "Product showcasing", "Brand storytelling"],
-      liveUrl: "https://example.com",
-      category: "Crafts"
-    },
-    {
-      title: "Professional Photography",
-      description: "Built an elegant portfolio that attracted 60% more high-value clients and streamlined the booking process, saving hours of admin work weekly.",
-      image: "/project-placeholder-6.jpg",
-      results: ["60% more premium clients", "Automated booking", "Portfolio showcase", "Client galleries"],
-      liveUrl: "https://example.com",
-      category: "Photography"
+      title: "John Gwynne",
+      year: "2025",
+      description: "Award-winning fantasy author's website showcasing bestselling novels, character guides, and immersive world-building content for devoted readers.",
+      image: "/JohnGwynne.png",
+      category: "Author",
+      screenshots: ["/JohnGwynne.png", "/JohnGwynne.png"]
     }
   ]
+
+  const toggleProject = (index: number) => {
+    setExpandedProject(expandedProject === index ? null : index)
+  }
 
   return (
     <section id="projects" className={styles.section}>
@@ -76,37 +66,53 @@ export default function Projects() {
           </p>
         </div>
 
-        {/* Projects Grid */}
-        <div className={`${styles.projectsGrid} ${isVisible ? styles.visible : styles.hidden}`}>
+        {/* Projects Accordion */}
+        <div className={`${styles.projectsAccordion} ${isVisible ? styles.visible : styles.hidden}`}>
           {projects.map((project, index) => (
-            <Link 
-              key={index} 
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.projectCard}
-            >
-              {/* Project Image */}
-              <div className={styles.projectImage}>
-                <div className={styles.imageContent}>
-                  <div className={styles.imageTextContainer}>
-                    <div className={styles.imageIcon}>
-                      <span>🖥️</span>
-                    </div>
-                    <p className={styles.imageText}>
-                      Project Image
-                    </p>
-                  </div>
-                </div>
-                
-                {/* Project Title Overlay */}
-                <div className={styles.titleOverlay}>
-                  <h3 className={styles.projectTitle}>
+            <div key={index} className={`${styles.accordionItem} ${expandedProject === index ? styles.expanded : ''}`}>
+              
+              {/* Project Row */}
+              <div 
+                className={`${styles.projectRow} ${expandedProject === index ? styles.expanded : ''}`}
+                onClick={() => toggleProject(index)}
+              >
+                <div className={styles.projectInfo}>
+                  <h3 className={styles.projectName}>
                     {project.title}
+                    <span className={styles.expandIcon}>
+                      {expandedProject === index ? '↑' : '↗'}
+                    </span>
                   </h3>
                 </div>
+                
+                <div className={styles.projectYear}>
+                  {project.year}
+                </div>
               </div>
-            </Link>
+
+              {/* Expanded Content */}
+              <div className={`${styles.expandedContent} ${expandedProject === index ? styles.show : ''}`}>
+                
+                {/* Project Screenshots */}
+                <div className={styles.projectScreenshots}>
+                  {project.screenshots.map((screenshot, screenshotIndex) => (
+                    <div key={screenshotIndex} className={styles.screenshot}>
+                      <div className={styles.screenshotPlaceholder}>
+                        <div className={styles.screenshotIcon}>🖥️</div>
+                        <p className={styles.screenshotText}>Website Preview</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                {/* Project Description */}
+                <p className={styles.projectDescription}>
+                  {project.description}
+                </p>
+                
+              </div>
+              
+            </div>
           ))}
         </div>
 
