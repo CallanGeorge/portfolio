@@ -9,7 +9,7 @@ export default function SEOServicesPage() {
     <>
       <Navbar />
       <main>
-        <Header title="SEO Services" />
+        <Header title="SEO" />
         <SEOContent />
         <FinalCTA />
       </main>

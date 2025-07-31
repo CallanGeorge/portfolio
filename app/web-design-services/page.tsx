@@ -10,7 +10,7 @@ export default function WebDesignServicesPage() {
       <Navbar />
       <main>
         <Header 
-          title="WEB DESIGN SERVICES"
+          title="WEB DESIGN"
         />
         <WebDesignContent />
         <FinalCTA />

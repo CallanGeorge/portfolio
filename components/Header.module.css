@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  padding-top: 6rem;
+  padding-top: 8rem;
   padding-bottom: 4rem;
   min-height: 28rem;
   display: flex;
@@ -11,21 +11,21 @@
 
 @media (min-width: 640px) {
   .section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 9rem;
+    padding-bottom: 4rem;
   }
 }
 
 @media (min-width: 768px) {
   .section {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .section {
-    min-height: 40rem;
+    min-height: 35rem;
     display: flex;
     align-items: center;
   }
@@ -34,7 +34,7 @@
 @media (min-width: 1280px) {
   .section {
     padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
   }
 }
 
