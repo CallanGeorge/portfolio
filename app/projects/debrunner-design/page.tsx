@@ -12,7 +12,6 @@ export default function DebrunnerDesignPage() {
 
       <Header 
         title="DEBRUNNER DESIGN"
-        subtitle="DESIGN AGENCY - 2025"
       />
       
       <ProjectBrief 

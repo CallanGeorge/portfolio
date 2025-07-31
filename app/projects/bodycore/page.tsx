@@ -12,7 +12,6 @@ export default function BodyCorePage() {
 
       <Header 
         title="BODYCORE"
-        subtitle="PT TRAINING - 2024"
       />
       
       <ProjectBrief 

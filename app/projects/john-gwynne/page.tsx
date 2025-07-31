@@ -12,7 +12,6 @@ export default function JohnGwynnePage() {
 
       <Header 
         title="JOHN GWYNNE"
-        subtitle="AUTHOR - 2025"
       />
       
       <ProjectBrief 

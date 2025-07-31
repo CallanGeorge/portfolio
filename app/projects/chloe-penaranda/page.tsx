@@ -12,7 +12,7 @@ export default function ChloePenarandaPage() {
 
       <Header 
         title="CHLOE PENARANDA"
-        subtitle="AUTHOR - 2025"
+
       />
       
       <ProjectBrief 

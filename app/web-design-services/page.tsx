@@ -11,7 +11,6 @@ export default function WebDesignServicesPage() {
       <main>
         <Header 
           title="WEB DESIGN SERVICES"
-          subtitle="CREATING BEAUTIFUL, FUNCTIONAL WEBSITES THAT DRIVE RESULTS."
         />
         <WebDesignContent />
         <FinalCTA />
