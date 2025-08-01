@@ -15,7 +15,7 @@ export default function AboutSection() {
     <section className={styles.section}>
       <div className={styles.container}>
         
-        {/* Welcome Title Section */}
+        {/*Title Section */}
         <div className={`${styles.welcomeSection} ${isVisible ? styles.visible : styles.hidden}`}>
           <h2 className={styles.welcomeTitle}>
             Welcome to Gabe Creative Dept, where I specialize in helping small businesses establish a strong online presence through modern, intuitive web design.
