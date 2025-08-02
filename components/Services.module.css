@@ -275,7 +275,7 @@
   transform-style: preserve-3d;
   width: 100%;
   background-color: var(--color-red);
-  color: white;
+  color: var(--color-white);
   position: relative;
   z-index: 2;
   text-align: center;

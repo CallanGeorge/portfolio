@@ -11,28 +11,13 @@ export default function Performance() {
     setIsVisible(true)
   }, [])
 
-  const metrics = [
-    {
-      value: "100%",
-      label: "Satisfaction Guaranteed"
-    },
-    {
-      value: "100",
-      label: "Page Speed Scores"
-    },
-    {
-      value: "5/5",
-      label: "Google Reviews"
-    }
-  ]
-
   const benefits = [
     {
       icon: "⏱️",
       title: "Better load times means more traffic and more site conversions over time."
     },
     {
-      icon: "🏆",
+      icon: "🏆", 
       title: "Faster websites can help improve SEO and your Google ads performance."
     },
     {
@@ -44,69 +29,79 @@ export default function Performance() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        {/* Top Section with Tag, Heading and Metrics */}
-        <div className={`${styles.topSection} ${isVisible ? styles.visible : styles.hidden}`}>
-          <div className={styles.leftColumn}>
-            <div className={styles.performanceTag}>
-              PERFORMANCE
-            </div>
-            
-            <h2 className={styles.mainHeading}>
-              WE BUILD <span className={styles.highlight}>BETTER</span> WEBSITES<br />
-              THAT PERFORM
-            </h2>
+        
+        {/* Header */}
+        <div className={`${styles.header} ${isVisible ? styles.visible : styles.hidden}`}>
+          <div className={styles.performanceTag}>
+            PERFORMANCE
           </div>
-
-          {/* Metrics positioned at top right */}
-          <div className={styles.metricsContainer}>
-            {metrics.map((metric, index) => (
-              <div key={index} className={styles.metric}>
-                <div className={styles.metricValue}>{metric.value}</div>
-                <div className={styles.metricLabel}>{metric.label}</div>
-              </div>
-            ))}
-          </div>
+          <h2 className={styles.title}>
+            Better
+            <br />
+            Websites
+          </h2>
+          <p className={styles.subtitle}>
+            When it comes to website load times, not very many can get the Google PageSpeed scores that we get with each and every site.
+          </p>
         </div>
 
-        {/* Bottom Section with Content and Screenshot */}
-        <div className={`${styles.bottomSection} ${isVisible ? styles.visible : styles.hidden}`}>
-          <div className={styles.contentColumn}>
-            <p className={styles.description}>
-              When it comes to website load times, not very many can get the Google 
-              PageSpeed scores that we get with each and every site. Test your website load 
-              times with Google PageSpeed Insights and see what your current site is scoring 
-              right now.
-            </p>
-
-            {/* Benefits */}
-            <div className={styles.benefitsContainer}>
+        {/* Main Content */}
+        <div className={`${styles.contentSection} ${isVisible ? styles.visible : styles.hidden}`}>
+          
+          {/* Benefits Section */}
+          <div className={styles.benefitsSection}>
+            <h3 className={styles.benefitsTitle}>
+              Why Performance Matters
+            </h3>
+            
+            <div className={styles.benefitsList}>
               {benefits.map((benefit, index) => (
-                <div key={index} className={styles.benefit}>
+                <div key={index} className={styles.benefitItem}>
                   <div className={styles.benefitIcon}>
                     {benefit.icon}
                   </div>
-                  <div className={styles.benefitText}>
+                  <p className={styles.benefitText}>
                     {benefit.title}
-                  </div>
+                  </p>
                 </div>
               ))}
             </div>
-
-            <Link href="/contact" className={styles.ctaButton}>
-              GET STARTED TODAY
-            </Link>
           </div>
 
-          {/* Screenshot positioned on the right */}
-          <div className={styles.screenshotColumn}>
-            <div className={styles.screenshotPlaceholder}>
-              {/* This is where your screenshot will go */}
-              <div className={styles.placeholderText}>
-                PageSpeed Insights Screenshot
+          {/* PageSpeed Showcase */}
+          <div className={styles.showcaseSection}>
+            <h3 className={styles.showcaseTitle}>
+              Google PageSpeed Results
+            </h3>
+            
+            <div className={styles.screenshotContainer}>
+              <div className={styles.screenshotPlaceholder}>
+                <div className={styles.placeholderIcon}>📊</div>
+                <div className={styles.placeholderText}>
+                  Google PageSpeed Insights<br />
+                  <strong>100/100 Performance Score</strong>
+                </div>
               </div>
             </div>
+            
+            <p className={styles.showcaseDescription}>
+              Test your website load times with Google PageSpeed Insights and see what your current site is scoring right now.
+            </p>
           </div>
+
         </div>
+
+        {/* CTA Section */}
+        <div className={`${styles.ctaSection} ${isVisible ? styles.visible : styles.hidden}`}>
+          <h3 className={styles.ctaTitle}>
+            Ready to boost your website performance and conversions?
+          </h3>
+          
+          <Link href="/contact" className={styles.ctaButton}>
+            GET STARTED TODAY
+          </Link>
+        </div>
+
       </div>
     </section>
   )

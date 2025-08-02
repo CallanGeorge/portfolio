@@ -1,7 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Performance from '@/components/Performance'
-import WhyChooseMe from '@/components/WhyChooseMe'
 import Services from '@/components/Services'
 import AboutSection from '@/components/AboutSection'
 import Projects from '@/components/Projects'
@@ -14,11 +13,10 @@ export default function Home() {
     <main className={styles.main}>
       <Navbar />
       <Hero />
-      <Performance />
-      <WhyChooseMe />
       <AboutSection />
-      <Services />
       <Projects />
+      <Performance />
+      <Services />
       <FinalCTA />
       <Footer />
     </main>

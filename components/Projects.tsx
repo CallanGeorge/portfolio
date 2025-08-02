@@ -117,16 +117,7 @@ export default function Projects() {
         </div>
 
         {/* CTA Section */}
-        <div className={`${styles.ctaSection} ${isVisible ? styles.visible : styles.hidden}`}>
-          <h3 className={styles.ctaTitle}>
-            Ready to grow your business like these success stories?
-          </h3>
-          
-          <Link href="/contact" className={styles.ctaButton}>
-            GET STARTED TODAY
-          </Link>
-        </div>
-
+      
       </div>
     </section>
   )
