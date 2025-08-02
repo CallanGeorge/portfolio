@@ -14,47 +14,46 @@ export default function Services() {
   const services = [
     {
       title: "Website Design & Development",
-      description: "Create you an award winning website that converts.",
+      description: "Professional 1–5 page website to get your business online fast.",
+      price: "£300",
       button: "GET STARTED",
       features: [
-        "Dedicated Notion board",
-        "Quick delivery (5-7 days)",
-        "Regular updates via Slack or email",
-        "Exclusive Features and Enhancements",
-        "Flexibility and Scalability as website grows",
-        "Training for platform"
+        "Custom-designed 1–5 page website matched to your brand",
+        "Mobile & tablet responsive",
+        "Basic on-page SEO",
+        "Delivered in 7 days or less",
       ]
     },
     {
-      title: "Photography",
-      description: "I'll take care of your website photography needs.",
-      price: "$30",
-      priceUnit: "/image",
-      priceNote: "minimum 5 images",
+      title: "Website + SEO Growth Plan",
+      description: "Your website, SEO, and updates handled for you — no upfront cost.",
+      price: "£75",
+      priceUnit: "/month",
+      priceNote: "No upfront cost",
       button: "GET STARTED",
       features: [
-        "Simple retouching/color correcting",
-        "Variety of shoots available",
-        "Unlimited usage license",
-        "Revisions and reshoots available",
-        "Drone photos available"
+        "Fully custom-built website included",
+        "Ongoing SEO optimisation to help you rank locally",
+        "Unlimited content & design updates",
+        "Monthly performance reports",
       ]
     },
     {
-      title: "Small Project",
-      description: "Need something quick and simple?",
-      price: "$1200",
-      priceNote: "One time fee",
+      title: "Premium Plan",
+      description: "Everything in Growth, plus e-commerce or booking and advanced SEO.",
+      price: "£125",
+      priceUnit: "/month",
+      priceNote: "No upfront cost",
       button: "GET STARTED",
       features: [
-        "Basic 1-3 page website",
-        "Quick delivery (1-3 days)",
-        "Training for platform",
-        "Exclusive Features and Enhancements",
-        "Flexibility and Scalability as website grows"
+        "Everything in the Growth Plan",
+        "E-commerce",
+        "Booking System Integration",
+        "Advanced SEO with keyword tracking & backlink outreach",
       ]
     }
-  ]
+  ];
+  
 
   return (
     <section id="services" className={styles.section}>

@@ -14,15 +14,15 @@ export default function Performance() {
   const benefits = [
     {
       icon: "⏱️",
-      title: "Better load times means more traffic and more site conversions over time."
+      title: "Google rewards fast-loading websites. My sites load in under 1 second, giving you a perfect 100/100 PageSpeed score and keeping visitors from clicking away."
     },
     {
       icon: "🏆", 
-      title: "Faster websites can help improve SEO and your Google ads performance."
+      title: "From the start, I optimise your site structure, headings, and content for the keywords your customers are searching for — whether that’s “café in Kirkcaldy” or “Fife wedding photographer.”"
     },
     {
       icon: "💻",
-      title: "Our sites load instantly in under 1 second or less, which leads to a better user experience and conversions."
+      title: "Google measures how users interact with your site. I make sure visitors find what they need quickly, stay longer, and are more likely to contact you or buy from you."
     }
   ]
 
@@ -32,17 +32,14 @@ export default function Performance() {
         
         {/* Header */}
         <div className={`${styles.header} ${isVisible ? styles.visible : styles.hidden}`}>
-          <div className={styles.performanceTag}>
-            PERFORMANCE
-          </div>
+         
           <h2 className={styles.title}>
             Better
             <br />
             Websites
           </h2>
           <p className={styles.subtitle}>
-            When it comes to website load times, not very many can get the Google PageSpeed scores that we get with each and every site.
-          </p>
+          Building a beautiful website is only half the battle — if customers can’t find you on Google, you’re missing out on sales. That’s why every site I build is designed to rank well, load fast, and turn visitors into paying customers.          </p>
         </div>
 
         {/* Main Content */}
@@ -51,8 +48,8 @@ export default function Performance() {
           {/* Benefits Section */}
           <div className={styles.benefitsSection}>
             <h3 className={styles.benefitsTitle}>
-              Why Performance Matters
-            </h3>
+            The 3 Keys to Ranking Higher
+             </h3>
             
             <div className={styles.benefitsList}>
               {benefits.map((benefit, index) => (

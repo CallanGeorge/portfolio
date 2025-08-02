@@ -30,14 +30,18 @@ export default function Hero() {
         <div className={`${styles.headlineContainer} ${isVisible ? styles.visible : styles.hidden}`}>
           <h1 className={styles.headline}>
             <div className={styles.headlineText}>
-              CUSTOM WEBSITES
+              SMALL BUSINESS
             </div>
             <div className={styles.headlineText}>
-              FOR LOCAL BUSINESS
+              WEB DESIGNER
             </div>
             <div className={styles.headlineText}>
               <span className={styles.outlineText}>
-                GROWTH!
+                FIFE
+              </span>
+               &  
+              <span className={styles.outlineText}>
+                EDINBURGH
               </span>
             </div>
           </h1>
@@ -48,9 +52,7 @@ export default function Hero() {
           <div className={styles.contentWrapper}>
             <div className={styles.subtitleContainer}>
               <p className={styles.subtitle}>
-                EDINBURGH-BASED FREELANCE WEB DEVELOPER HELPING LOCAL 
-                BUSINESSES BUILD THEIR DIGITAL PRESENCE - MODERN WEBSITES, 
-                PROVEN RESULTS, PERSONAL SERVICE.
+              Locally based web designer helping small businesses in Fife and Edinburgh grow online with fast, modern, and SEO-friendly websites that bring in more customers.
               </p>
             </div>
             

@@ -7,6 +7,7 @@ import Projects from '@/components/Projects'
 import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
 import styles from './page.module.css'
+import Testimonials from '@/components/Testimonials'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <AboutSection />
+      <Testimonials />
       <Projects />
       <Performance />
       <Services />

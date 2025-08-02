@@ -62,7 +62,7 @@ export default function Projects() {
             Recent Work
           </h2>
           <p className={styles.subtitle}>
-            Real results from Edinburgh businesses who trusted me to grow their online presence.
+            Real results from clients who trusted me to grow their online presence.
           </p>
         </div>
 

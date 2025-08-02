@@ -11,27 +11,6 @@ export default function AboutSection() {
     setIsVisible(true)
   }, [])
 
-  const testimonials = [
-    {
-      text: "Callan delivered exactly what we needed for our restaurant. The website is beautiful, easy to manage, and our online orders have increased significantly since launch.",
-      author: "Sarah Mitchell",
-      title: "Owner, The Local Bistro",
-      initials: "SM"
-    },
-    {
-      text: "Professional, responsive, and genuinely cares about the result. Callan took our fitness studio online and the booking system works perfectly. Highly recommend!",
-      author: "James Thompson",
-      title: "Director, FitCore Edinburgh",
-      initials: "JT"
-    },
-    {
-      text: "From concept to launch, Callan made the whole process smooth and stress-free. Our new e-commerce site looks amazing and sales have doubled in just 3 months.",
-      author: "Emma Davidson",
-      title: "Founder, Highland Crafts Co.",
-      initials: "ED"
-    }
-  ]
-
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -39,7 +18,7 @@ export default function AboutSection() {
         {/*Title Section */}
         <div className={`${styles.welcomeSection} ${isVisible ? styles.visible : styles.hidden}`}>
           <h2 className={styles.welcomeTitle}>
-            Welcome to Gabe Creative Dept, where I specialize in helping small businesses establish a strong online presence through modern, intuitive web design.
+          I'm Callan — a freelance web designer and developer, born and raised in Fife and now based in Edinburgh. I specialise in building high-performing websites for small businesses that look great, rank well on Google, and deliver an outstanding user experience.
           </h2>
         </div>
 
@@ -60,71 +39,33 @@ export default function AboutSection() {
           <div className={`${styles.textContainer} ${isVisible ? styles.visible : styles.hidden}`}>
             {/* Title */}
             <h2 className={styles.sectionTitle}>
-              Born and raised in Edinburgh
+              About Me
             </h2>
             
             {/* Description Paragraphs */}
             <div className={styles.textContent}>
               <p>
-                Howdy and welcome to my corner of the web! I'm Callan, a web developer and designer with a passion for crafting premium websites tailored specifically for small businesses.
+              With a background in professional web development, I understand that a successful website isn't just about design — it's about getting found online, keeping visitors engaged, and converting them into customers. That's why every site I build is:
               </p>
-              
+              <ul>
+                <li>
+                Optimised for SEO – so your business can rank higher in local and national searches.
+                </li>
+                <li>
+                Designed for user experience (UX) – so visitors can find what they need quickly and easily.
+                </li>
+                <li>
+                Built for performance – with lightning-fast load times to improve conversions and search rankings.
+                </li>
+              </ul>
               <p>
-                Being locally grown in Edinburgh, Scotland, I understand the unique pulse and needs of our vibrant local business landscape.
-              </p>
-              
+              I take the time to learn about your business, your audience, and your goals, then create a site that's tailored to you — whether you're a local café in Kirkcaldy, a salon in Dunfermline, or an e-commerce store serving customers across Scotland.              </p>
               <p>
-                When you work with me, you get my full focus and a personalised approach tailored to your business goals. I prioritise clear communication, attention to detail, and results that help your business grow.
-              </p>
-              
-              <p>
-                I take the time to understand what makes your business unique and create a website that not only looks great but works effectively to attract and convert your ideal customers.
+              When you work with me, you get more than just a website. You get a strategic online presence that helps your business grow.
               </p>
             </div>
           </div>
 
-        </div>
-
-        {/* Testimonials Section */}
-        <div className={`${styles.testimonialsSection} ${isVisible ? styles.visible : styles.hidden}`}>
-          <h3 className={styles.testimonialsTitle}>
-            What My Clients Say
-          </h3>
-          
-          <div className={styles.testimonialsGrid}>
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className={styles.testimonialCard}>
-                <div className={styles.testimonialContent}>
-                  <div className={styles.starsContainer}>
-                    {'★★★★★'.split('').map((star, i) => (
-                      <span key={i} className={styles.star}>{star}</span>
-                    ))}
-                  </div>
-                  <p className={styles.testimonialText}>
-                    "{testimonial.text}"
-                  </p>
-                </div>
-                
-                <div className={styles.authorContainer}>
-                  <div className={styles.avatar}>
-                    <div className={styles.avatarInner}>
-                      <span className={styles.avatarInitials}>
-                        {testimonial.initials}
-                      </span>
-                    </div>
-                  </div>
-                  <div className={styles.authorInfo}>
-                    <h4 className={styles.authorName}>
-                      {testimonial.author}
-                    </h4>
-                    <p className={styles.authorTitle}>
-                      {testimonial.title}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* CTA Section */}
