@@ -64,6 +64,16 @@
   }
 }
 
+.mainHeading {
+  color: #242424;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+  line-height: 0.9;
+  letter-spacing: -0.1px;
+  margin-bottom: 2rem;
+}
+
 .heading {
   color: #242424;
   font-family: 'Inter', sans-serif;
@@ -72,6 +82,12 @@
   line-height: 0.9;
   letter-spacing: -0.05px;
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .mainHeading {
+    margin-bottom: 2.5rem;
+  }
 }
 
 @media (min-width: 640px) {
