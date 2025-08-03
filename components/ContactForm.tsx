@@ -68,7 +68,7 @@ export default function ContactForm() {
             </div>
           </div>
 
-          {/* Right Side - Contact Form */}
+          {/*  Contact Form */}
           <div className={`${styles.formContainer} ${isVisible ? styles.visible : styles.hidden}`}>
                          <form onSubmit={handleSubmit} className={styles.form}>
                
