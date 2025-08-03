@@ -1,20 +1,20 @@
-import Navbar from '@/components/Navbar'
-import Hero from '@/components/Hero'
-import Performance from '@/components/Performance'
-import Services from '@/components/Services'
-import AboutSection from '@/components/AboutSection'
-import Projects from '@/components/Projects'
-import FinalCTA from '@/components/FinalCTA'
-import Footer from '@/components/Footer'
-import styles from './page.module.css'
-import Testimonials from '@/components/Testimonials'
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Projects from "@/components/Projects";
+import AboutSection from "@/components/AboutSection";
+import Performance from "@/components/Performance";
+import Testimonials from "@/components/Testimonials";
+import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <Navbar />
       <Hero />
-      <AboutSection />
+      <AboutSection showCTA={true} />
       <Testimonials />
       <Projects />
       <Performance />
@@ -22,5 +22,5 @@ export default function Home() {
       <FinalCTA />
       <Footer />
     </main>
-  )
-} 
+  );
+}
