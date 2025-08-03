@@ -64,9 +64,25 @@
   }
 }
 
+.mainHeading {
+  color: #242424;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+  line-height: 0.9;
+  letter-spacing: -0.1px;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .mainHeading {
+    margin-bottom: 2.5rem;
+  }
+}
+
 .heading {
   color: #242424;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 2.2em;
   line-height: 0.9;
@@ -82,7 +98,7 @@
 
 .subheading {
   color: #242424;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 2.2em;
   line-height: 0.9;
@@ -97,8 +113,8 @@
 }
 
 .paragraph {
-    font-family: 'Space Mono', monospace;
-    font-size: 1rem;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
   line-height: 1.7;
   color: var(--color-dark);
   margin-bottom: 1.5rem;
@@ -124,7 +140,7 @@
 }
 
 .listItem {
-    font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-size: 1rem;
   line-height: 1.6;
   color: var(--color-dark);
@@ -134,7 +150,7 @@
 }
 
 .listItem::before {
-  content: '•';
+  content: "•";
   color: var(--color-red);
   font-weight: bold;
   position: absolute;
@@ -153,4 +169,39 @@
   .listItem {
     font-size: 1.25rem;
   }
-} 
+}
+
+.ctaButton {
+  -webkit-text-size-adjust: 100%;
+  line-height: 20px;
+  box-sizing: border-box;
+  cursor: none;
+  max-width: 100%;
+  display: inline-block;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  border: 3px solid #000;
+  border-radius: 10px;
+  font-family: "Space Mono", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: 9px 10px #000;
+  padding: 0.5em 1.25em;
+  text-decoration: none;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  width: 100%;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  transition: all 200ms ease;
+}
+
+.ctaButton:hover {
+  background-color: var(--color-red-dark);
+  transform: translateY(-2px);
+  box-shadow: 11px 12px #000;
+}
