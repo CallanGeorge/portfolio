@@ -5,8 +5,14 @@ import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
 export default function ChloePenarandaPage() {
-  const contentBlocks = [
+  const contentItems = [
     {
+      type: "image" as const,
+      images: ["/ChloePenaranda.png"],
+      imageAlt: "Chloe Penaranda author website",
+    },
+    {
+      type: "text" as const,
       heading: "Author Brand & Literary Identity",
       paragraphs: [
         "Chloe Penaranda needed a professional author website that would showcase her literary work and establish her credibility in the competitive publishing industry. The challenge was creating a digital presence that captured her unique voice while providing readers with easy access to her books, speaking engagements, and personal story.",
@@ -14,6 +20,7 @@ export default function ChloePenarandaPage() {
       ],
     },
     {
+      type: "text" as const,
       heading: "Book Showcase & Reader Engagement",
       paragraphs: [
         "The website features a dedicated book showcase that highlights Chloe's published works with detailed descriptions, reading excerpts, and purchase links. We created an intuitive navigation system that allows visitors to easily explore her bibliography and discover new releases.",
@@ -21,6 +28,7 @@ export default function ChloePenarandaPage() {
       ],
     },
     {
+      type: "text" as const,
       heading: "Content Strategy & SEO",
       paragraphs: [
         "To help readers discover Chloe's work online, we implemented a comprehensive SEO strategy targeting key literary and genre-specific keywords. The site includes:",
@@ -34,6 +42,7 @@ export default function ChloePenarandaPage() {
       ],
     },
     {
+      type: "text" as const,
       heading: "Results & Literary Impact",
       paragraphs: [
         "The new website has significantly enhanced Chloe's online presence, providing a professional platform that showcases her work and connects her with readers worldwide. The clean design and user-friendly navigation have improved visitor engagement and book discovery.",
@@ -51,9 +60,7 @@ export default function ChloePenarandaPage() {
       <ProjectContent
         briefTitle="The brief"
         briefDescription="Chloe Penaranda, an emerging contemporary author, approached us to create a professional website that would serve as the central hub for her literary career. She needed a platform that would showcase her published works, establish credibility with readers and industry professionals, and provide an engaging space for fans to discover her books and connect with her story. The goal was to create a clean, literary-focused design that would support both her current promotional efforts and future book launches."
-        images={["/ChloePenaranda.png"]}
-        imageAlt="Chloe Penaranda author website"
-        contentBlocks={contentBlocks}
+        contentItems={contentItems}
       />
 
       <FinalCTA />

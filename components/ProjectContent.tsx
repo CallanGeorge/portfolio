@@ -2,31 +2,34 @@
 
 import styles from "./ProjectContent.module.css";
 
-interface ContentBlock {
+interface TextBlock {
+  type: "text";
   heading: string;
   paragraphs: string[];
   list?: string[];
 }
+
+interface ImageBlock {
+  type: "image";
+  images: string[];
+  imageAlt: string;
+}
+
+type ContentItem = TextBlock | ImageBlock;
 
 interface ProjectContentProps {
   // Brief section
   briefTitle: string;
   briefDescription: string;
 
-  // Image section
-  images: string[];
-  imageAlt: string;
-
-  // Content blocks
-  contentBlocks: ContentBlock[];
+  // Flexible content items (text blocks and image blocks)
+  contentItems: ContentItem[];
 }
 
 export default function ProjectContent({
   briefTitle,
   briefDescription,
-  images,
-  imageAlt,
-  contentBlocks,
+  contentItems,
 }: ProjectContentProps) {
   return (
     <section className={styles.section}>
@@ -38,39 +41,44 @@ export default function ProjectContent({
             <p className={styles.briefDescription}>{briefDescription}</p>
           </div>
 
-          {/* Rectangle Image Section */}
-          <div className={styles.imageSection}>
-            {images.map((image, index) => (
-              <div key={index} className={styles.imageContainer}>
-                <img
-                  src={image}
-                  alt={`${imageAlt} ${index + 1}`}
-                  className={styles.projectImage}
-                />
-              </div>
-            ))}
-          </div>
-
-          {/* Content Blocks */}
-          {contentBlocks.map((block, index) => (
-            <div key={index} className={styles.contentBlock}>
-              <h3 className={styles.subheading}>{block.heading}</h3>
-              {block.paragraphs.map((paragraph, pIndex) => (
-                <p key={pIndex} className={styles.paragraph}>
-                  {paragraph}
-                </p>
-              ))}
-              {block.list && (
-                <ul className={styles.list}>
-                  {block.list.map((item, lIndex) => (
-                    <li key={lIndex} className={styles.listItem}>
-                      {item}
-                    </li>
+          {/* Flexible Content Items */}
+          {contentItems.map((item, index) => {
+            if (item.type === "image") {
+              return (
+                <div key={index} className={styles.imageSection}>
+                  {item.images.map((image, imgIndex) => (
+                    <div key={imgIndex} className={styles.imageContainer}>
+                      <img
+                        src={image}
+                        alt={`${item.imageAlt} ${imgIndex + 1}`}
+                        className={styles.projectImage}
+                      />
+                    </div>
                   ))}
-                </ul>
-              )}
-            </div>
-          ))}
+                </div>
+              );
+            } else {
+              return (
+                <div key={index} className={styles.contentBlock}>
+                  <h3 className={styles.subheading}>{item.heading}</h3>
+                  {item.paragraphs.map((paragraph, pIndex) => (
+                    <p key={pIndex} className={styles.paragraph}>
+                      {paragraph}
+                    </p>
+                  ))}
+                  {item.list && (
+                    <ul className={styles.list}>
+                      {item.list.map((listItem, lIndex) => (
+                        <li key={lIndex} className={styles.listItem}>
+                          {listItem}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     </section>

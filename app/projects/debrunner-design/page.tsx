@@ -5,8 +5,9 @@ import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
 export default function DebrunnerDesignPage() {
-  const contentBlocks = [
+  const contentItems = [
     {
+      type: "text" as const,
       heading: "Brand Identity & Visual Direction",
       paragraphs: [
         "Debrunner Design needed a sophisticated online presence that would reflect their position as industry leaders in contemporary design. The challenge was creating a website that showcased their premium creative services while maintaining the elegant, minimalist aesthetic that defines their brand.",
@@ -14,6 +15,12 @@ export default function DebrunnerDesignPage() {
       ],
     },
     {
+      type: "image" as const,
+      images: ["/dbd-laptop.png"],
+      imageAlt: "Debrunner Design website",
+    },
+    {
+      type: "text" as const,
       heading: "User Experience & Portfolio Showcase",
       paragraphs: [
         "The website features an intuitive portfolio system that categorizes projects by industry and design type, making it easy for potential clients to explore relevant work and understand the agency's capabilities. We implemented advanced filtering and search functionality to help visitors quickly find case studies that match their needs.",
@@ -21,6 +28,12 @@ export default function DebrunnerDesignPage() {
       ],
     },
     {
+      type: "image" as const,
+      images: ["/dbd-phone.png"],
+      imageAlt: "Debrunner Design website",
+    },
+    {
+      type: "text" as const,
       heading: "Technical Excellence",
       paragraphs: [
         "Built with modern web technologies for maximum performance and reliability. The site features:",
@@ -34,6 +47,7 @@ export default function DebrunnerDesignPage() {
       ],
     },
     {
+      type: "text" as const,
       heading: "Results & Impact",
       paragraphs: [
         "The new website has significantly enhanced Debrunner Design's online presence, providing a professional platform that effectively converts visitors into potential clients. The streamlined user experience and compelling portfolio presentation have improved client engagement and inquiry quality.",
@@ -51,9 +65,7 @@ export default function DebrunnerDesignPage() {
       <ProjectContent
         briefTitle="The brief"
         briefDescription="Debrunner Design approached us to create a sophisticated website that would showcase their premium design services and establish them as industry leaders. They needed a digital presence that reflected their commitment to creative excellence while providing an intuitive way for potential clients to explore their portfolio and understand their capabilities. The goal was to create a platform that would not only display their work beautifully but also convert visitors into high-value clients through compelling storytelling and clear calls-to-action."
-        images={["/dbd-laptop.png", "/dbd-phone.png"]}
-        imageAlt="Debrunner Design website"
-        contentBlocks={contentBlocks}
+        contentItems={contentItems}
       />
 
       <FinalCTA />
