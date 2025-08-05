@@ -1,19 +1,19 @@
 "use client";
 
-import styles from "./SEOContent.module.css";
+import styles from "./ProjectContent.module.css";
 
 export default function SEOContent() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h2 className={styles.mainHeading}>
+          <h2 className={styles.briefTitle}>
             Small Business SEO Services in Fife & Edinburgh
           </h2>
 
           {/* SEO Strategy Section */}
           <div className={styles.contentBlock}>
-            <h3 className={styles.heading}>
+            <h3 className={styles.subheading}>
               SEO for Local Businesses in Scotland
             </h3>
             <p className={styles.paragraph}>
@@ -66,7 +66,7 @@ export default function SEOContent() {
             </p>
           </div>
 
-          <h2 className={styles.mainHeading}>My SEO Strategy</h2>
+          <h2 className={styles.briefTitle}>My SEO Strategy</h2>
 
           {/* Technical SEO Section */}
           <div className={styles.contentBlock}>

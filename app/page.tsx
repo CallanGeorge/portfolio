@@ -15,7 +15,6 @@ export default function Home() {
       <Navbar />
       <Hero />
       <AboutSection showCTA={true} />
-      <Testimonials />
       <Projects />
       <Performance />
       <Services />

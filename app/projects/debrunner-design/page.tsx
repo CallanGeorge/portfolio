@@ -1,39 +1,63 @@
-import Navbar from '@/components/Navbar'
-import Header from '../../../components/Header'
-import ProjectBrief from '@/components/ProjectBrief'
-import ProjectContentSection from '@/components/ProjectContentSection'
-import FinalCTA from '@/components/FinalCTA'
-import Footer from '@/components/Footer'
+import Navbar from "@/components/Navbar";
+import Header from "../../../components/Header";
+import ProjectContent from "@/components/ProjectContent";
+import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
 
 export default function DebrunnerDesignPage() {
+  const contentBlocks = [
+    {
+      heading: "Brand Identity & Visual Direction",
+      paragraphs: [
+        "Debrunner Design needed a sophisticated online presence that would reflect their position as industry leaders in contemporary design. The challenge was creating a website that showcased their premium creative services while maintaining the elegant, minimalist aesthetic that defines their brand.",
+        "We developed a clean, modern design system that allows their portfolio work to take center stage. Every element was carefully considered to reinforce their brand identity and establish credibility with high-value clients and creative professionals.",
+      ],
+    },
+    {
+      heading: "User Experience & Portfolio Showcase",
+      paragraphs: [
+        "The website features an intuitive portfolio system that categorizes projects by industry and design type, making it easy for potential clients to explore relevant work and understand the agency's capabilities. We implemented advanced filtering and search functionality to help visitors quickly find case studies that match their needs.",
+        "Interactive elements and smooth animations create an engaging experience that reflects the agency's creative expertise, while maintaining fast load times and optimal performance across all devices.",
+      ],
+    },
+    {
+      heading: "Technical Excellence",
+      paragraphs: [
+        "Built with modern web technologies for maximum performance and reliability. The site features:",
+      ],
+      list: [
+        "Custom content management system for easy portfolio updates",
+        "Optimized image delivery for fast-loading portfolio galleries",
+        "Responsive design ensuring perfect display on all screen sizes",
+        "SEO optimization to improve search engine visibility",
+        "Streamlined contact and project inquiry system",
+      ],
+    },
+    {
+      heading: "Results & Impact",
+      paragraphs: [
+        "The new website has significantly enhanced Debrunner Design's online presence, providing a professional platform that effectively converts visitors into potential clients. The streamlined user experience and compelling portfolio presentation have improved client engagement and inquiry quality.",
+        "The site's modern technical foundation ensures long-term scalability and easy maintenance, allowing the team to focus on their creative work while their online presence continues to drive business growth.",
+      ],
+    },
+  ];
+
   return (
     <div>
       <Navbar />
 
-      <Header 
-        title="DEBRUNNER DESIGN"
+      <Header title="DEBRUNNER DESIGN" />
+
+      <ProjectContent
+        briefTitle="The brief"
+        briefDescription="Debrunner Design approached us to create a sophisticated website that would showcase their premium design services and establish them as industry leaders. They needed a digital presence that reflected their commitment to creative excellence while providing an intuitive way for potential clients to explore their portfolio and understand their capabilities. The goal was to create a platform that would not only display their work beautifully but also convert visitors into high-value clients through compelling storytelling and clear calls-to-action."
+        images={["/dbd-laptop.png", "/dbd-phone.png"]}
+        imageAlt="Debrunner Design website"
+        contentBlocks={contentBlocks}
       />
-      
-      <ProjectBrief 
-        title="Elevating Creative Excellence"
-        description="Debrunner Design is a cutting-edge design agency specializing in brand identity, digital experiences, and creative solutions. This project involved creating a sophisticated online presence that showcases their portfolio while establishing them as industry leaders in contemporary design."
-      />
-      
-      <ProjectContentSection 
-        title="Brand Identity & Digital Presence"
-        images={['/debrunner-design.png']}
-        text="The Debrunner Design website was crafted to reflect the agency's commitment to innovative design and creative excellence. We developed a clean, minimalist aesthetic that allows their work to speak for itself while maintaining strong brand consistency throughout. The site features an intuitive portfolio system that categorizes projects by industry and design type, making it easy for potential clients to explore relevant work and understand the agency's capabilities."
-        imagePosition="left"
-      />
-      
-      <ProjectContentSection 
-        images={['/debrunner-design.png']}
-        text="We implemented advanced animation and interaction design to create an engaging user experience that reflects the agency's creative expertise. The responsive design ensures optimal viewing across all devices, while the content management system allows the team to easily update their portfolio with new projects. The site also includes a streamlined contact process and project inquiry system, helping to convert visitors into potential clients through clear calls-to-action and compelling case study presentations."
-        imagePosition="right"
-      />
-      
+
       <FinalCTA />
       <Footer />
     </div>
-  )
-} 
+  );
+}

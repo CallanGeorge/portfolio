@@ -1,19 +1,19 @@
 "use client";
 
-import styles from "./WebDesignContent.module.css";
+import styles from "./ProjectContent.module.css";
 
 export default function WebDesignContent() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h2 className={styles.mainHeading}>
+          <h2 className={styles.briefTitle}>
             Custom Web Design Services for Small Businesses in Fife & Edinburgh
           </h2>
 
           {/* Intro */}
           <div className={styles.contentBlock}>
-            <h3 className={styles.heading}>
+            <h3 className={styles.subheading}>
               Clean, Fast, and Purpose-Built — No Page Builders, No WordPress
             </h3>
             <p className={styles.paragraph}>
