@@ -3,55 +3,110 @@ import Header from "../../../components/Header";
 import ProjectContent from "@/components/ProjectContent";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Debrunner Design Studio Website | Design Agency Web Development Case Study | Callan George",
+  description:
+    "Discover how I built a premium website for Manchester-based Debrunner Design studio, featuring clean portfolio showcase, fast performance, and local SEO optimization.",
+  keywords: [
+    "design studio website",
+    "Debrunner Design",
+    "design agency website",
+    "portfolio website design",
+    "Manchester web design",
+    "creative studio website",
+    "design agency web developer",
+    "portfolio web design",
+    "Manchester design studio",
+    "creative website case study",
+  ],
+  openGraph: {
+    title:
+      "Debrunner Design Studio Website | Design Agency Web Development | Callan George",
+    description:
+      "A premium website design for Manchester-based Debrunner Design studio, featuring clean portfolio presentation and optimized performance.",
+    url: "https://callangeorge.com/projects/debrunner-design",
+    siteName: "Callan George - Web Designer & Developer",
+    images: [
+      {
+        url: "https://callangeorge.com/dbd-laptop.png",
+        width: 1200,
+        height: 630,
+        alt: "Debrunner Design studio website on laptop",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Debrunner Design Studio Website | Design Agency Web Development | Callan George",
+    description:
+      "A premium website design for Manchester-based Debrunner Design studio, featuring clean portfolio presentation and optimized performance.",
+    images: ["https://callangeorge.com/dbd-laptop.png"],
+  },
+  alternates: {
+    canonical: "https://callangeorge.com/projects/debrunner-design",
+  },
+};
 
 export default function DebrunnerDesignPage() {
   const contentItems = [
     {
       type: "text" as const,
-      heading: "Brand Identity & Visual Direction",
+      heading: "Bringing Their Vision to Life",
       paragraphs: [
-        "Debrunner Design needed a sophisticated online presence that would reflect their position as industry leaders in contemporary design. The challenge was creating a website that showcased their premium creative services while maintaining the elegant, minimalist aesthetic that defines their brand.",
-        "We developed a clean, modern design system that allows their portfolio work to take center stage. Every element was carefully considered to reinforce their brand identity and establish credibility with high-value clients and creative professionals.",
+        "Debrunner Design had a beautiful vision for their new website, created by their in-house designer. My job was to build it from scratch and make sure it looked and worked exactly how they imagined. Every detail was carefully crafted to match their modern, minimal style — from the layout and fonts to smooth scrolling and subtle animations.",
+        "Because I hand-coded the entire site without using WordPress or page builders, it’s fast, easy to use, and works perfectly on every device. This kind of setup not only looks great but also helps it show up higher in Google searches.",
       ],
     },
     {
       type: "image" as const,
       images: ["/dbd-laptop.png"],
-      imageAlt: "Debrunner Design website",
+      imageAlt: "Debrunner Design website on a laptop",
     },
     {
       type: "text" as const,
-      heading: "User Experience & Portfolio Showcase",
+      heading: "Easy-to-Use Portfolio",
       paragraphs: [
-        "The website features an intuitive portfolio system that categorizes projects by industry and design type, making it easy for potential clients to explore relevant work and understand the agency's capabilities. We implemented advanced filtering and search functionality to help visitors quickly find case studies that match their needs.",
-        "Interactive elements and smooth animations create an engaging experience that reflects the agency's creative expertise, while maintaining fast load times and optimal performance across all devices.",
+        "A big part of this project was making sure potential clients could easily browse their past work. I built a clean and simple portfolio system that clearly presents each project with high-quality visuals and descriptions, making it easy to understand the value behind the work.",
+      ],
+      list: [
+        "Works beautifully on phones, tablets, and desktops",
+        "Loads quickly thanks to optimised images",
+        "Smooth animations for a premium feel",
+        "Simple layout to keep visitors focused on the work",
       ],
     },
     {
       type: "image" as const,
       images: ["/dbd-phone.png"],
-      imageAlt: "Debrunner Design website",
+      imageAlt: "Debrunner Design website on a mobile device",
     },
     {
       type: "text" as const,
-      heading: "Technical Excellence",
+      heading: "Fast, Reliable, and Built to Rank",
       paragraphs: [
-        "Built with modern web technologies for maximum performance and reliability. The site features:",
+        "A fast and well-structured website isn’t just nice to have — it’s key for showing up on Google and keeping visitors engaged. I made sure the Debrunner Design site runs smoothly and checks all the boxes for local SEO (Search Engine Optimisation), especially for people searching for design services in Manchester.",
+        "This site was hand-coded for performance — meaning no clunky platforms, no bloated code, and nothing to slow it down. It’s simple, secure, and built to perform long-term without the need for constant maintenance or plugin updates.",
       ],
       list: [
-        "Custom content management system for easy portfolio updates",
-        "Optimized image delivery for fast-loading portfolio galleries",
-        "Responsive design ensuring perfect display on all screen sizes",
-        "SEO optimization to improve search engine visibility",
-        "Streamlined contact and project inquiry system",
+        "Loads in under 2 seconds",
+        "Designed to look great on all screen sizes",
+        "Set up with clear page titles, alt text, and headers for SEO",
+        "No plugins or third-party tools that can break",
+        "Built to be fast, secure, and reliable for years to come",
       ],
     },
     {
       type: "text" as const,
-      heading: "Results & Impact",
+      heading: "The Result",
       paragraphs: [
-        "The new website has significantly enhanced Debrunner Design's online presence, providing a professional platform that effectively converts visitors into potential clients. The streamlined user experience and compelling portfolio presentation have improved client engagement and inquiry quality.",
-        "The site's modern technical foundation ensures long-term scalability and easy maintenance, allowing the team to focus on their creative work while their online presence continues to drive business growth.",
+        "This project gave Debrunner Design the online home they needed — one that reflects their high-end design work and helps them turn visitors into real clients. Since launching the new site, they’ve had more engagement, more quality enquiries, and a much stronger presence when people search for their services online.",
+        "If you're a designer, agency, or creative professional who wants a sleek, professional site that brings in results — I’d love to help you build something just as powerful.",
       ],
     },
   ];
@@ -63,8 +118,8 @@ export default function DebrunnerDesignPage() {
       <Header title="DEBRUNNER DESIGN" />
 
       <ProjectContent
-        briefTitle="The brief"
-        briefDescription="Debrunner Design approached us to create a sophisticated website that would showcase their premium design services and establish them as industry leaders. They needed a digital presence that reflected their commitment to creative excellence while providing an intuitive way for potential clients to explore their portfolio and understand their capabilities. The goal was to create a platform that would not only display their work beautifully but also convert visitors into high-value clients through compelling storytelling and clear calls-to-action."
+        briefTitle="The Brief"
+        briefDescription="Debrunner Design, a design studio based in Manchester, needed a professional website to show off their work and attract new clients. They came to me with a clear design already made — and wanted it built exactly as planned. The goal: a clean, modern website that feels premium, loads fast, and helps them stand out in search engines."
         contentItems={contentItems}
       />
 

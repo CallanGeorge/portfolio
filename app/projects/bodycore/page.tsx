@@ -3,50 +3,107 @@ import Header from "../../../components/Header";
 import ProjectContent from "@/components/ProjectContent";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "BodyCore Fitness Website Design | Personal Training Web Design Case Study | Callan George",
+  description:
+    "Explore how I redesigned BodyCore's personal training website with mobile-first design, fast loading speeds, and conversion-focused features. A fitness website design case study.",
+  keywords: [
+    "fitness website design",
+    "personal training website",
+    "gym website design",
+    "bodycore fitness",
+    "mobile-first web design",
+    "fitness branding",
+    "personal trainer website",
+    "fitness web developer",
+    "gym web design",
+    "fitness website case study",
+  ],
+  openGraph: {
+    title:
+      "BodyCore Fitness Website Design | Personal Training Web Design | Callan George",
+    description:
+      "A high-performance fitness website design for BodyCore personal training, featuring mobile-first layout and conversion optimization.",
+    url: "https://callangeorge.com/projects/bodycore",
+    siteName: "Callan George - Web Designer & Developer",
+    images: [
+      {
+        url: "https://callangeorge.com/bc-laptop.png",
+        width: 1200,
+        height: 630,
+        alt: "BodyCore fitness website design on laptop",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "BodyCore Fitness Website Design | Personal Training Web Design | Callan George",
+    description:
+      "A high-performance fitness website design for BodyCore personal training, featuring mobile-first layout and conversion optimization.",
+    images: ["https://callangeorge.com/bc-laptop.png"],
+  },
+  alternates: {
+    canonical: "https://callangeorge.com/projects/bodycore",
+  },
+};
 
 export default function BodyCorePage() {
   const contentItems = [
     {
       type: "text" as const,
-      heading: "Fitness Brand & Community Building",
+      heading: "Fitness That Converts",
       paragraphs: [
-        "BodyCore needed a dynamic website that would capture the energy and motivation of their personal training services while providing an easy way for potential clients to book sessions and connect with trainers. The challenge was creating a platform that felt both professional and inspiring, encouraging visitors to take action on their fitness goals.",
-        "We developed a bold, energetic design that reflects the intensity and dedication of the fitness community. The visual identity uses strong typography and vibrant imagery to create an atmosphere of motivation and achievement.",
-      ],
-    },
-    {
-      type: "text" as const,
-      heading: "Trainer Profiles & Service Showcase",
-      paragraphs: [
-        "The website features detailed trainer profiles that highlight each instructor's specializations, certifications, and training philosophy. This helps potential clients find the right match for their fitness goals and builds trust through professional credentials and personal stories.",
-        "We created an intuitive service showcase that clearly explains different training programs, from one-on-one personal training to group fitness classes, making it easy for visitors to understand their options and pricing.",
+        "BodyCore approached me to redesign their outdated personal training website. The old site wasn’t mobile-friendly, didn’t support bookings, and wasn’t ranking well in Google. They needed something that matched the energy of their brand — fast, professional, and built to convert.",
       ],
     },
     {
       type: "image" as const,
-      images: ["/bodycore.png"],
-      imageAlt: "BodyCore fitness website",
+      images: ["/bc-laptop.png"],
+      imageAlt: "BodyCore fitness website on a laptop",
     },
     {
       type: "text" as const,
-      heading: "Booking System & User Experience",
+      heading: "Clear, Confident Branding",
       paragraphs: [
-        "To streamline the client experience, we implemented a comprehensive booking system that includes:",
+        "Fitness websites should feel like a boost of motivation — so I built BodyCore’s site with bold visuals, strong typography, and crisp messaging that reflects the drive of the personal trainers behind it.",
       ],
       list: [
-        "Online session scheduling with real-time availability",
-        "Trainer selection based on specialization and schedule",
-        "Client progress tracking and goal setting tools",
-        "Mobile-optimized design for on-the-go booking",
-        "Integrated payment processing for seamless transactions",
+        "Professional but energetic design",
+        "Strong calls-to-action to encourage signups",
+        "Mobile-first layout that performs across all devices",
+        "Image optimisation for faster load speeds",
+      ],
+    },
+    {
+      type: "image" as const,
+      images: ["/bc-phone.png"],
+      imageAlt: "BodyCore website mobile preview",
+    },
+    {
+      type: "text" as const,
+      heading: "Performance & SEO",
+      paragraphs: [
+        "To help BodyCore stand out in a competitive market, I built the site for speed and visibility from the ground up. No plugins. No bloated themes. Just lean, modern code that’s optimised to rank.",
+      ],
+      list: [
+        "Loads in under 2 seconds",
+        "Core Web Vitals optimised",
+        "Keyword-targeted service pages",
+        "Google Business Profile integration for local SEO",
       ],
     },
     {
       type: "text" as const,
-      heading: "Results & Community Impact",
+      heading: "The Result",
       paragraphs: [
-        "The new website has significantly improved BodyCore's ability to attract and retain clients, with streamlined booking processes and clear service information leading to increased session bookings. The professional presentation has enhanced credibility and trust with potential clients.",
-        "The platform serves as a central hub for the fitness community, supporting both individual training goals and group motivation through success stories, progress tracking, and easy communication between trainers and clients.",
+        "The new BodyCore site looks sharper, loads faster, and converts better. Visitors can quickly find the right trainer, book a session, and start their fitness journey. The business now ranks higher than many of its local competitors — and has a digital presence that matches the energy and professionalism of the team behind it.",
+        "If you're in fitness and want a site that works as hard as you do — let's talk.",
       ],
     },
   ];
@@ -55,11 +112,11 @@ export default function BodyCorePage() {
     <div>
       <Navbar />
 
-      <Header title="BODYCORE" />
+      <Header title="BODYCORE FITNESS" />
 
       <ProjectContent
-        briefTitle="The brief"
-        briefDescription="BodyCore approached us to create a dynamic fitness website that would showcase their personal training services and make it easy for potential clients to book sessions. They needed a platform that captured the energy and motivation of their fitness community while providing professional credibility and streamlined booking functionality. The goal was to create an inspiring digital presence that would convert visitors into committed fitness clients and support long-term relationships between trainers and members."
+        briefTitle="The Brief"
+        briefDescription="BodyCore needed a dynamic website to reflect the energy of their personal training brand and improve client bookings. Their old site wasn’t user-friendly or optimised for Google. My goal was to deliver a fast, mobile-friendly site that built trust, simplified bookings, and helped them stand out in a crowded local market."
         contentItems={contentItems}
       />
 

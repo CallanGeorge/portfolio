@@ -185,7 +185,7 @@
   margin: 0;
   line-height: 1.25;
   font-size: 1.125rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 @media (min-width: 640px) {
@@ -194,12 +194,10 @@
   }
 }
 
-
-
 .fallbackContainer {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #779179 0%, #6B7F68 100%);
+  background: linear-gradient(135deg, #779179 0%, #6b7f68 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,5 +225,37 @@
 .fallbackText {
   font-size: 0.875rem;
   font-weight: 500;
-  font-family: 'Space Mono', monospace;
-} 
+  font-family: "Space Mono", monospace;
+}
+
+/* Loading states */
+.loadingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.loadingSpinner {
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid #e9ecef;
+  border-top: 3px solid #779179;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -3,50 +3,109 @@ import Header from "../../../components/Header";
 import ProjectContent from "@/components/ProjectContent";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Chloe Penaranda Author Website Design | Contemporary Author Web Design Case Study | Callan George",
+  description:
+    "Learn how I created a professional author website for contemporary writer Chloe Penaranda, featuring book showcases, reader engagement, and SEO optimization for literary branding.",
+  keywords: [
+    "author website design",
+    "Chloe Penaranda website",
+    "contemporary author website",
+    "book website design",
+    "literary website design",
+    "author branding",
+    "book showcase website",
+    "writer website",
+    "author web developer",
+    "literary web design case study",
+  ],
+  openGraph: {
+    title:
+      "Chloe Penaranda Author Website Design | Contemporary Author Web Design | Callan George",
+    description:
+      "A professional website design for contemporary author Chloe Penaranda, featuring elegant book showcases and reader engagement tools.",
+    url: "https://callangeorge.com/projects/chloe-penaranda",
+    siteName: "Callan George - Web Designer & Developer",
+    images: [
+      {
+        url: "https://callangeorge.com/ccp-laptop.png",
+        width: 1200,
+        height: 630,
+        alt: "Chloe Penaranda author website design on laptop",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Chloe Penaranda Author Website Design | Contemporary Author Web Design | Callan George",
+    description:
+      "A professional website design for contemporary author Chloe Penaranda, featuring elegant book showcases and reader engagement tools.",
+    images: ["https://callangeorge.com/ccp-laptop.png"],
+  },
+  alternates: {
+    canonical: "https://callangeorge.com/projects/chloe-penaranda",
+  },
+};
 
 export default function ChloePenarandaPage() {
   const contentItems = [
     {
+      type: "text" as const,
+      heading: "Bringing Her Story to Life",
+      paragraphs: [
+        "Chloe Penaranda, an emerging contemporary author, approached me to create a professional website that would reflect her literary brand and support the launch of her latest book. Her existing site lacked user-friendliness, wasn’t optimised for speed or search engines, and didn’t reflect the quality of her work.",
+        "I brought her vision to life using a clean, elegant layout that gives her writing the spotlight it deserves. The entire site was hand-coded for performance, accessibility, and long-term reliability — no page builders, no WordPress, no unnecessary bloat.",
+      ],
+    },
+    {
       type: "image" as const,
-      images: ["/ChloePenaranda.png"],
-      imageAlt: "Chloe Penaranda author website",
+      images: ["/ccp-laptop.png"],
+      imageAlt: "Chloe Penaranda author website on a laptop",
     },
     {
       type: "text" as const,
-      heading: "Author Brand & Literary Identity",
+      heading: "Designed for Readers",
       paragraphs: [
-        "Chloe Penaranda needed a professional author website that would showcase her literary work and establish her credibility in the competitive publishing industry. The challenge was creating a digital presence that captured her unique voice while providing readers with easy access to her books, speaking engagements, and personal story.",
-        "We developed a clean, literary-focused design that reflects her brand as a contemporary author. The aesthetic balances professionalism with personality, creating an inviting space where readers can connect with both her work and her journey as a writer.",
-      ],
-    },
-    {
-      type: "text" as const,
-      heading: "Book Showcase & Reader Engagement",
-      paragraphs: [
-        "The website features a dedicated book showcase that highlights Chloe's published works with detailed descriptions, reading excerpts, and purchase links. We created an intuitive navigation system that allows visitors to easily explore her bibliography and discover new releases.",
-        "Interactive elements encourage reader engagement through book reviews, author events, and a newsletter signup that keeps fans updated on new publications and speaking opportunities.",
-      ],
-    },
-    {
-      type: "text" as const,
-      heading: "Content Strategy & SEO",
-      paragraphs: [
-        "To help readers discover Chloe's work online, we implemented a comprehensive SEO strategy targeting key literary and genre-specific keywords. The site includes:",
+        "The site includes a dedicated book showcase where readers can browse Chloe’s novels, read excerpts, and find direct links to purchase. We kept the layout simple and focused to make the experience feel immersive without distractions.",
       ],
       list: [
-        "Optimized book pages for search engine visibility",
-        "Author bio and background content for credibility",
-        "Speaking engagement and event information",
-        "Blog section for ongoing content and reader connection",
-        "Social media integration for broader reach",
+        "Mobile-friendly design that works across all devices",
+        "Fast load speeds with optimised images",
+        "Clean navigation and clear book pages",
+        "Newsletter signup to grow her audience",
+        "Subtle animations and thoughtful design touches",
+      ],
+    },
+    {
+      type: "image" as const,
+      images: ["/ccp-phone.png"],
+      imageAlt: "Chloe Penaranda author website on a mobile device",
+    },
+    {
+      type: "text" as const,
+      heading: "Optimised for Discovery",
+      paragraphs: [
+        "With so many authors competing for attention, being visible in search results is key. I implemented a tailored SEO strategy focused on Chloe’s genre, readership, and author branding to help her show up where it matters.",
+      ],
+      list: [
+        "Optimised titles and meta descriptions for each book",
+        "Search-friendly author bio and speaking info",
+        "Clear internal linking structure",
+        "Core Web Vitals optimised for Google rankings",
       ],
     },
     {
       type: "text" as const,
-      heading: "Results & Literary Impact",
+      heading: "The Result",
       paragraphs: [
-        "The new website has significantly enhanced Chloe's online presence, providing a professional platform that showcases her work and connects her with readers worldwide. The clean design and user-friendly navigation have improved visitor engagement and book discovery.",
-        "The site serves as a central hub for her literary career, supporting both current promotional efforts and future book launches with a scalable foundation that grows with her publishing success.",
+        "The new site not only looks beautiful — it also works harder. Visitors now have a smoother experience browsing Chloe’s books, and the site ranks better in Google for key searches. Most importantly, it’s a platform that grows with her literary career, supporting new book launches, events, and her connection with readers worldwide.",
+        "If you're an author or creative looking for a sleek, SEO-optimised website that reflects your work — get in touch. I’d love to help you build something just as powerful.",
       ],
     },
   ];
@@ -58,8 +117,8 @@ export default function ChloePenarandaPage() {
       <Header title="CHLOE PENARANDA" />
 
       <ProjectContent
-        briefTitle="The brief"
-        briefDescription="Chloe Penaranda, an emerging contemporary author, approached us to create a professional website that would serve as the central hub for her literary career. She needed a platform that would showcase her published works, establish credibility with readers and industry professionals, and provide an engaging space for fans to discover her books and connect with her story. The goal was to create a clean, literary-focused design that would support both her current promotional efforts and future book launches."
+        briefTitle="The Brief"
+        briefDescription="Chloe Penaranda needed a new website to coincide with the release of her latest book. Her old website was outdated, slow, and difficult to use. The goal was to create a fast, professional platform that reflected her unique literary voice, made it easy for readers to discover her work, and supported her long-term growth as an author."
         contentItems={contentItems}
       />
 
