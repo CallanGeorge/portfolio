@@ -1,18 +1,18 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Phudu:wght@300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Phudu:wght@300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /* Local Font Definitions */
 @font-face {
-  font-family: 'Thunder';
-  src: url('/fonts/Heading.ttf') format('truetype');
+  font-family: "Thunder";
+  src: url("/fonts/Heading.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/fonts/Inter.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("/fonts/Inter.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -24,31 +24,31 @@
   --font-family-space-mono: "Space Mono", monospace;
   --font-family-montserrat: "Montserrat", sans-serif;
   --font-family-phudu: "Phudu", sans-serif;
-  
+
   /* Brand Colors */
   --color-primary: #8d99ae;
   --color-primary-dark: #2b2d42;
   --color-primary-light: #8d99ae;
-  
+
   /* Base Colors */
   --color-dark: #2b2d42;
   --color-white: #edf2f4;
   --color-black: #000000;
-  
+
   /* Background Colors */
   --color-cream: #edf2f4;
   --color-light-pink: #edf2f4;
   --color-light-gray: #edf2f4;
-  
+
   /* Text Colors */
   --color-gray-300: #8d99ae;
   --color-gray-600: #2b2d42;
-  
+
   /* Accent Colors */
   --color-yellow: #eab308;
   --color-red: #ef233c;
   --color-red-dark: #d90429;
-  
+
   /* Transparency Variations */
   --color-white-10: rgba(237, 242, 244, 0.1);
   --color-white-20: rgba(237, 242, 244, 0.2);
@@ -56,33 +56,49 @@
   --color-white-20-alpha: rgba(237, 242, 244, 0.2);
   --color-black-shadow: rgba(0, 0, 0, 1);
   --color-black-05: rgba(0, 0, 0, 0.05);
-  
+
   --font-size-7xl: 5rem;
   --font-size-8xl: 6rem;
   --font-size-9xl: 8rem;
   --font-size-10xl: 10rem;
   --font-size-11xl: 12rem;
   --font-size-12xl: 14rem;
-  
+
   --animate-pulse-green: pulse-green 2s infinite;
   --animate-fade-in: fade-in 0.6s ease-out;
   --animate-slide-up: slide-up 0.6s ease-out;
 }
 
 @keyframes pulse-green {
-  0% { box-shadow: 0 0 0 0 rgba(0, 200, 81, 0.7); }
-  70% { box-shadow: 0 0 0 10px rgba(0, 200, 81, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(0, 200, 81, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 200, 81, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 200, 81, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 200, 81, 0);
+  }
 }
 
 @keyframes fade-in {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slide-up {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 html {
@@ -148,13 +164,14 @@ body {
   text-transform: uppercase;
   border: 3px solid #000;
   border-radius: 10px;
-  font-family: 'Space Mono', sans-serif;
+  font-family: "Space Mono", sans-serif;
   font-size: 16px;
   font-weight: 400;
   box-shadow: 9px 10px #000;
-  padding: .5em 1.25em;
+  padding: 0.5em 1.25em;
   text-decoration: none;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   background-color: var(--color-red);
   color: var(--color-white);
@@ -182,13 +199,14 @@ body {
   text-transform: uppercase;
   border: 3px solid #000;
   border-radius: 10px;
-  font-family: 'Space Mono', sans-serif;
+  font-family: "Space Mono", sans-serif;
   font-size: 16px;
   font-weight: 400;
   box-shadow: 9px 10px #000;
-  padding: .5em 1.25em;
+  padding: 0.5em 1.25em;
   text-decoration: none;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   background: var(--color-red);
   color: var(--color-white);
@@ -213,13 +231,14 @@ body {
   text-transform: uppercase;
   border: 3px solid #000;
   border-radius: 10px;
-  font-family: 'Space Mono', sans-serif;
+  font-family: "Space Mono", sans-serif;
   font-size: 16px;
   font-weight: 400;
   box-shadow: 9px 10px #000;
-  padding: .5em 1.25em;
+  padding: 0.5em 1.25em;
   text-decoration: none;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   background-color: var(--color-red);
   color: var(--color-white);
@@ -243,13 +262,14 @@ body {
   text-transform: uppercase;
   border: 3px solid #000;
   border-radius: 10px;
-  font-family: 'Space Mono', sans-serif;
+  font-family: "Space Mono", sans-serif;
   font-size: 16px;
   font-weight: 400;
   box-shadow: 9px 10px #000;
-  padding: .5em 1.25em;
+  padding: 0.5em 1.25em;
   text-decoration: none;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   background-color: transparent;
   color: var(--color-black);
@@ -274,13 +294,14 @@ body {
   text-transform: uppercase;
   border: 3px solid #000;
   border-radius: 10px;
-  font-family: 'Space Mono', sans-serif;
+  font-family: "Space Mono", sans-serif;
   font-size: 16px;
   font-weight: 400;
   box-shadow: 9px 10px #000;
-  padding: .5em 1.25em;
+  padding: 0.5em 1.25em;
   text-decoration: none;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   background-color: transparent;
   color: var(--color-red);
@@ -292,4 +313,4 @@ body {
   color: var(--color-white);
   transform: translateY(-2px);
   box-shadow: 11px 12px #000;
-} 
+}

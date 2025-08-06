@@ -1,20 +1,18 @@
-import Link from 'next/link'
-import styles from './Footer.module.css'
+import Link from "next/link";
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   const footerLinks = [
-    { name: 'ABOUT', href: '/about' },
-    { name: 'WORK', href: '/work' },
-    { name: 'SERVICES', href: '#services' },
-  ]
+    { name: "ABOUT", href: "/about" },
+    { name: "WORK", href: "/work" },
+    { name: "SERVICES", href: "#services" },
+  ];
 
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        
         {/* Mobile Layout - Stacked and Centered */}
         <div className={styles.mobileLayout}>
-          
           {/* Navigation Links */}
           <div className={styles.mobileSection}>
             <div className={styles.mobileNavigation}>
@@ -39,34 +37,12 @@ export default function Footer() {
               </p>
             </div>
           </div>
-
-          {/* Logo */}
-          <div className={styles.mobileSection}>
-            <div className={styles.mobileLogoContainer}>
-              <Link href="/" className={styles.mobileLogoLink}>
-                <div className={styles.mobileLogoText}>
-                  <div className={styles.mobileLogoBrand}>Callan</div>
-                  <div className={styles.mobileLogoTagline}>CREATIVE DEPT</div>
-                </div>
-              </Link>
-            </div>
-          </div>
-
-          {/* Location */}
-          <div className={styles.mobileSection}>
-            <p className={styles.mobileLocationText}>
-              MADE WITH LOVE ❤️ IN EDINBURGH
-            </p>
-          </div>
-
         </div>
 
-        {/* Desktop Layout - Two Rows */}
+        {/* Desktop Layout - Single Row */}
         <div className={styles.desktopLayout}>
-          
-          {/* Top Row - Navigation and Logo */}
-          <div className={styles.desktopTopRow}>
-            
+          {/* Navigation and Copyright */}
+          <div className={styles.desktopRow}>
             {/* Left - Navigation Links */}
             <div className={styles.desktopNavigation}>
               {footerLinks.map((link) => (
@@ -80,44 +56,16 @@ export default function Footer() {
               ))}
             </div>
 
-            {/* Right - Logo */}
-            <div className={styles.desktopLogoContainer}>
-              <Link href="/" className={styles.desktopLogoLink}>
-                <div className={styles.desktopLogoText}>
-                  <div className={styles.desktopLogoBrand}>Callan</div>
-                  <div className={styles.desktopLogoTagline}>CREATIVE DEPT</div>
-                </div>
-              </Link>
-            </div>
-
-          </div>
-
-          {/* Bottom Row - Copyright and Location */}
-          <div className={styles.desktopBottomRow}>
-            
-            {/* Left - Copyright */}
+            {/* Right - Copyright */}
             <div className={styles.desktopCopyright}>
               <div className={styles.desktopBullet}></div>
               <p className={styles.desktopCopyrightText}>
                 2025 CALLAN GEORGE. ALL RIGHTS RESERVED
               </p>
             </div>
-
-            {/* Center - Location */}
-            <div className={styles.desktopLocationContainer}>
-              <p className={styles.desktopLocationText}>
-                MADE WITH LOVE ❤️ IN EDINBURGH
-              </p>
-            </div>
-
-            {/* Right - Empty for balance */}
-            <div className={styles.desktopSpacer}></div>
-
           </div>
-
         </div>
-        
       </div>
     </footer>
-  )
-} 
+  );
+}

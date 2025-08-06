@@ -162,14 +162,15 @@
   letter-spacing: 0;
   text-transform: uppercase;
   border: 3px solid #000;
-  border-radius: 25px;
-  font-family: 'Space Mono', sans-serif;
-  font-size: 16px;
+  border-radius: 60px;
+  font-family: "Space Mono", sans-serif;
+  font-size: 18px;
   font-weight: 400;
   box-shadow: 9px 10px #000;
-  padding: .5em 1.25em;
+  padding: 1.2em 2.5em;
   text-decoration: none;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   background-color: var(--color-red);
   color: white;
@@ -186,34 +187,41 @@
 
 @media (min-width: 480px) {
   .ctaButton {
-    font-size: 18px;
-    padding: 0.75em 1.5em;
+    font-size: 20px;
+    padding: 1.4em 3em;
+    border-radius: 70px;
   }
 }
 
 @media (min-width: 640px) {
   .ctaButton {
-    padding: 1em 2em;
-    font-size: 20px;
+    padding: 1.6em 3.5em;
+    font-size: 22px;
+    border-radius: 80px;
   }
 }
 
 @media (min-width: 768px) {
   .ctaButton {
-    padding: 1.25em 2.5em;
-    font-size: 22px;
+    padding: 1.8em 4em;
+    font-size: 24px;
+    border-radius: 90px;
   }
 }
 
 @media (min-width: 1024px) {
   .ctaButton {
-    font-size: 24px;
+    font-size: 26px;
+    padding: 2em 4.5em;
+    border-radius: 100px;
   }
 }
 
 @media (min-width: 1280px) {
   .ctaButton {
-    font-size: 28px;
+    font-size: 30px;
+    padding: 2.2em 5em;
+    border-radius: 110px;
   }
 }
 
@@ -221,4 +229,4 @@
   background-color: var(--color-red-dark);
   transform: translateY(-2px);
   box-shadow: 11px 12px #000;
-} 
+}
