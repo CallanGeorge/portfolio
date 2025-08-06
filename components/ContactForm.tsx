@@ -5,10 +5,15 @@ import styles from "./ContactForm.module.css";
 
 export default function ContactForm() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState<{
+    type: "success" | "error" | null;
+    text: string;
+  }>({ type: null, text: "" });
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    project: "",
+    phone: "",
     message: "",
   });
 
@@ -27,18 +32,47 @@ export default function ContactForm() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! I'll get back to you soon.");
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      project: "",
-      message: "",
-    });
+    setIsSubmitting(true);
+    setMessage({ type: null, text: "" }); // Clear any existing messages
+
+    try {
+      const response = await fetch(
+        "https://g9qs7bjeo8.execute-api.eu-west-1.amazonaws.com/default/CallanGeorgeContact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.ok) {
+        setMessage({
+          type: "success",
+          text: "Thank you for your message! I'll get back to you soon.",
+        });
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setMessage({
+        type: "error",
+        text: "Sorry, there was an error sending your message. Please try again or contact me directly.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -91,47 +125,40 @@ export default function ContactForm() {
                 </div>
 
                 <div className={styles.formGroup}>
-                  <label htmlFor="email" className={styles.label}>
-                    Email *
+                  <label htmlFor="phone" className={styles.label}>
+                    Phone
                   </label>
                   <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
                     onChange={handleChange}
-                    required
                     className={styles.input}
-                    placeholder="your@email.com"
+                    placeholder="Your phone number"
                   />
                 </div>
               </div>
 
               <div className={styles.formGroup}>
-                <label htmlFor="project" className={styles.label}>
-                  Project Type *
+                <label htmlFor="email" className={styles.label}>
+                  Email *
                 </label>
-                <select
-                  id="project"
-                  name="project"
-                  value={formData.project}
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
                   onChange={handleChange}
                   required
-                  className={styles.select}
-                >
-                  <option value="">Select a project type</option>
-                  <option value="new-website">New Website</option>
-                  <option value="redesign">Website Redesign</option>
-                  <option value="ecommerce">E-commerce Store</option>
-                  <option value="maintenance">Website Maintenance</option>
-                  <option value="consultation">Consultation</option>
-                  <option value="other">Other</option>
-                </select>
+                  className={styles.input}
+                  placeholder="your@email.com"
+                />
               </div>
 
               <div className={styles.formGroup}>
                 <label htmlFor="message" className={styles.label}>
-                  Project Description *
+                  Message *
                 </label>
                 <textarea
                   id="message"
@@ -141,12 +168,23 @@ export default function ContactForm() {
                   required
                   rows={6}
                   className={styles.textarea}
-                  placeholder="Please describe your project, goals, and any specific requirements..."
+                  placeholder="Tell me about your project or how I can help you..."
                 />
               </div>
 
-              <button type="submit" className={styles.submitButton}>
-                SEND MESSAGE
+              {/* Message Display */}
+              {message.type && (
+                <div className={`${styles.message} ${styles[message.type]}`}>
+                  {message.text}
+                </div>
+              )}
+
+              <button
+                type="submit"
+                className={styles.submitButton}
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "SENDING..." : "SEND MESSAGE"}
               </button>
             </form>
           </div>
