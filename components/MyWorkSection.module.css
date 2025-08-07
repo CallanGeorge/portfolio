@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: var(--color-light-pink);
+  background-color: white;
 }
 
 @media (min-width: 640px) {
