@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     siteName: "Callan George - Web Designer & Developer",
     images: [
       {
-        url: "https://callangeorge.com/bc-laptop.png",
+        url: "/default-thumbnail.webp",
         width: 1200,
         height: 630,
-        alt: "BodyCore fitness website design on laptop",
+        alt: "Default social thumbnail",
       },
     ],
     locale: "en_GB",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       "BodyCore Fitness Website Design | Personal Training Web Design | Callan George",
     description:
       "A high-performance fitness website design for BodyCore personal training, featuring mobile-first layout and conversion optimization.",
-    images: ["https://callangeorge.com/bc-laptop.png"],
+    images: ["/default-thumbnail.webp"],
   },
   alternates: {
     canonical: "https://callangeorge.com/projects/bodycore",
@@ -64,7 +64,7 @@ export default function BodyCorePage() {
     },
     {
       type: "image" as const,
-      images: ["/bc-laptop.png"],
+      images: ["/bc-laptop.webp"],
       imageAlt: "BodyCore fitness website on a laptop",
     },
     {
@@ -82,7 +82,7 @@ export default function BodyCorePage() {
     },
     {
       type: "image" as const,
-      images: ["/bc-phone.png"],
+      images: ["/bc-phone.webp"],
       imageAlt: "BodyCore website mobile preview",
     },
     {

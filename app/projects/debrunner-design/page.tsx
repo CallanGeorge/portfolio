@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     siteName: "Callan George - Web Designer & Developer",
     images: [
       {
-        url: "https://callangeorge.com/dbd-laptop.png",
+        url: "/default-thumbnail.webp",
         width: 1200,
         height: 630,
-        alt: "Debrunner Design studio website on laptop",
+        alt: "Default social thumbnail",
       },
     ],
     locale: "en_GB",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       "Debrunner Design Studio Website | Design Agency Web Development | Callan George",
     description:
       "A premium website design for Manchester-based Debrunner Design studio, featuring clean portfolio presentation and optimized performance.",
-    images: ["https://callangeorge.com/dbd-laptop.png"],
+    images: ["/default-thumbnail.webp"],
   },
   alternates: {
     canonical: "https://callangeorge.com/projects/debrunner-design",
@@ -65,7 +65,7 @@ export default function DebrunnerDesignPage() {
     },
     {
       type: "image" as const,
-      images: ["/dbd-laptop.png"],
+      images: ["/dbd-laptop.webp"],
       imageAlt: "Debrunner Design website on a laptop",
     },
     {
@@ -83,7 +83,7 @@ export default function DebrunnerDesignPage() {
     },
     {
       type: "image" as const,
-      images: ["/dbd-phone.png"],
+      images: ["/dbd-phone.webp"],
       imageAlt: "Debrunner Design website on a mobile device",
     },
     {

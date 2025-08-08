@@ -21,21 +21,26 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.navbar} aria-label="Primary">
       <div className={styles.container}>
         <div className={styles.navContent}>
           {/* Logo */}
-          <Link href="/" className={styles.logoLink}>
+          <Link href="/" className={styles.logoLink} aria-label="Home">
             <div className={styles.logo}>Callan George</div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className={styles.desktopNav}>
+          <div
+            className={styles.desktopNav}
+            role="menubar"
+            aria-label="Primary"
+          >
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
                 className={styles.desktopNavLink}
+                role="menuitem"
               >
                 {item.name}
               </Link>
@@ -47,7 +52,12 @@ export default function Navbar() {
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <button className={styles.servicesButton}>
+              <button
+                className={styles.servicesButton}
+                aria-haspopup="true"
+                aria-expanded={isServicesOpen}
+                aria-controls="services-menu-desktop"
+              >
                 SERVICES
                 <svg
                   className={`${styles.dropdownIcon} ${
@@ -55,6 +65,7 @@ export default function Navbar() {
                   }`}
                   viewBox="0 0 20 20"
                   fill="currentColor"
+                  aria-hidden="true"
                 >
                   <path
                     fillRule="evenodd"
@@ -65,15 +76,19 @@ export default function Navbar() {
               </button>
 
               <div
+                id="services-menu-desktop"
                 className={`${styles.dropdownMenu} ${
                   isServicesOpen ? styles.dropdownMenuOpen : ""
                 }`}
+                role="menu"
+                aria-label="Services"
               >
                 {serviceItems.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
                     className={styles.dropdownLink}
+                    role="menuitem"
                   >
                     {item.name}
                   </Link>
@@ -93,11 +108,15 @@ export default function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className={styles.mobileMenuButton}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
+            aria-controls="mobile-nav-panel"
           >
             <svg
               className={styles.menuIcon}
               viewBox="0 0 24 24"
               stroke="currentColor"
+              aria-hidden="true"
             >
               {isOpen ? (
                 <path
@@ -120,7 +139,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className={styles.mobileNavPanel}>
+          <div className={styles.mobileNavPanel} id="mobile-nav-panel">
             <div className={styles.mobileNavContent}>
               {navItems.map((item) => (
                 <Link
@@ -138,6 +157,9 @@ export default function Navbar() {
                 <button
                   className={styles.mobileServicesButton}
                   onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                  aria-haspopup="true"
+                  aria-expanded={isMobileServicesOpen}
+                  aria-controls="services-menu-mobile"
                 >
                   SERVICES
                   <svg
@@ -146,6 +168,7 @@ export default function Navbar() {
                     }`}
                     viewBox="0 0 20 20"
                     fill="currentColor"
+                    aria-hidden="true"
                   >
                     <path
                       fillRule="evenodd"
@@ -156,9 +179,12 @@ export default function Navbar() {
                 </button>
 
                 <div
+                  id="services-menu-mobile"
                   className={`${styles.mobileDropdownMenu} ${
                     isMobileServicesOpen ? styles.mobileDropdownMenuOpen : ""
                   }`}
+                  role="menu"
+                  aria-label="Services"
                 >
                   {serviceItems.map((item) => (
                     <Link
@@ -169,6 +195,7 @@ export default function Navbar() {
                         setIsOpen(false);
                         setIsMobileServicesOpen(false);
                       }}
+                      role="menuitem"
                     >
                       {item.name}
                     </Link>

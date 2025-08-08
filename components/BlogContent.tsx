@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import styles from "./BlogContent.module.css";
 
 interface TextBlock {
@@ -111,10 +112,14 @@ export default function BlogContent({
                   <div key={index} className={styles.imageSection}>
                     {item.images.map((image, imgIndex) => (
                       <div key={imgIndex} className={styles.imageContainer}>
-                        <img
+                        <Image
                           src={image}
                           alt={`${item.imageAlt} ${imgIndex + 1}`}
-                          className={styles.blogImage}
+                          width={1200}
+                          height={800}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+                          style={{ width: "100%", height: "auto" }}
+                          loading="lazy"
                         />
                         {item.caption && (
                           <figcaption className={styles.imageCaption}>

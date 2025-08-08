@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     siteName: "Callan George - Web Designer & Developer",
     images: [
       {
-        url: "https://callangeorge.com/ccp-laptop.png",
+        url: "/default-thumbnail.webp",
         width: 1200,
         height: 630,
-        alt: "Chloe Penaranda author website design on laptop",
+        alt: "Default social thumbnail",
       },
     ],
     locale: "en_GB",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       "Chloe Penaranda Author Website Design | Contemporary Author Web Design | Callan George",
     description:
       "A professional website design for contemporary author Chloe Penaranda, featuring elegant book showcases and reader engagement tools.",
-    images: ["https://callangeorge.com/ccp-laptop.png"],
+    images: ["/default-thumbnail.webp"],
   },
   alternates: {
     canonical: "https://callangeorge.com/projects/chloe-penaranda",
@@ -65,7 +65,7 @@ export default function ChloePenarandaPage() {
     },
     {
       type: "image" as const,
-      images: ["/ccp-laptop.png"],
+      images: ["/ccp-laptop.webp"],
       imageAlt: "Chloe Penaranda author website on a laptop",
     },
     {
@@ -84,7 +84,7 @@ export default function ChloePenarandaPage() {
     },
     {
       type: "image" as const,
-      images: ["/ccp-phone.png"],
+      images: ["/ccp-phone.webp"],
       imageAlt: "Chloe Penaranda author website on a mobile device",
     },
     {

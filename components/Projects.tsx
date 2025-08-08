@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Projects.module.css";
 
 export default function Projects() {
@@ -18,37 +19,37 @@ export default function Projects() {
       year: "2025",
       description:
         "A sophisticated design agency website showcasing premium creative services and portfolio work with elegant typography and clean layouts.",
-      image: "/debrunner-design.png",
+      image: "/debrunner-design.webp",
       url: "https://debrunnerdesign.com",
       category: "Design Agency",
-      screenshots: ["/dbd-laptop.png", "/dbd-phone.png"],
+      screenshots: ["/dbd-laptop.webp", "/dbd-phone.webp"],
     },
     {
       title: "Chloe Penaranda",
       year: "2025",
       description:
         "Professional author website featuring book showcases, speaking engagements, and a clean, literary-focused design that reflects the author's brand.",
-      image: "/ChloePenaranda.png",
+      image: "/ChloePenaranda.webp",
       category: "Author",
-      screenshots: ["/ccp-laptop.png", "/ccp-phone.png"],
+      screenshots: ["/ccp-laptop.webp", "/ccp-phone.webp"],
     },
     {
       title: "BodyCore",
       year: "2024",
       description:
         "Dynamic fitness and personal training website with booking systems, trainer profiles, and motivational design elements to inspire fitness journeys.",
-      image: "/bodycore.png",
+      image: "/bodycore.webp",
       category: "PT Training",
-      screenshots: ["/bc-laptop.png", "/bc-phone.png"],
+      screenshots: ["/bc-laptop.webp", "/bc-phone.webp"],
     },
     {
       title: "John Gwynne",
       year: "2025",
       description:
         "Award-winning fantasy author's website showcasing bestselling novels, character guides, and immersive world-building content for devoted readers.",
-      image: "/JohnGwynne.png",
+      image: "/JohnGwynne.webp",
       category: "Author",
-      screenshots: ["/jg-laptop.png", "/jg-phone.png"],
+      screenshots: ["/jg-laptop.webp", "/jg-phone.webp"],
     },
   ];
 
@@ -114,12 +115,16 @@ export default function Projects() {
                 <div className={styles.projectScreenshots}>
                   {project.screenshots.map((screenshot, screenshotIndex) => (
                     <div key={screenshotIndex} className={styles.screenshot}>
-                      <img
+                      <Image
                         src={screenshot}
                         alt={`${project.title} screenshot ${
                           screenshotIndex + 1
                         }`}
-                        className={styles.screenshotImage}
+                        width={800}
+                        height={500}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                        style={{ width: "100%", height: "auto" }}
+                        loading="lazy"
                       />
                     </div>
                   ))}

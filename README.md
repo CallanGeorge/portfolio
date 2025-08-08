@@ -5,12 +5,14 @@ A modern, responsive portfolio website for Callan George, a freelance web develo
 ## 🌟 Features
 
 ### Pages
+
 - **Home** - Hero section with services, testimonials, and project showcases
 - **About** - Personal story and background information
 - **Work** - Portfolio showcase with large website screenshots
 - **Contact** - Call-to-action sections throughout the site
 
 ### Key Components
+
 - **Responsive Navigation** - Glassmorphism navbar with mobile menu
 - **Hero Section** - Large impact text with smooth animations
 - **Services** - Web development services overview
@@ -24,6 +26,7 @@ A modern, responsive portfolio website for Callan George, a freelance web develo
 ## 🎨 Design System
 
 ### Colors
+
 - **Primary Background**: `#ebe2da` (Light cream)
 - **Secondary Background**: `#f5edf0` (Light pink)
 - **Dark Background**: `#242424` (Dark gray)
@@ -31,11 +34,13 @@ A modern, responsive portfolio website for Callan George, a freelance web develo
 - **Accent**: `#779179` (Sage green)
 
 ### Typography
+
 - **Headings**: Thunder (custom font)
 - **Body Text**: Space Mono (monospace)
 - **UI Elements**: Inter (sans-serif)
 
 ### UI Elements
+
 - **Cards**: White backgrounds with black borders and box shadows
 - **Buttons**: Consistent styling with hover effects
 - **Animations**: Smooth fade-in and slide transitions
@@ -51,18 +56,21 @@ A modern, responsive portfolio website for Callan George, a freelance web develo
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - npm, yarn, pnpm, or bun
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone [repository-url]
 cd portfolio
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -72,6 +80,7 @@ pnpm install
 ```
 
 3. Run the development server:
+
 ```bash
 npm run dev
 # or
@@ -112,18 +121,21 @@ portfolio/
 ## 🎯 Key Features
 
 ### Responsive Design
+
 - Mobile-first approach
 - Responsive typography and spacing
 - Adaptive layouts for all screen sizes
 - Touch-friendly mobile navigation
 
 ### Performance
+
 - Optimized images and assets
 - Efficient component structure
 - Fast loading times
 - SEO-friendly structure
 
 ### User Experience
+
 - Smooth animations and transitions
 - Intuitive navigation
 - Clear call-to-action placement
@@ -138,6 +150,7 @@ This project is optimized for deployment on Vercel:
 3. Deploy automatically with each push
 
 For other platforms, build the project:
+
 ```bash
 npm run build
 ```
@@ -145,23 +158,27 @@ npm run build
 ## 📝 Content Updates
 
 ### Adding Projects
+
 Update the projects array in `components/MyWorkSection.tsx`:
+
 ```typescript
 const projects = [
   {
     title: "Project Name",
-    image: "/project-screenshot.jpg",
+    image: "/project-screenshot.webp",
     url: "https://project-url.com",
     category: "Project Category",
-    year: "2025"
-  }
-]
+    year: "2025",
+  },
+];
 ```
 
 ### Updating Services
+
 Modify the services array in `components/Services.tsx` to reflect current offerings.
 
 ### Customizing Content
+
 - **About page**: Edit `components/AboutSection.tsx`
 - **Hero section**: Update `components/Hero.tsx`
 - **Contact info**: Modify footer and navbar links
@@ -169,6 +186,7 @@ Modify the services array in `components/Services.tsx` to reflect current offeri
 ## 📧 Contact
 
 **Callan George**
+
 - Website: [Coming Soon]
 - Location: Edinburgh, Scotland
 - Specialization: Web Development & Design for Small Businesses
@@ -179,4 +197,4 @@ This project is for Callan George's personal portfolio. All rights reserved.
 
 ---
 
-*Built with ❤️ in Edinburgh, Scotland*
+_Built with ❤️ in Edinburgh, Scotland_

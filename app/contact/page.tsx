@@ -34,10 +34,10 @@ export const metadata: Metadata = {
     siteName: "Callan George - Web Designer & Developer",
     images: [
       {
-        url: "https://callangeorge.com/Callan.JPG",
+        url: "/default-thumbnail.webp",
         width: 1200,
         height: 630,
-        alt: "Contact Callan George - Professional Web Designer & Developer",
+        alt: "Default social thumbnail",
       },
     ],
     locale: "en_GB",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Contact Callan George | Professional Web Designer & Developer",
     description:
       "Ready to grow your business with a professional website? Contact Callan George for web design and development services in Fife and Edinburgh.",
-    images: ["https://callangeorge.com/Callan.JPG"],
+    images: ["/default-thumbnail.webp"],
   },
   alternates: {
     canonical: "https://callangeorge.com/contact",

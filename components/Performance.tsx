@@ -75,7 +75,7 @@ export default function Performance() {
 
             <div className={styles.screenshotContainer}>
               <img
-                src="/Light-house-score.png"
+                src="/Light-house-score.webp"
                 alt="Google PageSpeed Insights showing 100/100 Performance Score"
                 className={styles.lighthouseImage}
               />

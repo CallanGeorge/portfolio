@@ -9,8 +9,8 @@ Disallow: /api/
 Allow: /public/
 Allow: *.css
 Allow: *.js
-Allow: *.png
-Allow: *.jpg
+Allow: *.webp
+Allow: *.webp
 Allow: *.jpeg
 Allow: *.gif
 Allow: *.svg

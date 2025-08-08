@@ -30,10 +30,10 @@ export const metadata: Metadata = {
     siteName: "Callan George - Web Designer & Developer",
     images: [
       {
-        url: "https://callangeorge.com/jg-laptop.png",
+        url: "/default-thumbnail.webp",
         width: 1200,
         height: 630,
-        alt: "John Gwynne fantasy author website design",
+        alt: "Default social thumbnail",
       },
     ],
     locale: "en_GB",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "John Gwynne Fantasy Author Website Design | Callan George",
     description:
       "An immersive website design for fantasy author John Gwynne, featuring series showcases, character guides, and fan engagement tools.",
-    images: ["https://callangeorge.com/jg-laptop.png"],
+    images: ["/default-thumbnail.webp"],
   },
   alternates: {
     canonical: "https://callangeorge.com/projects/john-gwynne",
@@ -62,7 +62,7 @@ export default function JohnGwynnePage() {
     },
     {
       type: "image" as const,
-      images: ["/jg-laptop.png"],
+      images: ["/jg-laptop.webp"],
       imageAlt: "John Gwynne fantasy author website on a laptop",
     },
     {
@@ -80,7 +80,7 @@ export default function JohnGwynnePage() {
     },
     {
       type: "image" as const,
-      images: ["/jg-phone.png"],
+      images: ["/jg-phone.webp"],
       imageAlt: "John Gwynne website mobile preview",
     },
     {

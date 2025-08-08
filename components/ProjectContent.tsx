@@ -1,5 +1,4 @@
-"use client";
-
+import Image from "next/image";
 import styles from "./ProjectContent.module.css";
 
 interface TextBlock {
@@ -48,10 +47,14 @@ export default function ProjectContent({
                 <div key={index} className={styles.imageSection}>
                   {item.images.map((image, imgIndex) => (
                     <div key={imgIndex} className={styles.imageContainer}>
-                      <img
+                      <Image
                         src={image}
                         alt={`${item.imageAlt} ${imgIndex + 1}`}
-                        className={styles.projectImage}
+                        width={1200}
+                        height={800}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+                        style={{ width: "100%", height: "auto" }}
+                        loading="lazy"
                       />
                     </div>
                   ))}

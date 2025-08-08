@@ -19,28 +19,28 @@ export default function MyWorkSection() {
   const projects = [
     {
       title: "Debrunner Design",
-      image: "/debrunner-design.png",
+      image: "/debrunner-design.webp",
       slug: "debrunner-design",
       category: "Design Agency",
       year: "2025",
     },
     {
       title: "Chloe Penaranda",
-      image: "/ChloePenaranda.png",
+      image: "/ChloePenaranda.webp",
       slug: "chloe-penaranda",
       category: "Author",
       year: "2025",
     },
     {
       title: "BodyCore",
-      image: "/bodycore.png",
+      image: "/bodycore.webp",
       slug: "bodycore",
       category: "PT Training",
       year: "2024",
     },
     {
       title: "John Gwynne",
-      image: "/JohnGwynne.png",
+      image: "/JohnGwynne.webp",
       slug: "john-gwynne",
       category: "Author",
       year: "2025",
@@ -87,15 +87,14 @@ export default function MyWorkSection() {
                   src={project.image}
                   alt={`${project.title} website screenshot`}
                   className={styles.projectImage}
-                  fill
-                  style={{ objectFit: "cover" }}
+                  width={1200}
+                  height={800}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  priority={index < 2} // Prioritize first 2 images
+                  style={{ width: "100%", height: "auto" }}
+                  loading="lazy"
                   quality={85}
                   onLoadStart={() => handleImageLoadStart(project.slug)}
                   onLoad={() => handleImageLoad(project.slug)}
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                 />
 
                 {/* Project Title Overlay */}

@@ -41,7 +41,7 @@ export default function AboutSection({ showCTA = true }: AboutSectionProps) {
           >
             <div className={styles.imageWrapper}>
               <img
-                src="/Callan.JPG"
+                src="/Callan.webp"
                 alt="Callan George - Web Developer"
                 className={styles.aboutImage}
               />
