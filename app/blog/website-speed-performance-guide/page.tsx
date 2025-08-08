@@ -6,31 +6,39 @@ import Footer from "@/components/Footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Why Your Website Speed Matters More Than You Think | Callan George",
+  title:
+    "Website Speed for Scottish Businesses: Why Performance Matters (and How to Fix It) | Callan George",
   description:
-    "Learn how website performance directly impacts your conversions, search rankings, and user experience. Practical tips to speed up your website and boost your business.",
+    "Your website’s speed directly affects enquiries, sales and Google rankings. A practical performance guide for Scottish SMEs across Edinburgh, Glasgow, Fife, Aberdeen, Dundee & Inverness.",
   keywords: [
-    "website speed",
-    "web performance",
-    "page load time",
-    "Core Web Vitals",
-    "website optimization",
-    "user experience",
-    "conversion rate",
+    "website speed Scotland",
+    "web performance Scotland",
+    "Core Web Vitals Scotland",
+    "website optimisation Scotland",
+    "Edinburgh web performance",
+    "Glasgow website speed",
+    "Fife web designer",
+    "Aberdeen website optimisation",
+    "Dundee Core Web Vitals",
+    "Inverness web design",
+    "LCP INP CLS",
     "Google PageSpeed",
+    "fast websites Scotland",
   ],
   openGraph: {
-    title: "Why Your Website Speed Matters More Than You Think | Callan George",
+    title:
+      "Website Speed for Scottish Businesses: Why Performance Matters (and How to Fix It) | Callan George",
     description:
-      "Discover how website performance directly impacts your business success and learn practical ways to improve it.",
-    url: "https://callangeorge.com/blog/website-speed-performance-guide",
-    siteName: "Callan George - Web Designer & Developer",
+      "Learn how site speed impacts conversions and rankings, and follow a clear plan to improve Core Web Vitals for your Scottish business website.",
+    url: "https://callangeorge.com/blog/website-speed-performance-guide-scotland",
+    siteName: "Callan George - Web Designer & SEO Specialist",
     locale: "en_GB",
     type: "article",
-    publishedTime: "2024-03-08T00:00:00.000Z",
+    publishedTime: "2025-03-08T00:00:00.000Z",
   },
   alternates: {
-    canonical: "https://callangeorge.com/blog/website-speed-performance-guide",
+    canonical:
+      "https://callangeorge.com/blog/website-speed-performance-guide-scotland",
   },
 };
 
@@ -38,66 +46,109 @@ export default function WebsiteSpeedBlogPost() {
   const contentItems = [
     {
       type: "text" as const,
+      heading: "Why Website Speed Matters for Scottish Businesses",
       paragraphs: [
-        "Your website's loading speed isn't just a technical metric—it's a business-critical factor that directly impacts your bottom line. In today's fast-paced digital world, users expect websites to load in under 3 seconds, and they'll abandon your site if it doesn't meet their expectations.",
+        "Website speed isn’t just a technical detail — it’s a revenue driver. Whether you serve customers in Edinburgh, Glasgow, Fife, Aberdeen, Dundee or Inverness, a faster site means more enquiries, better Google visibility and a smoother experience on real Scottish mobile networks.",
+        "Most visitors expect pages to load in a couple of seconds. If your site drags, people bounce, rankings drop and ads get more expensive. The flip side: optimise performance, and everything else gets easier.",
       ],
     },
     {
       type: "text" as const,
       heading: "The Real Cost of a Slow Website",
       paragraphs: [
-        "Amazon found that every 100ms of latency cost them 1% in sales. For a small business, this translates to real money lost every day. But it's not just about immediate sales—slow websites create a ripple effect that damages your brand and long-term growth.",
+        "Slow pages create a ripple effect: fewer form submissions and calls, weaker SEO signals and higher abandonment on mobile. It also hurts trust — a sluggish site feels outdated and unreliable.",
+        "For local service businesses (salons, cafés, trades, gyms, clinics), every extra second can be the difference between a booked slot and a lost customer.",
       ],
       list: [
-        "40% of users abandon a site that takes more than 3 seconds to load",
-        "A 1-second delay reduces customer satisfaction by 16%",
-        "53% of mobile users leave sites that take longer than 3 seconds",
-        "Page speed is a direct Google ranking factor",
+        "Higher bounce rates and lower conversion rates, especially on mobile.",
+        "Reduced visibility in Google as user signals and Core Web Vitals suffer.",
+        "Wasted ad spend as landing pages fail to convert.",
       ],
     },
     {
       type: "text" as const,
       heading: "How Speed Affects Your Search Rankings",
       paragraphs: [
-        "Google has made it clear: page speed is a ranking factor. With their Core Web Vitals update, they're measuring real user experience data. Sites that provide fast, smooth experiences rank higher and get more organic traffic.",
-        "It's a virtuous cycle—faster sites rank better, get more traffic, and convert more visitors into customers.",
+        "Google uses real-world user experience signals to inform rankings. If your site loads quickly and responds fast to input, you’re more likely to outrank slower competitors targeting the same Scottish audiences.",
+        "Performance improvements often create a virtuous cycle: better speed → improved rankings → more traffic → more leads.",
+      ],
+    },
+    {
+      type: "text" as const,
+      heading: "Core Web Vitals: What to Measure in 2025+",
+      paragraphs: [
+        "Focus on the three Core Web Vitals that reflect real user experience:",
+      ],
+      list: [
+        "Largest Contentful Paint (LCP): How quickly your main content appears (aim ≤ 2.5s).",
+        "Interaction to Next Paint (INP): Overall interaction responsiveness (aim ≤ 200ms).",
+        "Cumulative Layout Shift (CLS): Visual stability as the page loads (aim ≤ 0.1).",
       ],
     },
     {
       type: "text" as const,
       heading: "Quick Wins to Speed Up Your Website",
       paragraphs: [
-        "You don't need to be a developer to improve your website's speed. Here are the most impactful changes you can make:",
+        "You don’t need to rebuild your entire site to see gains. Start with high-impact fixes that move the needle fast:",
       ],
       list: [
-        "Optimize images: Compress them and use modern formats like WebP",
-        "Choose fast hosting: Shared hosting is often a bottleneck",
-        "Enable browser caching: Let returning visitors load your site faster",
-        "Minimize plugins: Each plugin adds weight to your site",
-        "Use a Content Delivery Network (CDN) to serve files globally",
+        "Optimise images: Serve properly sized images in WebP/AVIF and lazy-load below the fold.",
+        "Reduce JavaScript: Remove unused libraries, defer non-critical scripts and avoid heavy page builders.",
+        "Use caching & a CDN: Leverage HTTP caching and serve assets via a CDN for faster delivery UK-wide.",
+        "Choose fast hosting: Avoid slow shared hosting; use a performant host with edge caching.",
+        "Preload critical assets: Fonts, hero images and above-the-fold CSS.",
       ],
     },
     {
       type: "text" as const,
-      heading: "The Mobile Speed Imperative",
+      heading: "The Mobile Speed Imperative (Especially in Scotland)",
       paragraphs: [
-        "With mobile traffic accounting for over 50% of web usage, mobile speed is crucial. Mobile users are often on slower connections and have less patience for slow-loading sites.",
-        "Google now uses mobile-first indexing, meaning they primarily use the mobile version of your site for ranking. If your mobile site is slow, your entire SEO strategy suffers.",
+        "Most first visits happen on mobile and often on variable 4G coverage. Your pages should feel instant on real devices, not just desktop broadband.",
+        "Design mobile-first: prioritise readable content, lightweight components and fast interactions.",
+      ],
+      list: [
+        "Test on mid-range phones over 4G, not just your desktop Mac.",
+        "Avoid oversized hero videos and auto-playing media on mobile.",
+        "Make tap targets large and forms minimal to speed up completion.",
       ],
     },
     {
       type: "text" as const,
-      heading: "Measuring Your Website's Performance",
+      heading: "How to Measure and Monitor Performance",
       paragraphs: [
-        "You can't improve what you don't measure. Use tools like Google PageSpeed Insights, GTmetrix, or WebPageTest to get detailed performance reports.",
-        "Focus on Core Web Vitals: Largest Contentful Paint (LCP), First Input Delay (FID), and Cumulative Layout Shift (CLS). These metrics directly impact user experience and search rankings.",
+        "Measure before and after changes so you know what worked. Use both lab and field data:",
+      ],
+      list: [
+        "Google PageSpeed Insights & Lighthouse for lab tests and guidance.",
+        "Chrome User Experience (CrUX) data for real-world Core Web Vitals.",
+        "WebPageTest or GTmetrix to profile waterfalls and find bottlenecks.",
+        "Set up ongoing monitoring so regressions are caught early.",
       ],
     },
     {
       type: "text" as const,
+      heading: "A Simple 4-Step Plan for Scottish SMEs",
       paragraphs: [
-        "Website speed isn't a 'nice-to-have'—it's essential for business success. Every second of improvement can lead to higher conversions, better search rankings, and happier customers.",
-        "Need help optimizing your website's performance? I specialize in building fast, high-performing websites that convert visitors into customers. Let's discuss how we can speed up your site and grow your business.",
+        "Here’s a pragmatic approach that fits busy teams and delivers results:",
+      ],
+      list: [
+        "Audit: Run Lighthouse and note the biggest issues (images, scripts, fonts).",
+        "Fix Top 3: Ship the easiest, highest-impact wins first (often images + script bloat).",
+        "Verify: Re-test LCP/INP/CLS and check real-user data improves over time.",
+        "Repeat: Tackle the next bottlenecks and set a monthly check-in.",
+      ],
+    },
+    {
+      type: "text" as const,
+      heading: "Want a Faster Site That Ranks in Scotland?",
+      paragraphs: [
+        "I build fast, accessible, SEO-ready websites for Scottish businesses — designed to pass Core Web Vitals and convert from day one.",
+        "Whether you’re in Edinburgh, Glasgow, Fife, Aberdeen, Dundee or Inverness, I can audit your current site, fix the bottlenecks and put performance on autopilot.",
+      ],
+      list: [
+        "📍 Edinburgh-based, working across Scotland",
+        "🚀 Core Web Vitals first: LCP, INP, CLS",
+        "💬 Let’s talk about speeding up your site and lifting conversions",
       ],
     },
   ];
@@ -109,22 +160,25 @@ export default function WebsiteSpeedBlogPost() {
       <Header title="BLOG" />
 
       <BlogContent
-        title="Why Your Website Speed Matters More Than You Think"
-        publishedAt="2024-03-08"
+        title="Website Speed for Scottish Businesses: Why Performance Matters (and How to Fix It)"
+        publishedAt="2025-03-08"
         readTime="7 min read"
         category="Performance"
         tags={[
           "Performance",
-          "User Experience",
+          "Core Web Vitals",
           "SEO",
           "Conversion",
-          "Core Web Vitals",
+          "Web Design Scotland",
+          "LCP",
+          "INP",
+          "CLS",
         ]}
         author={{
           name: "Callan George",
-          bio: "Web Developer & Performance Specialist",
+          bio: "Scotland-based Web Designer & Performance Specialist",
         }}
-        excerpt="Learn how website performance directly impacts your conversions, search rankings, and user experience. Discover practical strategies to optimize your site speed and boost your business success."
+        excerpt="Your website’s speed affects enquiries, rankings and trust. Learn how Scottish businesses can improve Core Web Vitals (LCP, INP, CLS) and turn faster pages into more customers."
         contentItems={contentItems}
       />
 

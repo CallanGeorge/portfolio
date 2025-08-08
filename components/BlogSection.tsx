@@ -20,7 +20,7 @@ export default function BlogSection() {
       slug: "essential-seo-tips-small-business",
       category: "SEO",
       readTime: "5 min read",
-      publishedAt: "2024-03-15",
+      publishedAt: "2025-03-15",
       featured: true,
     },
     {
@@ -30,17 +30,17 @@ export default function BlogSection() {
       slug: "website-speed-performance-guide",
       category: "Performance",
       readTime: "7 min read",
-      publishedAt: "2024-03-08",
+      publishedAt: "2025-03-08",
       featured: false,
     },
     {
       title: "The Complete Guide to Modern Web Design Trends",
       excerpt:
-        "Explore the latest design trends that are shaping the web in 2024 and how to implement them effectively.",
-      slug: "modern-web-design-trends-2024",
+        "Explore the latest design trends that are shaping the web in 2025 and how to implement them effectively.",
+      slug: "modern-web-design-trends-2025",
       category: "Design",
       readTime: "6 min read",
-      publishedAt: "2024-03-01",
+      publishedAt: "2025-03-01",
       featured: false,
     },
   ];

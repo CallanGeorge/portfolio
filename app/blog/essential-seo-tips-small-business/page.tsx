@@ -6,32 +6,38 @@ import Footer from "@/components/Footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "5 Essential SEO Tips for Small Business Websites | Callan George",
+  title:
+    "5 Essential SEO Tips for Scottish Small Business Websites | Callan George",
   description:
-    "Discover the most effective SEO strategies that can help your small business rank higher in Google and attract more customers. Expert tips from an Edinburgh web developer.",
+    "Practical SEO advice for Scottish small businesses. Learn how to rank in Google across Edinburgh, Glasgow, Fife, Aberdeen, Dundee & Inverness — from a Scotland-based web designer.",
   keywords: [
-    "SEO tips",
-    "small business SEO",
-    "local SEO",
-    "Google ranking",
-    "search engine optimization",
-    "small business marketing",
-    "website optimization",
+    "SEO Scotland",
+    "Scottish small business SEO",
     "Edinburgh SEO",
+    "Glasgow SEO",
+    "Fife web design",
+    "Aberdeen SEO",
+    "Dundee web design",
+    "Inverness SEO",
+    "local SEO Scotland",
+    "Scottish web designer",
+    "small business websites Scotland",
+    "Google Business Profile Scotland",
   ],
   openGraph: {
-    title: "5 Essential SEO Tips for Small Business Websites | Callan George",
+    title:
+      "5 Essential SEO Tips for Scottish Small Business Websites | Callan George",
     description:
-      "Expert SEO strategies to help your small business rank higher in Google and attract more customers.",
-    url: "https://callangeorge.com/blog/essential-seo-tips-small-business",
-    siteName: "Callan George - Web Designer & Developer",
+      "Five proven, local-first SEO strategies to help Scottish small businesses rank higher in Google and win more customers.",
+    url: "https://callangeorge.com/blog/essential-seo-tips-small-business-scotland",
+    siteName: "Callan George - Web Designer & SEO Specialist",
     locale: "en_GB",
     type: "article",
-    publishedTime: "2024-03-15T00:00:00.000Z",
+    publishedTime: "2025-03-15T00:00:00.000Z",
   },
   alternates: {
     canonical:
-      "https://callangeorge.com/blog/essential-seo-tips-small-business",
+      "https://callangeorge.com/blog/essential-seo-tips-small-business-scotland",
   },
 };
 
@@ -39,55 +45,85 @@ export default function SEOTipsBlogPost() {
   const contentItems = [
     {
       type: "text" as const,
-      heading: "1. Focus on Local SEO",
+      heading: "5 Essential SEO Tips for Scottish Small Business Websites",
       paragraphs: [
-        "As a small business, your biggest advantage is your local presence. Google My Business is your secret weapon here. Make sure your listing is complete, accurate, and regularly updated.",
-        "Include your exact business address, phone number, and opening hours. Encourage satisfied customers to leave reviews, and always respond to them professionally. This builds trust and shows Google that you're an active, legitimate business.",
+        "If you run a business in Scotland — whether you’re based in Edinburgh, Glasgow, Aberdeen, Dundee, Inverness, or across Fife — your customers are searching for you on Google every day. If they can’t find you, they’ll find a competitor.",
+        "As a Scotland-based web designer and SEO specialist, I help small businesses get found online. Below are five practical, Scotland-focused SEO tactics you can start using today to boost visibility and enquiries.",
+      ],
+    },
+    {
+      type: "text" as const,
+      heading: "1) Focus on Local SEO for Scotland",
+      paragraphs: [
+        "Your local presence is your superpower. Local search results often appear above national listings, which means you can outrank bigger brands in your area.",
+        "Complete and maintain your Google Business Profile, keep your details consistent, and earn reviews from real local customers.",
       ],
       list: [
-        "Claim and optimize your Google My Business listing",
-        "Encourage customer reviews and respond to them",
-        "Use local keywords in your content",
-        "Include your location in page titles and meta descriptions",
+        "Claim & optimise your Google Business Profile (address, phone, opening hours, photos).",
+        "Ask happy customers for reviews — and reply to every review.",
+        "Use location terms in titles & meta descriptions (e.g. “Edinburgh coffee shop”, “Glasgow personal trainer”).",
+        "Keep NAP (Name, Address, Phone) consistent across your website and listings.",
       ],
     },
     {
       type: "text" as const,
-      heading: "2. Target Long-Tail Keywords",
+      heading: "2) Target Long-Tail, Location-Specific Keywords",
       paragraphs: [
-        "Instead of competing for generic terms like 'web design', focus on specific phrases your customers actually search for like 'affordable web design for restaurants in Edinburgh'.",
-        "These longer, more specific keywords have less competition and higher conversion rates because they capture people who know exactly what they want.",
+        "Broad terms like “web design” or “SEO services” are competitive and vague. Long-tail phrases match how real customers search — and they convert better.",
+      ],
+      list: [
+        "Examples: “affordable SEO for small businesses in Edinburgh”, “best web designer for cafes in Glasgow”, “accountant for contractors in Fife”.",
+        "Create one focused page or article per intent; avoid cramming multiple topics into a single page.",
       ],
     },
     {
       type: "text" as const,
-      heading: "3. Create Valuable, Problem-Solving Content",
+      heading: "3) Publish Helpful, Problem-Solving Content",
       paragraphs: [
-        "Google rewards websites that genuinely help users. Instead of just talking about your services, create content that solves your customers' problems.",
-        "If you're a plumber, write about 'How to fix a leaky tap' or '5 signs you need emergency plumbing'. This positions you as an expert and captures people at different stages of the buying journey.",
+        "Google rewards sites that genuinely help users. Answer the questions your customers ask before they contact you.",
+        "Use Scottish, real-world examples to build trust and relevance.",
+      ],
+      list: [
+        "Plumber in Dundee? “How to stop a dripping tap (and when to call a pro)”.",
+        "Café in Aberdeen? “How to brew great coffee at home — our barista tips”.",
+        "PT in Inverness? “10 beginner workouts for busy professionals”.",
       ],
     },
     {
       type: "text" as const,
-      heading: "4. Optimize Your Website Speed",
+      heading: "4) Improve Website Speed (It Helps SEO & Conversions)",
       paragraphs: [
-        "Page speed is a major ranking factor, especially on mobile. A slow website doesn't just hurt your SEO – it kills conversions too.",
-        "Compress your images, choose a reliable hosting provider, and avoid unnecessary plugins. Even a one-second improvement in load time can significantly boost your rankings and user experience.",
+        "A fast website keeps people on the page and signals quality to Google. Even a 1-second improvement can lift conversion rates.",
+      ],
+      list: [
+        "Compress and properly size images (WebP/AVIF where possible).",
+        "Use a reliable host/CDN and avoid heavy, unnecessary plugins/scripts.",
+        "Audit with Lighthouse/PageSpeed Insights and fix the biggest bottlenecks first.",
       ],
     },
     {
       type: "text" as const,
-      heading: "5. Build Quality Local Backlinks",
+      heading: "5) Earn Quality Local Backlinks",
       paragraphs: [
-        "A few high-quality local backlinks are worth more than hundreds of spammy ones. Partner with other local businesses, sponsor community events, or contribute to local publications.",
-        "The key is relevance and authenticity. A link from your local chamber of commerce or industry association carries much more weight than a random directory listing.",
+        "Relevant Scottish links beat dozens of low-quality directory links. Aim for authenticity and locality.",
+      ],
+      list: [
+        "Partner with nearby businesses for cross-promotions and case studies.",
+        "Sponsor local teams or events; request a link from organisers’ sites.",
+        "Contribute articles to Scottish industry blogs or community sites.",
+        "Join your local Chamber of Commerce or trade associations and get listed.",
       ],
     },
     {
       type: "text" as const,
+      heading: "Need a Website That Ranks in Scotland?",
       paragraphs: [
-        "SEO doesn't have to be complicated. Start with these five fundamentals, be consistent, and measure your results. Remember, SEO is a marathon, not a sprint – but the businesses that stick with it see real, lasting growth.",
-        "Need help implementing these strategies for your business? I specialize in SEO-optimized websites that help small businesses get found online. Let's discuss how we can improve your search visibility.",
+        "SEO isn’t a one-off task — it’s consistent, customer-focused work. If you want a professional, SEO-optimised website designed to rank in Scottish searches and turn visitors into enquiries, I can help.",
+        "I build fast, mobile-friendly sites with on-page SEO best practices from day one, tailored to your local market.",
+      ],
+      list: [
+        "📍 Based in Edinburgh — working with businesses across Scotland.",
+        "💬 Ready to grow? Get in touch and let’s plan your next steps.",
       ],
     },
   ];
@@ -99,16 +135,22 @@ export default function SEOTipsBlogPost() {
       <Header title="BLOG" />
 
       <BlogContent
-        title="5 Essential SEO Tips for Small Business Websites"
-        publishedAt="2024-03-15"
+        title="5 Essential SEO Tips for Scottish Small Business Websites"
+        publishedAt="2025-03-15"
         readTime="5 min read"
         category="SEO"
-        tags={["SEO", "Small Business", "Local SEO", "Google", "Marketing"]}
+        tags={[
+          "SEO Scotland",
+          "Local SEO",
+          "Scottish Small Business",
+          "Edinburgh SEO",
+          "Glasgow Web Design",
+        ]}
         author={{
           name: "Callan George",
-          bio: "Web Developer & SEO Specialist",
+          bio: "Scotland-based Web Designer & SEO Specialist",
         }}
-        excerpt="Discover the most effective SEO strategies that can help your small business rank higher in Google and attract more customers. These proven techniques focus on practical, implementable tactics that deliver real results."
+        excerpt="Five proven, local-first SEO tactics for Scottish small businesses. Learn how to rank in Google across Edinburgh, Glasgow, Fife, Aberdeen, Dundee & Inverness — and turn searches into enquiries."
         contentItems={contentItems}
       />
 
