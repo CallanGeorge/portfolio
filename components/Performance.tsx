@@ -92,7 +92,7 @@ export default function Performance() {
                 Google PageSpeed Insights
               </a>{" "}
               and see how your current site performs. Most small business sites
-              fail this test — but mine consistently score 100/100.
+              fail this test.
             </p>
           </div>
         </div>
