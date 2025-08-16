@@ -17,11 +17,8 @@ interface ImageBlock {
 type ContentItem = TextBlock | ImageBlock;
 
 interface ProjectContentProps {
-  // Brief section
   briefTitle: string;
   briefDescription: string;
-
-  // Flexible content items (text blocks and image blocks)
   contentItems: ContentItem[];
 }
 
