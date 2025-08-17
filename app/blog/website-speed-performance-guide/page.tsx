@@ -146,9 +146,9 @@ export default function WebsiteSpeedBlogPost() {
         "Whether you’re in Edinburgh, Glasgow, Fife, Aberdeen, Dundee or Inverness, I can audit your current site, fix the bottlenecks and put performance on autopilot.",
       ],
       list: [
-        "📍 Edinburgh-based, working across Scotland",
-        "🚀 Core Web Vitals first: LCP, INP, CLS",
-        "💬 Let’s talk about speeding up your site and lifting conversions",
+        "Edinburgh-based, working across Scotland",
+        "Core Web Vitals first: LCP, INP, CLS",
+        "Let’s talk about speeding up your site and lifting conversions",
       ],
     },
   ];

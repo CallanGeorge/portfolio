@@ -167,9 +167,9 @@ export default function WebDesignTrendsBlogPost() {
         "Whether you’re in Edinburgh, Glasgow, Fife, Aberdeen, Dundee or Inverness, I’ll help you apply the right 2025 trends without sacrificing speed or usability.",
       ],
       list: [
-        "📍 Edinburgh-based, working across Scotland",
-        "🚀 Performance-first builds with on-page SEO baked in",
-        "💬 Let’s plan your redesign and growth",
+        "Edinburgh-based, working across Scotland",
+        "Performance-first builds with on-page SEO baked in",
+        "Let’s plan your redesign and growth",
       ],
     },
   ];

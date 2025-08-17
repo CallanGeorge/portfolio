@@ -122,8 +122,8 @@ export default function SEOTipsBlogPost() {
         "I build fast, mobile-friendly sites with on-page SEO best practices from day one, tailored to your local market.",
       ],
       list: [
-        "📍 Based in Edinburgh — working with businesses across Scotland.",
-        "💬 Ready to grow? Get in touch and let’s plan your next steps.",
+        "Based in Edinburgh — working with businesses across Scotland.",
+        "Ready to grow? Get in touch and let’s plan your next steps.",
       ],
     },
   ];
