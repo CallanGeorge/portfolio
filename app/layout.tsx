@@ -155,24 +155,9 @@ export default function RootLayout({
 
         {/* Favicon and icons */}
         <link rel="icon" href="/cg.svg" type="image/svg+xml" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
+        <link rel="apple-touch-icon" sizes="180x180" href="/cg.svg" />
+        <link rel="icon" sizes="32x32" href="/cg.svg" type="image/svg+xml" />
+        <link rel="icon" sizes="16x16" href="/cg.svg" type="image/svg+xml" />
         <link rel="manifest" href="/site.webmanifest" />
 
         {/* Additional meta tags */}
