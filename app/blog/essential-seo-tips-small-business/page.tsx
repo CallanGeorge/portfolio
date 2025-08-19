@@ -6,10 +6,9 @@ import Footer from "@/components/Footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "5 Essential SEO Tips for Scottish Small Business Websites | Callan George",
+  title: "5 SEO Tips for Scottish Small Businesses — Rank Locally in 2025",
   description:
-    "Practical SEO advice for Scottish small businesses. Learn how to rank in Google across Edinburgh, Glasgow, Fife, Aberdeen, Dundee & Inverness — from a Scotland-based web designer.",
+    "Five proven, local‑first SEO tactics for Scottish small businesses. Rank higher across Edinburgh, Glasgow, Fife, Aberdeen, Dundee & Inverness — and turn searches into enquiries.",
   keywords: [
     "SEO Scotland",
     "Scottish small business SEO",
@@ -25,19 +24,18 @@ export const metadata: Metadata = {
     "Google Business Profile Scotland",
   ],
   openGraph: {
-    title:
-      "5 Essential SEO Tips for Scottish Small Business Websites | Callan George",
+    title: "5 SEO Tips for Scottish Small Businesses — Rank Locally in 2025",
     description:
-      "Five proven, local-first SEO strategies to help Scottish small businesses rank higher in Google and win more customers.",
-    url: "https://callangeorge.com/blog/essential-seo-tips-small-business-scotland",
-    siteName: "Callan George - Web Designer & SEO Specialist",
+      "Five proven, local‑first SEO strategies to help Scottish small businesses rank higher in Google and win more customers.",
+    url: "https://callangeorge.com/blog/essential-seo-tips-small-business",
+    siteName: "Freelance Web Designer & SEO — Fife & Edinburgh",
     locale: "en_GB",
     type: "article",
     publishedTime: "2025-03-15T00:00:00.000Z",
   },
   alternates: {
     canonical:
-      "https://callangeorge.com/blog/essential-seo-tips-small-business-scotland",
+      "https://callangeorge.com/blog/essential-seo-tips-small-business",
   },
 };
 

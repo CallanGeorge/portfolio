@@ -7,7 +7,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Website Speed for Scottish Businesses: Why Performance Matters (and How to Fix It) | Callan George",
+    "Website Speed for Scottish Businesses — Why It Matters (and How to Fix It)",
   description:
     "Your website’s speed directly affects enquiries, sales and Google rankings. A practical performance guide for Scottish SMEs across Edinburgh, Glasgow, Fife, Aberdeen, Dundee & Inverness.",
   keywords: [
@@ -27,18 +27,17 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      "Website Speed for Scottish Businesses: Why Performance Matters (and How to Fix It) | Callan George",
+      "Website Speed for Scottish Businesses — Why It Matters (and How to Fix It)",
     description:
       "Learn how site speed impacts conversions and rankings, and follow a clear plan to improve Core Web Vitals for your Scottish business website.",
-    url: "https://callangeorge.com/blog/website-speed-performance-guide-scotland",
-    siteName: "Callan George - Web Designer & SEO Specialist",
+    url: "https://callangeorge.com/blog/website-speed-performance-guide",
+    siteName: "Freelance Web Designer & SEO — Fife & Edinburgh",
     locale: "en_GB",
     type: "article",
     publishedTime: "2025-03-08T00:00:00.000Z",
   },
   alternates: {
-    canonical:
-      "https://callangeorge.com/blog/website-speed-performance-guide-scotland",
+    canonical: "https://callangeorge.com/blog/website-speed-performance-guide",
   },
 };
 
@@ -129,26 +128,20 @@ export default function WebsiteSpeedBlogPost() {
       type: "text" as const,
       heading: "A Simple 4-Step Plan for Scottish SMEs",
       paragraphs: [
-        "Here’s a pragmatic approach that fits busy teams and delivers results:",
+        "Apply this sequence to improve speed without breaking your site:",
       ],
       list: [
-        "Audit: Run Lighthouse and note the biggest issues (images, scripts, fonts).",
-        "Fix Top 3: Ship the easiest, highest-impact wins first (often images + script bloat).",
-        "Verify: Re-test LCP/INP/CLS and check real-user data improves over time.",
-        "Repeat: Tackle the next bottlenecks and set a monthly check-in.",
+        "Audit current performance and prioritise the biggest wins.",
+        "Optimise images, fonts and third-party scripts first.",
+        "Measure Core Web Vitals after each change and iterate.",
+        "Bake performance into your ongoing workflow (CI checks, regular audits).",
       ],
     },
     {
       type: "text" as const,
-      heading: "Want a Faster Site That Ranks in Scotland?",
+      heading: "Ready to Make Your Site Faster?",
       paragraphs: [
-        "I build fast, accessible, SEO-ready websites for Scottish businesses — designed to pass Core Web Vitals and convert from day one.",
-        "Whether you’re in Edinburgh, Glasgow, Fife, Aberdeen, Dundee or Inverness, I can audit your current site, fix the bottlenecks and put performance on autopilot.",
-      ],
-      list: [
-        "Edinburgh-based, working across Scotland",
-        "Core Web Vitals first: LCP, INP, CLS",
-        "Let’s talk about speeding up your site and lifting conversions",
+        "I build fast, SEO-friendly websites for Scottish small businesses. If your site is slow or underperforming, I can help you fix it and turn speed into a competitive advantage.",
       ],
     },
   ];
@@ -156,32 +149,20 @@ export default function WebsiteSpeedBlogPost() {
   return (
     <div>
       <Navbar />
-
       <Header title="BLOG" />
-
       <BlogContent
-        title="Website Speed for Scottish Businesses: Why Performance Matters (and How to Fix It)"
+        title="Why Website Speed Matters for Scottish Businesses"
         publishedAt="2025-03-08"
         readTime="7 min read"
         category="Performance"
-        tags={[
-          "Performance",
-          "Core Web Vitals",
-          "SEO",
-          "Conversion",
-          "Web Design Scotland",
-          "LCP",
-          "INP",
-          "CLS",
-        ]}
+        tags={["performance", "Core Web Vitals", "site speed", "Scotland"]}
         author={{
           name: "Callan George",
-          bio: "Scotland-based Web Designer & Performance Specialist",
+          bio: "Scotland-based Web Designer & SEO Specialist",
         }}
-        excerpt="Your website’s speed affects enquiries, rankings and trust. Learn how Scottish businesses can improve Core Web Vitals (LCP, INP, CLS) and turn faster pages into more customers."
+        excerpt="Your website’s speed directly affects enquiries, sales and rankings. A practical performance guide for Scottish SMEs — with steps you can implement today."
         contentItems={contentItems}
       />
-
       <FinalCTA />
       <Footer />
     </div>

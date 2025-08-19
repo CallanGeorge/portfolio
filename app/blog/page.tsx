@@ -7,25 +7,26 @@ import styles from "../page.module.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog | Web Development Insights & Tips | Callan George",
+  title:
+    "Web Design & SEO Blog — Practical Guides for Scottish Small Businesses",
   description:
-    "Read my latest thoughts on web development, SEO, design trends, and business growth strategies. Expert insights from an Edinburgh-based freelance web developer.",
+    "Actionable tips on web design, site speed and local SEO for Scottish SMEs across Fife & Edinburgh.",
   keywords: [
-    "web development blog",
-    "SEO tips",
-    "web design insights",
-    "freelance developer blog",
-    "Edinburgh web developer",
-    "business website tips",
+    "web design blog",
+    "SEO tips Scotland",
     "web performance",
-    "digital marketing",
+    "freelance web designer",
+    "Edinburgh SEO",
+    "Fife web design",
+    "digital marketing Scotland",
   ],
   openGraph: {
-    title: "Blog | Web Development Insights & Tips | Callan George",
+    title:
+      "Web Design & SEO Blog — Practical Guides for Scottish Small Businesses",
     description:
-      "Expert insights on web development, SEO, and business growth from an Edinburgh-based freelance developer.",
+      "Actionable insights on web design, SEO and performance for Scottish SMEs.",
     url: "https://callangeorge.com/blog",
-    siteName: "Callan George - Web Designer & Developer",
+    siteName: "Freelance Web Designer & SEO — Fife & Edinburgh",
     locale: "en_GB",
     type: "website",
   },

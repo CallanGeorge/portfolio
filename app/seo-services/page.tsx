@@ -6,9 +6,10 @@ import FinalCTA from "../../components/FinalCTA";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "SEO Services Fife & Edinburgh | Small Business SEO Expert Scotland",
+  title:
+    "Local SEO Consultant Fife & Edinburgh — Rank Higher & Win More Enquiries",
   description:
-    "Professional SEO services for small businesses in Fife & Edinburgh. Local SEO, technical optimization, content strategy & backlink building. Rank higher on Google & get more leads.",
+    "Local SEO for small businesses across Fife & Edinburgh: Maps, on‑page, technical SEO and content that brings in leads. Fixed‑fee, no fluff.",
   keywords: [
     "SEO services Fife",
     "SEO Edinburgh",
@@ -16,30 +17,29 @@ export const metadata: Metadata = {
     "small business SEO",
     "SEO consultant Fife",
     "Google ranking Edinburgh",
-    "local business SEO",
+    "Google Maps SEO",
     "technical SEO",
     "content strategy",
     "backlink building",
-    "Google Maps optimization",
-    "near me searches",
     "SEO Kirkcaldy",
     "SEO Dunfermline",
     "SEO Leven",
   ],
   authors: [{ name: "Callan George" }],
   openGraph: {
-    title: "SEO Services Fife & Edinburgh | Small Business SEO Expert Scotland",
+    title:
+      "Local SEO Consultant Fife & Edinburgh — Rank Higher & Win More Enquiries",
     description:
-      "Professional SEO services for small businesses in Fife & Edinburgh. Local SEO, technical optimization, content strategy & backlink building. Rank higher on Google & get more leads.",
+      "Local SEO for small businesses across Fife & Edinburgh: Maps, on‑page, technical SEO and content that brings in leads.",
     type: "website",
     locale: "en_GB",
-    siteName: "Callan George - Web Design & SEO",
+    siteName: "Freelance Web Designer & SEO — Fife & Edinburgh",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO Services Fife & Edinburgh | Small Business SEO Expert Scotland",
+    title: "Local SEO Consultant Fife & Edinburgh",
     description:
-      "Professional SEO services for small businesses in Fife & Edinburgh. Local SEO, technical optimization, content strategy & backlink building.",
+      "Rank higher and win more enquiries with local SEO for small businesses.",
   },
   alternates: {
     canonical: "/seo-services",

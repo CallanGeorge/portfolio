@@ -7,9 +7,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Modern Web Design Trends 2025 for Scottish Businesses | Callan George",
+    "Web Design Trends 2025 for Scottish Small Businesses — What Actually Works",
   description:
-    "A practical guide to 2025 web design trends tailored for Scottish small businesses. See how to apply minimalism, bold type, micro-interactions, dark mode, accessibility, sustainability and AI—optimised for audiences in Edinburgh, Glasgow, Fife, Aberdeen, Dundee & Inverness.",
+    "A practical guide to 2025 web design trends that boost conversions and performance for Scottish SMEs across Edinburgh, Glasgow, Fife, Aberdeen, Dundee & Inverness.",
   keywords: [
     "web design Scotland",
     "web design trends 2025",
@@ -30,18 +30,17 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      "Modern Web Design Trends 2025 for Scottish Businesses | Callan George",
+      "Web Design Trends 2025 for Scottish Small Businesses — What Actually Works",
     description:
-      "Discover the 2025 web design trends that actually move the needle for Scottish SMEs—and how to implement them for speed, accessibility and conversions.",
-    url: "https://callangeorge.com/blog/modern-web-design-trends-2025-scotland",
-    siteName: "Callan George - Web Designer & SEO Specialist",
+      "2025 web design trends that actually move the needle for Scottish SMEs—applied for speed, accessibility and conversions.",
+    url: "https://callangeorge.com/blog/modern-web-design-trends-2025",
+    siteName: "Freelance Web Designer & SEO — Fife & Edinburgh",
     locale: "en_GB",
     type: "article",
     publishedTime: "2025-03-01T00:00:00.000Z",
   },
   alternates: {
-    canonical:
-      "https://callangeorge.com/blog/modern-web-design-trends-2025-scotland",
+    canonical: "https://callangeorge.com/blog/modern-web-design-trends-2025",
   },
 };
 
@@ -138,38 +137,12 @@ export default function WebDesignTrendsBlogPost() {
       type: "text" as const,
       heading: "How to Apply These Trends Without Hurting SEO",
       paragraphs: [
-        "Trends should support your goals: more calls, more bookings, more sales. Start small, measure, and expand.",
+        "It's easy to bloat a site with trends. The key is to implement with intent and measurement.",
       ],
       list: [
-        "Pick one or two improvements (e.g., typography + performance) and A/B test.",
-        "Map every page to a single intent (call, quote, booking, purchase).",
-        "Keep core web vitals in the green; design flourishes must not slow the site.",
-      ],
-    },
-    {
-      type: "text" as const,
-      heading: "What This Means for Scottish SMEs",
-      paragraphs: [
-        "If you operate locally—say a salon in Leith, a café in the West End of Glasgow, or a gym in Dundee—your site should load fast on 4G, make contact effortless, and look premium without heavy assets.",
-        "Executed well, these trends lift trust, rankings and conversions across Scotland.",
-      ],
-      list: [
-        "Clear calls to action: phone, WhatsApp, booking links.",
-        "Local signals: city names, service areas, opening hours.",
-        "Performance first: pass Lighthouse on mobile, not just desktop.",
-      ],
-    },
-    {
-      type: "text" as const,
-      heading: "Ready to Modernise Your Website for Scotland?",
-      paragraphs: [
-        "I design and build fast, accessible, SEO-ready websites for Scottish businesses—built to convert from day one.",
-        "Whether you’re in Edinburgh, Glasgow, Fife, Aberdeen, Dundee or Inverness, I’ll help you apply the right 2025 trends without sacrificing speed or usability.",
-      ],
-      list: [
-        "Edinburgh-based, working across Scotland",
-        "Performance-first builds with on-page SEO baked in",
-        "Let’s plan your redesign and growth",
+        "Design mobile-first and test performance early.",
+        "Use semantic HTML and accessible patterns by default.",
+        "Measure Core Web Vitals and make iterative changes.",
       ],
     },
   ];
@@ -177,31 +150,20 @@ export default function WebDesignTrendsBlogPost() {
   return (
     <div>
       <Navbar />
-
       <Header title="BLOG" />
-
       <BlogContent
-        title="Modern Web Design Trends 2025 for Scottish Businesses"
+        title="Web Design Trends 2025 for Scottish Small Businesses"
         publishedAt="2025-03-01"
         readTime="6 min read"
-        category="Design"
-        tags={[
-          "Web Design Scotland",
-          "Design Trends",
-          "UX",
-          "UI",
-          "Accessibility",
-          "Performance",
-          "AI",
-        ]}
+        category="Web Design"
+        tags={["web design trends", "UI/UX", "performance", "Scotland"]}
         author={{
           name: "Callan George",
           bio: "Scotland-based Web Designer & SEO Specialist",
         }}
-        excerpt="A practical guide to 2025 web design trends tailored for Scottish SMEs. Learn how to apply minimalism, bold type, micro-interactions, dark mode, accessibility, sustainability and AI—without harming speed or SEO."
+        excerpt="2025 web design trends that matter for Scottish SMEs — practical guidance for modern, fast, accessible websites that convert."
         contentItems={contentItems}
       />
-
       <FinalCTA />
       <Footer />
     </div>

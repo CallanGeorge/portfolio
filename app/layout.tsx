@@ -3,21 +3,20 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://callangeorge.com"),
-  title:
-    "Callan George - Freelance Web Developer Edinburgh | Custom Websites for Local Business Growth",
+  title: "Freelance Web Designer & SEO Consultant in Fife & Edinburgh",
   description:
-    "Edinburgh-based freelance web developer helping local businesses build their digital presence. Modern websites, proven results, personal service. Get started today.",
+    "Fast, conversion‑focused websites and local SEO for small businesses across Fife & Edinburgh. Rank higher, load faster, win more enquiries.",
   keywords: [
-    "freelance web developer Edinburgh",
-    "custom websites Edinburgh",
-    "local business web design",
-    "Edinburgh web developer",
-    "small business websites",
-    "freelance developer Scotland",
-    "responsive web design",
-    "business website Edinburgh",
-    "web development services",
+    "freelance web designer Fife",
+    "web designer Edinburgh",
+    "website design Fife",
+    "SEO consultant Fife",
     "local SEO Edinburgh",
+    "small business SEO Scotland",
+    "fast websites",
+    "Core Web Vitals",
+    "Kirkcaldy",
+    "Dunfermline",
   ],
   authors: [{ name: "Callan George" }],
   creator: "Callan George",
@@ -44,24 +43,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_GB",
     url: "https://callangeorge.com",
-    siteName: "Callan George - Freelance Web Developer",
-    title: "Callan George - Custom Websites for Local Business Growth",
+    siteName: "Freelance Web Designer & SEO — Fife & Edinburgh",
+    title: "Freelance Web Designer & SEO in Fife & Edinburgh",
     description:
-      "Edinburgh-based freelance web developer helping local businesses build their digital presence. Modern websites, proven results, personal service.",
+      "Fast, conversion‑focused websites and local SEO for small businesses across Fife & Edinburgh.",
     images: [
       {
         url: "/default-thumbnail.webp",
         width: 1200,
         height: 630,
-        alt: "Callan George - Web Developer",
+        alt: "Freelance Web Designer & SEO — Fife & Edinburgh",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Callan George - Custom Websites for Local Business Growth",
+    title: "Freelance Web Designer & SEO in Fife & Edinburgh",
     description:
-      "Edinburgh-based freelance web developer helping local businesses build their digital presence.",
+      "Fast, conversion‑focused websites and local SEO for small businesses across Fife & Edinburgh.",
     images: ["/default-thumbnail.webp"],
     creator: "@callangeorge",
   },

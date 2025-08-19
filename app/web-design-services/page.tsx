@@ -7,24 +7,18 @@ import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
   title:
-    "Custom Web Design Services Fife & Edinburgh | Fast, Secure Websites Scotland",
+    "Web Design Fife & Edinburgh — Fast, SEO‑Optimised Websites for Small Businesses",
   description:
-    "Professional custom web design for small businesses in Fife & Edinburgh. Hand-coded websites that load fast, rank higher on Google & convert more visitors. No WordPress, no page builders.",
+    "Freelance web designer building fast, secure, custom websites that rank and convert. Serving Fife & Edinburgh. No WordPress or page builders.",
   keywords: [
     "web design Fife",
     "web design Edinburgh",
-    "custom web design Scotland",
+    "custom websites Scotland",
     "small business websites Fife",
     "fast website design",
-    "custom coded websites",
     "web designer Fife",
     "web designer Edinburgh",
-    "responsive web design",
     "SEO web design",
-    "secure websites",
-    "professional web design Scotland",
-    "website development Fife",
-    "modern web design",
     "conversion optimised websites",
     "web design Kirkcaldy",
     "web design Dunfermline",
@@ -33,19 +27,18 @@ export const metadata: Metadata = {
   authors: [{ name: "Callan George" }],
   openGraph: {
     title:
-      "Custom Web Design Services Fife & Edinburgh | Fast, Secure Websites Scotland",
+      "Web Design Fife & Edinburgh — Fast, SEO‑Optimised Websites for Small Businesses",
     description:
-      "Professional custom web design for small businesses in Fife & Edinburgh. Hand-coded websites that load fast, rank higher on Google & convert more visitors. No WordPress, no page builders.",
+      "Freelance web designer building fast, secure, custom websites that rank and convert. Serving Fife & Edinburgh.",
     type: "website",
     locale: "en_GB",
-    siteName: "Callan George - Web Design & SEO",
+    siteName: "Freelance Web Designer & SEO — Fife & Edinburgh",
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Custom Web Design Services Fife & Edinburgh | Fast, Secure Websites Scotland",
+    title: "Web Design Fife & Edinburgh — Fast, SEO‑Optimised Websites",
     description:
-      "Professional custom web design for small businesses in Fife & Edinburgh. Hand-coded websites that load fast, rank higher on Google & convert more visitors.",
+      "Fast, secure, custom websites for small businesses in Fife & Edinburgh.",
   },
   alternates: {
     canonical: "/web-design-services",
