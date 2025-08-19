@@ -237,11 +237,14 @@
   color: var(--color-dark);
   margin: 0;
   font-family: "Inter", sans-serif;
+  transition: color 300ms ease;
+  line-height: 1.2;
+}
+
+.projectMeta {
   display: flex;
   align-items: center;
   gap: 1rem;
-  transition: color 300ms ease;
-  line-height: 1.2;
 }
 
 @media (min-width: 768px) {
@@ -277,7 +280,6 @@
   font-weight: 500;
   color: var(--color-dark);
   font-family: "Space Mono", monospace;
-  text-align: center;
   transition: color 300ms ease;
   letter-spacing: 0.5px;
 }

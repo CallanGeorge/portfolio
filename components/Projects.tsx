@@ -73,6 +73,22 @@ export default function Projects() {
           </p>
         </div>
 
+        {/* Preload images for better performance */}
+        <div style={{ display: "none" }}>
+          {projects.map((project) =>
+            project.screenshots.map((screenshot, index) => (
+              <Image
+                key={`${project.title}-${index}`}
+                src={screenshot}
+                alt=""
+                width={800}
+                height={500}
+                priority
+              />
+            ))
+          )}
+        </div>
+
         {/* Projects Accordion */}
         <div
           className={`${styles.projectsAccordion} ${
@@ -94,15 +110,15 @@ export default function Projects() {
                 onClick={() => toggleProject(index)}
               >
                 <div className={styles.projectInfo}>
-                  <h3 className={styles.projectName}>
-                    {project.title}
-                    <span className={styles.expandIcon}>
-                      {expandedProject === index ? "↑" : "↗"}
-                    </span>
-                  </h3>
+                  <h3 className={styles.projectName}>{project.title}</h3>
                 </div>
 
-                <div className={styles.projectYear}>{project.year}</div>
+                <div className={styles.projectMeta}>
+                  <div className={styles.projectYear}>{project.year}</div>
+                  <span className={styles.expandIcon}>
+                    {expandedProject === index ? "↑" : "↗"}
+                  </span>
+                </div>
               </div>
 
               {/* Expanded Content */}
@@ -124,7 +140,6 @@ export default function Projects() {
                         height={500}
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
                         style={{ width: "100%", height: "auto" }}
-                        loading="lazy"
                       />
                     </div>
                   ))}
