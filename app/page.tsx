@@ -3,7 +3,6 @@ import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import AboutSection from "@/components/AboutSection";
 import Performance from "@/components/Performance";
-import Testimonials from "@/components/Testimonials";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
