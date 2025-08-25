@@ -43,6 +43,16 @@ export default function BlogSection() {
       publishedAt: "2025-03-01",
       featured: false,
     },
+    {
+      title: "How to rank on Google: Fife and Edinburgh",
+      excerpt:
+        "A practical guide for local businesses in Fife and Edinburgh to rank higher on Google: mobile-first design, Lighthouse/Core Web Vitals, Google Business Profile, reviews, citations, on-page SEO, and conversion-ready CTAs.",
+      slug: "local-seo-fife-edinburgh",
+      category: "SEO",
+      readTime: "7 min read",
+      publishedAt: "2025-08-25",
+      featured: false,
+    },
   ];
 
   const handleBlogClick = (slug: string) => {
@@ -69,13 +79,13 @@ export default function BlogSection() {
         >
           {blogPosts.map((post, index) => (
             <article key={index} className={styles.blogCard}>
-              {/* Title - Fixed height */}
+              {/* Title */}
               <h3 className={styles.cardTitle}>{post.title}</h3>
 
-              {/* Excerpt - Fixed height */}
+              {/* Excerpt */}
               <p className={styles.cardDescription}>{post.excerpt}</p>
 
-              {/* Meta Section - Fixed height for alignment */}
+              {/* Meta Section */}
               <div className={styles.metaSection}>
                 <div className={styles.metaContainer}>
                   <span className={styles.category}>{post.category}</span>
@@ -89,7 +99,7 @@ export default function BlogSection() {
                 )}
               </div>
 
-              {/* CTA Button - Fixed position */}
+              {/* CTA Button */}
               <div className={styles.buttonContainer}>
                 <button
                   className={styles.ctaButton}
@@ -102,7 +112,7 @@ export default function BlogSection() {
               {/* Divider */}
               <div className={styles.divider}></div>
 
-              {/* Tags - Takes remaining space */}
+              {/* Tags */}
               <div className={styles.tagsContainer}>
                 <h4 className={styles.tagsTitle}>Tags:</h4>
                 <div className={styles.tagsList}>
