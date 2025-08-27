@@ -41,57 +41,56 @@ export default function LocalSEOFifeEdinburghPost() {
       type: "text" as const,
       heading: "Why Showing Up on Google Matters",
       paragraphs: [
-        "Think about the last time you looked for a café, hairdresser, or tradesperson. Chances are, you searched on Google and clicked one of the top results. Your potential customers in Fife and Edinburgh do exactly the same. If your business doesn’t show up, you’re losing enquiries to competitors who do. The good news? There are clear steps you can take to improve your chances of being seen.",
+        "Think about the last time you searched for a café, hairdresser, or plumber. Chances are, you clicked one of the top results. Your potential customers in Fife and Edinburgh do exactly the same. If your business doesn’t show up, those enquiries often go to a competitor. The good news is there are clear, simple steps you can take to improve your chances of being seen.",
       ],
     },
     {
       type: "text" as const,
-      heading: "Mobile-Friendly Websites Win More Customers",
+      heading: "1. Make Sure Your Website Works on Mobile",
       paragraphs: [
-        "Most people now search on their phone. If your site is hard to use on a small screen—tiny text, buttons that don’t work, or awkward menus—people will quickly leave. Google notices this too and pushes mobile-friendly sites higher up. I design every site with mobile in mind first, so your business looks professional and works smoothly whether someone is searching in a café in Edinburgh or on the go in Fife.",
+        "Most local searches happen on phones. If your site has tiny text, menus that are hard to tap, or buttons that don’t work properly, people will leave fast—and Google notices. A mobile-friendly site keeps visitors around longer and helps your rankings. To check yours, simply open your website on your phone. If it feels awkward, that’s a sign changes are needed.",
       ],
     },
     {
       type: "text" as const,
-      heading: "Why Website Speed Makes a Difference",
+      heading: "2. Speed Up Your Website",
       paragraphs: [
-        "We’ve all clicked on a site that takes ages to load and given up. Slow sites lose customers and drop down the rankings. Google prefers fast, easy-to-use websites. By building lightweight websites and optimising images and code, I make sure your site loads quickly and keeps customers engaged. A fast site doesn’t just help rankings—it means more people actually stick around to call or book.",
+        "A slow website is one of the fastest ways to lose a potential customer. Google also rewards faster sites with higher positions. You can test your speed using Google’s free PageSpeed Insights tool. Compressing large images, reducing unnecessary plugins, and using modern hosting are all ways to make your site faster.",
       ],
     },
     {
       type: "text" as const,
-      heading: "Clear Content That Google (and Customers) Understand",
+      heading: "3. Use Clear, Local Content",
       paragraphs: [
-        "Google needs to understand what your business does and where you do it. That means having clear page titles and content that mention your services and location in a natural way. For example, instead of a homepage that just says 'Welcome', a better title might be 'Family Hairdresser in Dunfermline'. I help write content that speaks directly to your customers while also giving Google the right signals to rank you locally.",
+        "Google needs to know what you do and where you do it. Instead of vague titles like 'Welcome', use something descriptive such as 'Family Hairdresser in Dunfermline'. Mentioning your service and location naturally throughout your pages helps customers and search engines alike. Avoid keyword stuffing—just write clearly for real people.",
       ],
     },
     {
       type: "text" as const,
-      heading:
-        "Your Google Business Profile Is Just as Important as Your Website",
+      heading: "4. Optimise Your Google Business Profile",
       paragraphs: [
-        "When someone searches 'plumber near me', the first thing they see is the map with local businesses. That’s powered by your Google Business Profile. Keeping this up to date with your correct address, phone number, opening hours, photos, and reviews is crucial. I help businesses claim, optimise, and manage their profiles so they show up in that all-important map section—and get more local calls.",
+        "When people search 'near me', the map section is often the first thing they click. That’s powered by your Google Business Profile. Make sure your profile is claimed, your contact details are correct, and your opening hours and photos are up to date. Encourage customers to leave reviews—fresh activity helps your profile show up more often.",
       ],
     },
     {
       type: "text" as const,
-      heading: "Reviews Build Trust and Improve Rankings",
+      heading: "5. Collect Reviews Regularly",
       paragraphs: [
-        "Having lots of recent positive reviews not only convinces new customers to choose you, it also helps push your business higher in local results. Asking for reviews can feel awkward, but it’s a simple system once you know how. I help set up an easy review process so happy customers can quickly leave feedback on Google, boosting both your credibility and your visibility.",
+        "Reviews not only build trust with new customers, they also signal to Google that your business is active and reliable. Set up a simple process: after completing a job or service, politely ask happy customers if they’d be willing to leave a quick review. The more recent and genuine reviews you have, the more likely you are to rank above competitors.",
       ],
     },
     {
       type: "text" as const,
-      heading: "Clear Calls-to-Action: Turning Visitors into Customers",
+      heading: "6. Use Clear Calls-to-Action",
       paragraphs: [
-        "It’s one thing to get people to your site—it’s another to get them to act. Every page should make it easy to contact you, book an appointment, or request a quote. That might mean a clear 'Call Now' button on mobile or a short contact form that actually works. I design sites that guide visitors naturally towards taking the next step, so you’re not just getting clicks, you’re getting customers.",
+        "Getting visitors is only half the battle—turning them into customers is what really matters. Each page should make it obvious how to take the next step, whether that’s a 'Call Now' button, an online booking link, or a simple contact form. Make sure these work smoothly on mobile as well as desktop.",
       ],
     },
     {
       type: "text" as const,
-      heading: "How I Can Help Your Business Rank Higher",
+      heading: "Putting It All Together",
       paragraphs: [
-        "For local businesses, SEO can feel confusing and overly technical. My job is to make it simple: build you a professional, mobile-first website that loads fast, is easy to use, and gives Google all the right signals. I’ll also help you set up and manage your Google Business Profile, collect reviews, and write clear content that makes your services stand out. The result? More visibility in Fife and Edinburgh searches, more website visits, and more customers contacting you.",
+        "Ranking locally on Google comes down to a few essentials: a fast, mobile-friendly website, clear and locally focused content, an optimised Google Business Profile, and steady flow of reviews. Get those right and you’ll already be ahead of many competitors.",
       ],
     },
   ];

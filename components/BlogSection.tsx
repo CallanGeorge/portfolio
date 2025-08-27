@@ -49,7 +49,7 @@ export default function BlogSection() {
         "A practical guide for local businesses in Fife and Edinburgh to rank higher on Google: mobile-first design, Lighthouse/Core Web Vitals, Google Business Profile, reviews, citations, on-page SEO, and conversion-ready CTAs.",
       slug: "local-seo-fife-edinburgh",
       category: "SEO",
-      readTime: "7 min read",
+      readTime: "6 min read",
       publishedAt: "2025-08-25",
       featured: false,
     },
